@@ -21,7 +21,7 @@
 \contentsline {chapter}{\numberline {2}Quantum Correlations, Continuous Variables, and Quantum Steering}{9}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction}{10}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Literature Review: Quantum Correlations in Quantum Information}{10}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Overview of Quantum Correlations}{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Overview of Quantum Steering}{10}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Hierarchy of Quantum Correlations: Discord $\supseteq $ Entanglement $\supseteq $ Steering $\supseteq $ Bell Nonlocality}{11}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Entanglement in Continuous Variables}{12}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Advantages of Continuous-Variable Systems}{12}{subsection.2.3.1}%

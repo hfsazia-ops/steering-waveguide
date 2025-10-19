@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.30)  18 OCT 2025 23:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.30)  19 OCT 2025 02:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1258,8 +1258,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `MS_Thesis_Steering.out' has not changed.
-(rerunfilecheck)             Checksum: B8C3574B80595482464EE36EFAAFB4D8;34355.
+
+Package rerunfilecheck Warning: File `MS_Thesis_Steering.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `MS_Thesis_Steering.out':
+(rerunfilecheck)             Before: B8C3574B80595482464EE36EFAAFB4D8;34355
+(rerunfilecheck)             After:  2AFAF43888A0CB5FE0127CAA4100A21B;34335.
  ) 
 Here is how much of TeX's memory you used:
  25412 strings out of 474486
@@ -1286,7 +1292,7 @@ eX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/quanta/AppData/Local/Programs/MiK
 TeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/quanta/AppData/Local/Programs/M
 iKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/quanta/AppData/Local/Programs/
 MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MS_Thesis_Steering.pdf (64 pages, 1726619 bytes).
+Output written on MS_Thesis_Steering.pdf (64 pages, 1726632 bytes).
 PDF statistics:
  1249 PDF objects out of 1440 (max. 8388607)
  335 named destinations out of 1000 (max. 500000)
