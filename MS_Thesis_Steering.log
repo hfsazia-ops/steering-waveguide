@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.30)  19 OCT 2025 02:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.30)  19 OCT 2025 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,6 +999,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 213
+.
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 213
+.
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (7.18303pt too wide) in paragraph at lines 213--214
+\T1/ptm/m/n/12 ing (asym-met-ric) and quan-tum en-tan-gle-ment (sym-met-ric) in
+ cou-pled lossy op-ti-cal waveg-
+ []
+
 [9
 
 ]
@@ -1007,22 +1023,10 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
  (C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 221
-.
-
-(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 221
-.
-
-(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 [10] [11
 
 ]
-Overfull \vbox (87.02652pt too high) has occurred while \output is active []
+Overfull \vbox (46.42673pt too high) has occurred while \output is active []
 
 
 [12] (MS_Thesis_Steering.toc [13
@@ -1258,14 +1262,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `MS_Thesis_Steering.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MS_Thesis_Steering.out':
-(rerunfilecheck)             Before: B8C3574B80595482464EE36EFAAFB4D8;34355
-(rerunfilecheck)             After:  2AFAF43888A0CB5FE0127CAA4100A21B;34335.
+Package rerunfilecheck Info: File `MS_Thesis_Steering.out' has not changed.
+(rerunfilecheck)             Checksum: 2AFAF43888A0CB5FE0127CAA4100A21B;34335.
  ) 
 Here is how much of TeX's memory you used:
  25412 strings out of 474486
@@ -1292,7 +1290,7 @@ eX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/quanta/AppData/Local/Programs/MiK
 TeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/quanta/AppData/Local/Programs/M
 iKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/quanta/AppData/Local/Programs/
 MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MS_Thesis_Steering.pdf (64 pages, 1726632 bytes).
+Output written on MS_Thesis_Steering.pdf (64 pages, 1727419 bytes).
 PDF statistics:
  1249 PDF objects out of 1440 (max. 8388607)
  335 named destinations out of 1000 (max. 500000)
