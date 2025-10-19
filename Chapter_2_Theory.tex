@@ -1,0 +1,307 @@
+%=============================================================================================
+%                           Chapter 2: Theory and Literature Review
+%=============================================================================================
+
+\chapter{Quantum Correlations, Continuous Variables, and Quantum Steering}
+\label{chp2}
+\newpage
+
+% ============================= SECTION 2.1: INTRODUCTION =============================
+\section{Introduction}
+
+Quantum correlations form the fundamental basis of quantum information science, representing non-classical relationships between subsystems that have no classical analogues. Unlike classical information where correlations arise from shared randomness, quantum correlations emerge from the intrinsic non-commutativity of quantum observables and the superposition principle. This chapter establishes the theoretical foundation for understanding quantum steering in continuous-variable systems, with particular emphasis on the RDQBL platform.
+
+We begin by reviewing the hierarchy of quantum correlations—a central organizational principle that categorizes different types of quantum correlations by their strength and scope. We then shift focus to continuous-variable systems and their advantages over discrete-variable approaches. Finally, we examine quantum steering specifically: its mathematical formulation, quantification criteria for Gaussian states, and its unique asymmetric properties that distinguish it from entanglement and Bell nonlocality.
+
+% ============================= SECTION 2.2: LITERATURE REVIEW =============================
+\section{Literature Review: Quantum Correlations in Quantum Information}
+
+\subsection{Overview of Quantum Correlations}
+
+Quantum correlations have been at the heart of foundational quantum mechanics debates since Einstein, Podolsky, and Rosen (EPR) challenged the completeness of quantum theory in 1935 \cite{einsteinPodolskyRosen1935}. Their paradox highlighted the apparent non-locality inherent in quantum mechanics—that measurements on one system can instantaneously affect another distant system.
+
+Over the past century, several types of quantum correlations have been identified and rigorously formalized:
+
+\begin{enumerate}
+	\item \textbf{Quantum Entanglement:} Two or more subsystems are in a non-separable state such that the overall state cannot be written as a product of individual subsystem states. Entanglement is symmetric—if subsystem A is entangled with B, then B is entangled with A.
+
+	\item \textbf{Bell Nonlocality:} A stronger form of correlation where measurements on one system cannot be explained by any local hidden-variable model. Violates Bell inequalities. Symmetric under party exchange.
+
+	\item \textbf{Quantum Steering:} An asymmetric correlation where one party's measurements can influence (``steer'') the conditional state of another distant party in a manner incompatible with local realism. First formally defined by Schrödinger \cite{schrodingerDiscussion1935} as a response to the EPR paradox.
+
+	\item \textbf{Quantum Discord:} A broader measure of quantum correlations that captures non-classical correlations beyond entanglement. Present in many separable states. Most general measure.
+\end{enumerate}
+
+\subsection{Hierarchy of Quantum Correlations: Discord $\supseteq$ Entanglement $\supseteq$ Steering $\supseteq$ Bell Nonlocality}
+
+A fundamental insight in quantum information theory is that different types of quantum correlations form a strict hierarchy \cite{brunnerBellNonlocality2014}:
+
+\begin{equation}
+\text{Discord} \supseteq \text{Entanglement} \supseteq \text{Steering} \supseteq \text{Bell Nonlocality}
+\end{equation}
+
+where $X \supseteq Y$ means X is a superset of Y (i.e., all states exhibiting Y also exhibit X, but not vice versa).
+
+\textbf{Bell Nonlocality:} The most restrictive class. If a state violates Bell inequalities, it exhibits all forms of correlations below it.
+
+\textbf{Steering:} Intermediate in strength. Asymmetric—one party may steer another without the converse being true. Every steerable state exhibits entanglement, but not every entangled state is steerable.
+
+\textbf{Entanglement:} States that are non-separable. Symmetric under party exchange. Always exhibits discord, but may not exhibit steering or nonlocality.
+
+\textbf{Discord:} Widest class, present in many separable states. Classical correlations can coexist with quantum discord. Some separable states exhibit discord.
+
+This hierarchy has profound implications: focusing specifically on steering (our work) targets the optimal balance between correlation strength and operational utility, particularly for one-sided device-independent protocols where only one party needs trusted devices.
+
+% ============================= SECTION 2.3: ENTANGLEMENT IN CV =============================
+\section{Entanglement in Continuous Variables}
+
+\subsection{Advantages of Continuous-Variable Systems}
+
+Continuous-variable (CV) quantum information processing offers significant practical advantages over discrete-variable (DV) systems:
+
+\begin{itemize}
+	\item \textbf{Deterministic Generation:} Entangled CV states can be generated deterministically through parametric down-conversion and squeezed light, without requiring post-selection.
+
+	\item \textbf{Optical Compatibility:} CV observables (quadrature amplitudes) are naturally measured via homodyne detection using standard optical components. Easy integration with existing fiber-optic infrastructure.
+
+	\item \textbf{Scalability:} Continuous variables allow more quantum information encoding per physical system compared to qubits.
+
+	\item \textbf{Experimental Simplicity:} Homodyne detection is experimentally simpler than single-photon counting required in DV systems.
+
+	\item \textbf{Gaussian State Framework:} Many CV states and operations can be represented using Gaussian formalism, enabling efficient computation and analysis.
+\end{itemize}
+
+\subsection{Quadrature Operators and Gaussian States}
+
+The fundamental observables in CV quantum optics are the \textbf{quadrature operators}:
+\begin{equation}
+X = \frac{1}{\sqrt{2}}(a + a^\dagger), \quad P = \frac{i}{\sqrt{2}}(a^\dagger - a)
+\end{equation}
+
+These satisfy the canonical commutation relation:
+\begin{equation}
+[X, P] = i
+\end{equation}
+
+\textbf{Gaussian States} are quantum states whose Wigner function (quasi-probability distribution) is Gaussian. For bipartite systems, Gaussian states are fully characterized by:
+\begin{enumerate}
+	\item Mean values (first moments): $\langle X_1 \rangle, \langle P_1 \rangle, \langle X_2 \rangle, \langle P_2 \rangle$
+	\item Covariance matrix (second-order moments)
+\end{enumerate}
+
+The two-mode covariance matrix is:
+\begin{equation}
+V = \begin{pmatrix}
+V_1 & C_{12} \\
+C_{12}^T & V_2
+\end{pmatrix}
+\end{equation}
+
+where each $V_j$ is a $2 \times 2$ block:
+\begin{equation}
+V_j = \begin{pmatrix}
+\langle X_j^2 \rangle - \langle X_j \rangle^2 & \langle\{X_j, P_j\}\rangle/2 - \langle X_j \rangle\langle P_j \rangle \\
+\langle\{X_j, P_j\}\rangle/2 - \langle X_j \rangle\langle P_j \rangle & \langle P_j^2 \rangle - \langle P_j \rangle^2
+\end{pmatrix}
+\end{equation}
+
+\subsection{Quantifying Entanglement in CV: Logarithmic Negativity}
+
+For Gaussian states, entanglement is quantified by \textbf{logarithmic negativity}:
+\begin{equation}
+E = \max\{0, -\log_2(2\tilde{\eta}_-)\}
+\end{equation}
+
+where $\tilde{\eta}_-$ is the smallest symplectic eigenvalue of the partial transpose of the covariance matrix.
+
+A state is entangled if $E > 0$. The metric $\tilde{\eta}_-$ is computed from:
+\begin{equation}
+2\tilde{\eta}_{\pm}^2 = \zeta \pm \sqrt{\zeta^2 - 4\det V}
+\end{equation}
+where $\zeta = \det V_1 + \det V_2 - 2\det C_{12}$.
+
+\subsection{Coherent and Squeezed States}
+
+Important classes of CV states include:
+
+\textbf{Coherent States:} Pure states minimizing uncertainty, $|\alpha\rangle = e^{-|\alpha|^2/2}\sum_{n=0}^{\infty} \frac{\alpha^n}{\sqrt{n!}}|n\rangle$.
+
+\textbf{Squeezed States:} States with reduced variance in one quadrature at the expense of increased variance in the orthogonal quadrature. Squeeze parameter $r$ quantifies the squeezing degree.
+
+These states form the foundation for entanglement generation in parametric processes and laser systems.
+
+% ============================= SECTION 2.4: STEERING IN CONTINUOUS VARIABLES =============================
+\section{Quantum Steering in Continuous Variables}
+
+\subsection{Formal Definition and Steering Criteria for Gaussian States}
+
+Quantum steering is formalized as follows: Party A (Alice) can steer Party B (Bob) if Alice's local measurements on her subsystem produce conditional states for Bob that cannot be explained by any local hidden-variable model compatible with realism.
+
+For Gaussian states with covariance matrix $V$, the steering criterion derived from the PPT (Positive Partial Transpose) condition is \cite{kogiastQuantificationGaussianQuantum2015}:
+\begin{equation}
+S^{A \to B} = \max\left\{0, \frac{1}{2}\log_2\frac{\det V_A}{4\det V_{out}^T}\right\}
+\end{equation}
+
+where:
+\begin{itemize}
+	\item $V_A = \det V_1$ is the covariance determinant for Alice's subsystem
+	\item $V_{out}^T$ is evaluated over the conditional states Bob can access
+\end{itemize}
+
+If $S^{A \to B} > 0$, steering from A to B is demonstrated.
+
+\subsection{Asymmetry of Steering: The Key Distinction}
+
+The defining characteristic of steering is its \textbf{asymmetry}. Unlike entanglement and Bell nonlocality (which are symmetric), steering can be directional:
+
+\begin{equation}
+S^{A \to B} > 0 \text{ while } S^{B \to A} = 0 \text{ (Asymmetric Steering)}
+\end{equation}
+
+This directionality has profound practical implications:
+\begin{itemize}
+	\item In asymmetric steering, only one party needs a trusted measurement device
+	\item The steered party (Bob) can be untrusted or even adversarial
+	\item Perfect for one-sided device-independent protocols
+\end{itemize}
+
+\subsection{Entanglement versus Steering}
+
+While related, steering and entanglement are distinct:
+
+\begin{itemize}
+	\item \textbf{Entanglement:} Correlation structure of the state itself, symmetric, quantifies by logarithmic negativity
+	\item \textbf{Steering:} Ability to influence conditional states through measurement, asymmetric, directional
+\end{itemize}
+
+An entangled state may or may not be steerable in both directions. A steerable state is necessarily entangled, but an entangled state need not be steerable (if both parties have local hidden-variable descriptions).
+
+% ============================= SECTION 2.5: EFFECT OF LOSS AND DECOHERENCE =============================
+\section{Effect of Loss and Decoherence on Quantum Correlations}
+
+\subsection{Lindblad Master Equation and Loss Operators}
+
+Real quantum systems are open systems interacting with their environment. The dynamics are governed by the Lindblad master equation:
+\begin{equation}
+\frac{d\rho}{dt} = -\frac{i}{\hbar}[H, \rho] + \sum_k \left(L_k \rho L_k^\dagger - \frac{1}{2}\{L_k^\dagger L_k, \rho\}\right)
+\end{equation}
+
+For a two-mode cavity system with loss rates $\kappa_1, \kappa_2$, the loss Liouvillian is:
+\begin{equation}
+\mathcal{L}_{\text{loss}}[\rho] = \kappa_1\left(a_1\rho a_1^\dagger - \frac{1}{2}\{a_1^\dagger a_1, \rho\}\right) + \kappa_2\left(a_2\rho a_2^\dagger - \frac{1}{2}\{a_2^\dagger a_2, \rho\}\right)
+\end{equation}
+
+\subsection{Robustness of Entanglement versus Steering in Waveguides}
+
+Previous work on coupled lossy waveguides \cite{RaiDasAgarwal2010} demonstrated:
+
+\begin{itemize}
+	\item Entanglement shows considerable robustness against material loss
+	\item Loss parameters $\gamma/J$ up to 1/10 still preserve entanglement
+	\item Logarithmic negativity decays but does not vanish rapidly
+	\item Different initial states (photon number, NOON, squeezed) show varying robustness
+\end{itemize}
+
+Key finding: \textbf{Waveguide structures are reasonably robust against loss effects and appropriate for quantum circuits}.
+
+This provides motivation for investigating steering robustness in similar systems—if entanglement persists, can steering (a potentially stronger resource) also be preserved?
+
+% ============================= SECTION 2.6: OPTICAL WAVEGUIDES AS QM SYSTEMS =============================
+\section{Optical Waveguides as Quantum Systems}
+
+\subsection{Basics of Waveguide Coupling and Evanescent Fields}
+
+Coupled optical waveguides represent a passive quantum platform where two single-mode waveguides interact through evanescent field overlap. The system is governed by coupled-mode theory \cite{laiNonclassicalFieldsLinear1991}.
+
+The quantum Hamiltonian for coupled waveguides:
+\begin{equation}
+H = \hbar\omega(a^\dagger a + b^\dagger b) + \hbar J(a^\dagger b + b^\dagger a)
+\end{equation}
+
+where:
+\begin{itemize}
+	\item $J$ is the coupling strength (depends on waveguide separation)
+	\item $a, b$ are annihilation operators for the two modes
+\end{itemize}
+
+\subsection{Losses in Realistic Systems}
+
+Real waveguides experience material losses (absorption, scattering):
+\begin{equation}
+\gamma \text{ (loss rate)} = \frac{2.3 \times \alpha}{10} \text{ (in natural units from dB/cm)}
+\end{equation}
+
+Typical parameters:
+\begin{itemize}
+	\item Silica: $\gamma \approx 3 \times 10^9$ s$^{-1}$, $\gamma/J \approx 1/50$ (excellent)
+	\item LiNbO$_3$: $\gamma \approx 3 \times 10^9$ s$^{-1}$, $\gamma/J \approx 1/7$ (moderate)
+	\item AlGaAs: $\gamma \approx 2.7 \times 10^{10}$ s$^{-1}$, $\gamma/J \approx 1/10$ (moderate)
+\end{itemize}
+
+\subsection{Relevance for Quantum Circuits and Quantum Photonics}
+
+Coupled waveguides serve as basic building blocks for integrated quantum circuits \cite{PolitiSilicaonSilicon2008}. Success in generating robust entanglement in these passive structures motivates investigation of steering—potentially a more useful resource for practical quantum information protocols.
+
+% ============================= SECTION 2.7: ACTIVE QUANTUM SYSTEMS AND STEERING =============================
+\section{Application and Motivation: Why Steering in Lossy Waveguides Matters}
+
+\subsection{Role in Photonic Quantum Networks}
+
+Quantum steering in optical systems enables:
+
+\begin{itemize}
+	\item \textbf{One-Sided Device-Independent (1sDI) Quantum Networks:} Asymmetric steering allows distributed quantum networks where only central nodes need trusted devices \cite{branciardOnesidedDeviceIndependentQuantum2012}.
+
+	\item \textbf{Secure Communication:} The asymmetry of steering provides inherent directionality for secure quantum channels, particularly in untrusted or adversarial scenarios.
+
+	\item \textbf{Quantum Internet and Cryptography:} Growing quantum internet frameworks (QIA, GSMA) identify steering-based protocols as key enablers for next-generation secure communications \cite{downlingQuantumTechnology2003}.
+
+	\item \textbf{Quantum Key Distribution (QKD):} Device-independent QKD schemes benefit from steering's asymmetric nature, reducing hardware complexity.
+\end{itemize}
+
+\subsection{Steering vs Entanglement for Practical Applications}
+
+Why focus on steering rather than entanglement?
+
+\begin{itemize}
+	\item \textbf{Resource Asymmetry:} Entanglement requires both parties to trust devices. Steering allows one untrusted party.
+
+	\item \textbf{Operational Advantage:} Steering is a more practical resource for scenarios with asymmetric trust levels or capabilities.
+
+	\item \textbf{Hierarchical Efficiency:} Since Steering $\subset$ Entanglement, steering-capable systems are automatically entanglement-capable, but the converse is not guaranteed.
+
+	\item \textbf{Future-Oriented:} As quantum networks grow, asymmetric architectures (central trusted hubs, edge nodes) will dominate, making steering naturally suited for these topologies.
+\end{itemize}
+
+\subsection{Quantum Internet, Cryptography, and Beyond}
+
+Emerging quantum communication infrastructure requires efficient, robust, and asymmetric quantum resources:
+
+\begin{itemize}
+	\item Quantum internet protocols prioritize asymmetric trust models
+	\item Quantum cryptography standards (ETSI, ISO) increasingly focus on device-independent protocols
+	\item Quantum sensing and metrology benefit from asymmetric correlations
+	\item Quantum machine learning exploits steering for advanced protocols
+\end{itemize}
+
+% ============================= SECTION 2.8: CHAPTER SUMMARY =============================
+\section{Chapter Summary}
+
+This chapter has established the theoretical and motivational foundations for investigating quantum steering:
+
+\begin{enumerate}
+	\item \textbf{Quantum Correlations Hierarchy:} Discord $\supseteq$ Entanglement $\supseteq$ Steering $\supseteq$ Bell Nonlocality—steering occupies the optimal position for practical quantum information.
+
+	\item \textbf{Continuous-Variable Advantage:} CV systems offer deterministic generation, optical compatibility, and Gaussian state formalism—ideal for steering studies.
+
+	\item \textbf{Steering Fundamentals:} Asymmetric, directional, intermediate in strength, quantifiable for Gaussian states—uniquely suited for one-sided device-independent protocols.
+
+	\item \textbf{Loss and Decoherence:} Prior work shows entanglement survives realistic loss in waveguides; steering robustness remains to be investigated.
+
+	\item \textbf{Waveguides as Platforms:} Coupled waveguides demonstrate that passive systems can preserve entanglement. Active systems (like our RDQBL) may offer superior steering generation and control.
+
+	\item \textbf{Practical Motivation:} Emerging quantum internet, cryptography, and sensing applications specifically require steering resources in asymmetric network topologies.
+\end{enumerate}
+
+The stage is now set for developing the specific RDQBL model (Chapter \ref{chp3}), investigating steering generation mechanisms (Chapter \ref{chp4}), and demonstrating practical feasibility (Chapter \ref{chp5}).
+

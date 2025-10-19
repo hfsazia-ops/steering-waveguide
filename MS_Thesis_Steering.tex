@@ -1,0 +1,311 @@
+\documentclass[12pt,a4paper]{report}
+% ============================= DOCUMENT CLASS & GEOMETRY =============================
+\usepackage[left=1.5in,right=1.0in,top=1.0in,bottom=1.0in]{geometry}
+\usepackage{times}
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.4}
+
+% ============================= ENHANCED PACKAGES =============================
+% Typography & Formatting
+\usepackage[titles]{tocloft}
+\usepackage{afterpage}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{lettrine}
+\usepackage{lipsum}
+
+% Graphics & Figures
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage{rotating}
+\usepackage{float}
+
+% Mathematics & Science
+\usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{amsmath,bm}
+\usepackage{braket}
+\usepackage{cases}
+
+% Algorithms & Code
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+% Tables & Lists
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{lscape}
+
+% Language & References
+\usepackage[english]{babel}
+\usepackage{parskip}
+\usepackage{url}
+\usepackage[acronym]{glossaries}
+\usepackage{nomencl}
+
+% Captions & Typography
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+\usepackage[T1]{fontenc}
+
+% Enhanced Hyperlinks
+\usepackage[colorlinks=true, allcolors=blue, bookmarks=true, bookmarksnumbered=true]{hyperref}
+
+% ============================= CUSTOM FORMATTING =============================
+% Table of Contents Depth
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+% Section Font Formatting
+\allsectionsfont{\usefont{OT1}{times}{bc}{n}\bf\selectfont}
+
+% Title Formatting - Main Chapters
+\titleformat{\chapter}[display]{\vspace{7.5cm}\Large\bfseries\centering}{\chaptername~\thechapter}{1ex}{}
+
+% Enhanced TOC Formatting
+\renewcommand{\contentsname}{\textbf{TABLE OF CONTENTS\normalsize\centering}}
+\renewcommand{\listfigurename}{LIST OF FIGURES}
+\renewcommand{\listtablename}{LIST OF TABLES}
+
+% Paragraph Spacing
+\parskip 1ex
+
+% ============================= BEGIN DOCUMENT =============================
+\begin{document}
+
+% ============================= TITLE PAGE (Page 1) =============================
+\begin{titlepage}
+	\centering
+
+	% Title
+	{\LARGE \textbf{ Quantum Steering } \par}
+
+	\vspace{1.5cm}
+
+	% University Logo
+	\includegraphics[width=7.7cm]{QAU_enhanced_Logo} % Update filename as needed
+
+	\vspace{1.2cm}
+
+	% Author
+	{\large \textbf{BY} \par}
+	{\Large \textbf{[Hafsa Zia]} \par}
+	\vspace{0.6cm}
+
+	% Supervisor
+	{\large \textbf{Supervisor:} \\}
+	{\Large \textbf{Dr. Shakir Ullah} \par}
+
+	\vspace{4cm}
+
+	% Department and University
+	{\Large\textbf{Department of Physics} \par}
+	{\textbf{Quaid-i-Azam University, Islamabad, Pakistan} \par}
+	{(Spring 2025--2026) \par}
+
+\end{titlepage}
+
+% ============================= TITLE PAGE (Page 2 - Formal) =============================
+\newpage
+\begin{titlepage}
+	\centering
+
+	% Title
+	{\LARGE \textbf{Continuous-Variable Quantum Steering in a Raman-Driven Quantum Beat Laser} \par}
+	\vspace{0.8cm}
+
+	\includegraphics[width=7.5cm]{QAU_enhanced_Logo}
+	\vspace{0.5cm}
+
+	% Author
+	{\large \textbf{BY} \par}
+	{\Large \textbf{[Your Name]} \\}
+	{\centering\large (Reg. \# [Your Registration Number])}
+	\vspace{0.5cm}
+
+	% Supervisor
+	{\large \textbf{Supervisor:} \\}
+	{\Large \textbf{Dr. Shakir Ullah} \par}
+
+	\vspace{0.8cm}
+		% Dissertation Note
+	\begin{spacing}{1.2}
+		{\textbf{\textit{A dissertation submitted in partial fulfillment of the requirements for the degree of}}}
+		{\Large \textit{\textbf{Master of Science in Physics}} \par}
+		{\textbf{\textit{at the Quaid-i-Azam University, Islamabad, Pakistan}} \par}
+		{\textbf{\textit{2025--2026}} \par}
+	\end{spacing}
+		\vspace{1cm}
+		% Department and University
+	{\Large\textbf{Department of Physics} \\}
+	{\textbf{Quaid-i-Azam University, Islamabad, Pakistan} \par}
+
+\end{titlepage}
+
+% ============================= CERTIFICATION PAGE (Page 3) =============================
+\newpage
+\begin{titlepage}
+	 \begin{center}
+		{\Large \textbf{Research Completion Certificate}}
+	\end{center}
+	\vspace{0.4cm}
+	This is to certify that \textbf{[Your Name]} (Reg. \# [Your Registration Number]) has carried out the work contained in this dissertation under my supervision and is accepted by the Department of Physics, Quaid-i-Azam University, Islamabad as satisfying the dissertation requirement for the degree of Master of Science in Physics.\\
+	\vspace{1cm}
+
+	% Right-aligned block (Supervisor info)
+	\begin{flushright}
+		\textbf{Supervisor:}\\[6pt]
+		\vspace{1cm}
+		\rule{3.5cm}{0.4pt}\\
+		\textbf{Dr. Shakir Ullah}\\
+		Department of Physics\\
+		Quaid-i-Azam University,\\
+		Islamabad, Pakistan.
+	\end{flushright}
+	\vspace{1cm}
+	% Left-aligned block (Chairman info)
+	\textbf{Submitted through:}\\[12pt]
+
+	\begin{flushleft}
+		\rule{3.5cm}{0.4pt}\\
+		\textbf{Prof. Dr. [Chairman Name]}\\
+		\textbf{Chairman}\\
+		Department of Physics\\
+		Quaid-i-Azam University,\\
+		Islamabad, Pakistan.
+	\end{flushleft}
+\end{titlepage}
+
+% ============================= DEDICATION PAGE (Page 4) =============================
+\newpage
+\begin{titlepage}
+ \begin{center}
+	{\Large \textbf{Dedication}}
+\end{center}
+\vspace{0.4cm}
+\centering {I dedicate this work to my parents, whose unconditional support, encouragement, and sacrifices have been the foundation of my academic journey. Their belief in the pursuit of knowledge and excellence continues to inspire me.
+}.\\
+\end{titlepage}
+
+% ============================= FRONT MATTER - ROMAN NUMERALS =============================
+\pagenumbering{roman}
+\setcounter{page}{8}
+\newpage
+
+% ============================= ACKNOWLEDGMENTS =============================
+\addcontentsline{toc}{chapter}{Acknowledgments}
+\chapter*{Acknowledgments}
+I express my sincere gratitude to my supervisor, Dr. Shakir Ullah, for his invaluable guidance, insightful discussions, and continuous encouragement throughout this research. His expertise in quantum optics and quantum information processing has been instrumental in shaping this work.
+
+I would like to thank the Department of Physics at Quaid-i-Azam University for providing the necessary research facilities and computational resources. Special thanks to my colleagues and research group members for their collaborative spirit and constructive feedback.
+
+I am grateful to the Higher Education Commission (HEC), Pakistan, for their financial support through research grants. Finally, I acknowledge the contributions of previous researchers whose foundational work in quantum steering and laser physics has provided the theoretical basis for this investigation.
+
+\newpage
+
+% ============================= ABSTRACT =============================
+\addcontentsline{toc}{chapter}{Abstract}
+\chapter*{Abstract}
+
+\noindent \textbf{Title:} Continuous-Variable Quantum Steering in a Raman-Driven Quantum Beat Laser\\[0.5cm]
+
+Quantum steering—an intrinsically asymmetric quantum correlation intermediate between entanglement and Bell nonlocality—represents a fundamental resource for quantum information processing, particularly in one-sided device-independent quantum key distribution and asymmetric quantum networks. This dissertation investigates the theoretical framework for generating, controlling, and characterizing continuous-variable (CV) quantum steering in a Raman-driven quantum beat laser (RDQBL) system.
+
+We develop a comprehensive theoretical model of the RDQBL operating in the regime of strong driving fields and weak cavity damping, where two external classical fields interact with a three-level atomic system in a Raman configuration to produce correlated photon pairs in two cavity modes. Through analytical and numerical approaches, we derive the master equation governing the system dynamics and compute the density matrix for the output cavity field using both interaction picture techniques and covariance matrix formalism.
+
+Key findings demonstrate that:
+\begin{itemize}
+	\item Continuous-variable quantum steering is periodically generated between the two cavity modes as they propagate, with tunability through system parameters.
+	\item The directionality of steering (one mode steering another but not vice versa) can be controlled via the relative phase between classical coupling fields and the Rabi frequency.
+	\item Cavity damping introduces decoherence but the hierarchical structure of quantum correlations (Discord $\supseteq$ Entanglement $\supseteq$ Steering $\supseteq$ Bell Nonlocality) persists in realistic conditions.
+	\item Non-classical properties of initial cavity modes and purity effects substantially influence steering dynamics and robustness.
+\end{itemize}
+
+This work bridges the gap between quantum optics—focusing on coherent light-matter interactions—and quantum information theory by providing the theoretical foundation and quantitative measures for exploiting steering resources in active photonic systems. The tunability of steering in RDQBL establishes it as a promising platform for next-generation quantum communication technologies and quantum metrology applications.
+
+\textbf{Keywords:} Quantum steering, continuous variables, Raman-driven quantum beat laser, cavity QED, quantum correlations hierarchy, quantum communication.
+
+\newpage
+
+% ============================= ABBREVIATIONS =============================
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+\chapter*{List of Abbreviations}
+
+\begin{tabular}{ll}
+CV & Continuous Variable \\
+DV & Discrete Variable \\
+RDQBL & Raman-Driven Quantum Beat Laser \\
+QBL & Quantum Beat Laser \\
+CEL & Correlated Emission Laser \\
+QIT & Quantum Information Theory \\
+QED & Quantum Electrodynamics \\
+CQED & Cavity Quantum Electrodynamics \\
+EPR & Einstein-Podolsky-Rosen \\
+1sDI & One-Sided Device-Independent \\
+QKD & Quantum Key Distribution \\
+1sDI-QKD & One-Sided Device-Independent Quantum Key Distribution \\
+PPT & Positive Partial Transpose \\
+CV & Continuous Variable \\
+TMGS & Two-Mode Gaussian State \\
+NOON & N-Photon State \\
+HOM & Hong-Ou-Mandel (interference) \\
+PMF & Probability Mass Function \\
+PDF & Probability Density Function \\
+FWHM & Full Width at Half Maximum \\
+SNR & Signal-to-Noise Ratio \\
+\end{tabular}
+
+\newpage
+
+% ============================= TABLE OF CONTENTS =============================
+\renewcommand{\contentsname}{\textbf{TABLE OF CONTENTS}}
+\tableofcontents
+
+\titleformat{\chapter}[display]{\large\bfseries\raggedright}{\chaptername~\thechapter}{1ex}{}[{\titlerule[1pt]}]
+
+\newpage
+
+% ============================= LIST OF FIGURES =============================
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+
+\newpage
+
+% ============================= LIST OF TABLES =============================
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+\newpage
+
+% ============================= MAIN CONTENT - ARABIC NUMERALS =============================
+\pagenumbering{arabic}
+\titleformat{\chapter}[display]{\vspace{7.5cm}\Large\bfseries\centering}{\chaptername~\thechapter}{1ex}{}
+
+% ============================= CHAPTER 1: INTRODUCTION =============================
+\input{./Chapter_1_Introduction}
+
+% ============================= CHAPTER 2: LITERATURE REVIEW & THEORY =============================
+\input{./Chapter_2_Theory}
+
+% ============================= CHAPTER 3: MODEL & METHODOLOGY =============================
+\input{./Chapter_3_Model}
+
+% ============================= CHAPTER 4: RESULTS & ANALYSIS =============================
+\input{./Chapter_4_Results}
+
+% ============================= CHAPTER 5: DISCUSSION =============================
+\input{./Chapter_5_Discussion}
+
+% ============================= CHAPTER 6: CONCLUSIONS =============================
+\input{./Chapter_6_Conclusions}
+
+% ============================= REFERENCES =============================
+\input{./Chapter_7_References}
+
+% ============================= APPENDICES (OPTIONAL) =============================
+% Uncomment if needed
+% \appendix
+% \input{./Appendix_A}
+
+\end{document}

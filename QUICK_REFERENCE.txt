@@ -1,0 +1,305 @@
+================================================================================
+         MS THESIS LATEX TEMPLATE - QUICK REFERENCE GUIDE
+================================================================================
+
+MAIN FILE TO COMPILE
+====================
+→ MS_Thesis_Steering.tex
+
+
+QUICK COMMANDS
+==============
+
+1. COMPILATION (Windows Command Prompt)
+
+   cd C:\Users\quanta\Documents\MS Research\Thesis
+
+   pdflatex MS_Thesis_Steering.tex
+   bibtex MS_Thesis_Steering
+   pdflatex MS_Thesis_Steering.tex
+   pdflatex MS_Thesis_Steering.tex
+
+
+2. COMPILATION (Linux/Mac Terminal)
+
+   cd ~/Documents/MS\ Research/Thesis
+
+   pdflatex MS_Thesis_Steering.tex
+   bibtex MS_Thesis_Steering
+   pdflatex MS_Thesis_Steering.tex
+   pdflatex MS_Thesis_Steering.tex
+
+
+BASIC LATEX FORMATTING
+======================
+
+BOLD:           \textbf{text}
+ITALIC:         \textit{text}
+MONOSPACE:      \texttt{text}
+SMALL CAPS:     \textsc{text}
+
+HEADERS:        \section{Title}
+                \subsection{Title}
+                \subsubsection{Title}
+
+
+REFERENCES & CITATIONS
+=====================
+
+CITE A SOURCE:   \cite{keyname}
+REFERENCE:       \ref{label}
+EQUATION:        \eqref{eq:label}
+FIGURE:          \ref{fig:label}
+TABLE:           \ref{tab:label}
+
+EXAMPLE:
+  See Figure \ref{fig:myplot} and \cite{AuthorYear}
+
+
+EQUATIONS
+=========
+
+INLINE:         $E = mc^2$
+
+DISPLAY:        \begin{equation}
+                E = mc^2
+                \label{eq:einstein}
+                \end{equation}
+
+QUANTUM NOTATION:  $\braket{\psi|\phi}$
+                   $|\psi\rangle$
+                   $\langle\psi|$
+
+
+LISTS
+=====
+
+BULLET POINTS:  \begin{itemize}
+                  \item First
+                  \item Second
+                \end{itemize}
+
+NUMBERED:       \begin{enumerate}
+                  \item First
+                  \item Second
+                \end{enumerate}
+
+
+FIGURES
+=======
+
+BASIC:          \begin{figure}[h]
+                  \centering
+                  \includegraphics[width=0.8\textwidth]{file.pdf}
+                  \caption{Description}
+                  \label{fig:label}
+                \end{figure}
+
+PLACEMENT OPTIONS:
+  [h] - Here
+  [t] - Top of page
+  [b] - Bottom of page
+  [p] - Separate page
+
+
+TABLES
+======
+
+BASIC:          \begin{table}[h]
+                  \centering
+                  \begin{tabular}{|l|c|r|}
+                    \hline
+                    Left & Center & Right \\
+                    \hline
+                    Data & Data & Data \\
+                    \hline
+                  \end{tabular}
+                  \caption{Title}
+                  \label{tab:label}
+                \end{table}
+
+COLUMN OPTIONS:
+  l - Left aligned
+  c - Centered
+  r - Right aligned
+  | - Vertical line
+
+
+COMMON SYMBOLS
+==============
+
+\alpha    α        \beta     β
+\gamma    γ        \delta    δ
+\epsilon  ε        \zeta     ζ
+\theta    θ        \lambda   λ
+\mu       μ        \pi       π
+\rho      ρ        \sigma    σ
+\Omega    Ω        \hbar     ℏ
+
+\infty    ∞        \approx   ≈
+\neq      ≠        \leq      ≤
+\geq      ≥        \propto   ∝
+\partial  ∂        \nabla    ∇
+\times    ×        \cdot     ·
+
+
+FILE STRUCTURE
+==============
+
+Thesis/
+├── MS_Thesis_Steering.tex          (main - COMPILE THIS)
+├── Chapter_1_Introduction.tex       (\input in main)
+├── Chapter_2_Theory.tex             (\input in main)
+├── Chapter_3_Model.tex              (\input in main)
+├── Chapter_4_Results.tex            (\input in main)
+├── Chapter_5_Discussion.tex         (\input in main)
+├── Chapter_6_Conclusions.tex        (\input in main)
+├── Chapter_7_References.tex         (\input in main)
+├── Sample.bib                       (bibliography database)
+├── QAU_enhanced_Logo.jpg            (university logo)
+├── README.md                        (full guide)
+└── THESIS_STRUCTURE_SUMMARY.md     (detailed structure)
+
+
+COMMON ERRORS & FIXES
+=====================
+
+ERROR: "pdfinclude.sty not found"
+FIX:   Already removed from template
+
+ERROR: "Bibliography not showing"
+FIX:   Did you run: pdflatex → bibtex → pdflatex → pdflatex?
+
+ERROR: "Figure not displaying"
+FIX:   Check image format (.pdf, .jpg, .png)
+       Check filename spelling
+       Is image in same directory as .tex?
+
+ERROR: "Undefined control sequence \cite"
+FIX:   Did you define the citation in Sample.bib?
+       Check \cite{keyname} matches @article{keyname}
+
+ERROR: "Page numbers wrong"
+FIX:   Recompile twice
+       LaTeX needs 2 passes to update page numbers
+
+
+EDITING PERSONAL INFORMATION
+============================
+
+YOUR NAME:              Line 65 & 94 in MS_Thesis_Steering.tex
+                        Replace [Your Name]
+
+REGISTRATION NUMBER:    Line 94 in MS_Thesis_Steering.tex
+                        Replace [Your Registration Number]
+
+SUPERVISOR NAME:        Line 69 & 99 in MS_Thesis_Steering.tex
+                        Replace Dr. Shakir Ullah
+
+UNIVERSITY LOGO:        Line 58 & 88 in MS_Thesis_Steering.tex
+                        Update filename if different
+
+
+ADDING CITATIONS
+================
+
+1. Add entry to Sample.bib:
+   @article{AuthorYear,
+     author = {Author, A.},
+     title = {Title},
+     journal = {Journal},
+     year = {2024}
+   }
+
+2. Cite in your text:
+   \cite{AuthorYear}
+
+3. Compile:
+   pdflatex → bibtex → pdflatex → pdflatex
+
+
+USEFUL KEYBOARD SHORTCUTS
+=========================
+
+In TeXstudio:
+  F5           Compile
+  Ctrl+B       Build
+  Ctrl+T       Typeset
+  Ctrl+Alt+1   View PDF
+  F3           Find & Replace
+  Ctrl+M       Math mode
+
+
+BEFORE FINAL SUBMISSION
+=======================
+
+Checklist:
+  ☐ All chapters completed
+  ☐ All figures inserted with captions
+  ☐ All citations properly formatted
+  ☐ Bibliography compiled correctly
+  ☐ Table of Contents updated
+  ☐ Page numbering correct
+  ☐ No red error marks in editor
+  ☐ PDF generated successfully
+  ☐ Spell-checked content
+  ☐ Supervisor approval obtained
+
+
+QUICK COMPILATION CHECKLIST
+============================
+
+Issue: PDF not updating after editing
+→ Delete all auxiliary files (.aux, .toc, .out, .lof, .lot)
+→ Recompile
+
+
+Issue: Changes not appearing
+→ In TeXstudio: Tools → Clean Auxiliary Files
+→ Then F5 to recompile
+
+
+Issue: "LaTeX Error"
+→ Check red error in editor
+→ Look at line number indicated
+→ Search that line for syntax errors
+→ Verify matching braces: { }
+
+
+ONLINE HELP
+===========
+
+Overleaf Help:           www.overleaf.com/help
+LaTeX Wikibook:          en.wikibooks.org/wiki/LaTeX
+TeXstudio Manual:        texstudio.sourceforge.net
+Stack Exchange TeX:      tex.stackexchange.com
+
+
+RECOMMENDED WORKFLOW
+====================
+
+1. Open MS_Thesis_Steering.tex
+2. Edit individual chapter files
+3. After each edit, press F5 (compile)
+4. Fix any errors shown
+5. View generated PDF
+6. After major changes, run full compilation cycle
+7. Before submission, clean auxiliary files and recompile once
+
+
+NOTES
+=====
+
+• Always backup your files!
+• Compile frequently (catches errors early)
+• Use descriptive \label{} names for easy referencing
+• Comment code with % for readability
+• Test citations early - much easier to fix than at end
+• The README.md has complete detailed instructions
+
+
+================================================================================
+For complete instructions, see README.md and THESIS_STRUCTURE_SUMMARY.md
+For quick help: consult this file
+Last Updated: October 18, 2025
+================================================================================
