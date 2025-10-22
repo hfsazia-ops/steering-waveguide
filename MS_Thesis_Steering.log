@@ -964,7 +964,7 @@ Package pdftex.def Info: QAU_enhanced_Logo.jpg  used on input line 87.
 
 {C:/Users/quanta/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/qua
 nta/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./QAU_enhanced_
-Logo.jpg>]
+Logo.jpg>] [2]
 File: QAU_enhanced_Logo.jpg Graphic file (type jpg)
 <use QAU_enhanced_Logo.jpg>
 Package pdftex.def Info: QAU_enhanced_Logo.jpg  used on input line 118.
@@ -974,8 +974,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
+l.142 ...d-i-Azam University, Islamabad, Pakistan}
+                                                   \par} [1]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
 l.144 \end{titlepage}
-                      [1]
+                      [2]
 Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
@@ -999,66 +1005,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 213
-.
-(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 213
-.
 
-(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (7.18303pt too wide) in paragraph at lines 213--214
-\T1/ptm/m/n/12 ing (asym-met-ric) and quan-tum en-tan-gle-ment (sym-met-ric) in
- cou-pled lossy op-ti-cal waveg-
- []
+! LaTeX Error: Unicode character ⊇ (U+2287)
+               not set up for use with LaTeX.
 
-[9
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 ...uantum correlation hierarchy (Discord ⊇
+                                                   Entanglement ⊇ Steering...
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-19.
- (C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-[10] [11
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.213 ...uantum correlation hierarchy (Discord ⊇
+                                                   Entanglement ⊇ Steering...
 
-]
-Overfull \vbox (46.42673pt too high) has occurred while \output is active []
+You may provide a definition with
+\DeclareUnicodeCharacter 
 
-
-[12] (MS_Thesis_Steering.toc [13
-
-] [14] [15] [16])
-\tf@toc=\write4
-\openout4 = `MS_Thesis_Steering.toc'.
-
- [17] (MS_Thesis_Steering.lof)
-\tf@lof=\write5
-\openout5 = `MS_Thesis_Steering.lof'.
-
-[18
-
-] (MS_Thesis_Steering.lot)
-\tf@lot=\write6
-\openout6 = `MS_Thesis_Steering.lot'.
-
- [19
-
-] (Chapter_1_Introduction.tex
-Chapter 1.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.7 \newpage
-             [1
-
-]
-LaTeX Font Info:    Trying to load font information for OT1+times on input line
+ 
+Here is how much of TeX's memory you used:
+ 24958 strings out of 474486
+ 469350 string characters out of 5743283
+ 1929542 words of memory out of 5000000
+ 46757 multiletter control sequences out of 15000+600000
+ 585559 words of font info for 56 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 110i,6n,117p,2508b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
+ion for OT1+times on input line
  9.
 LaTeX Font Info:    No file OT1times.fd. on input line 9.
 
