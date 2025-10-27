@@ -16,21 +16,63 @@ We begin by reviewing the hierarchy of quantum correlations—a central organiza
 % ============================= SECTION 2.2: LITERATURE REVIEW =============================
 \section{Literature Review: Quantum Correlations in Quantum Information}
 
-\subsection{Overview of Quantum Steering}
+\subsection{Quantum states of light}
+\subsection{Continious variable states}
+In quantum mechanics, a Continious variable state is a quantum state where the physical observables i,e momentum and position vary continiously unlike discrete variable state where observables can take only discrete values.These system are illustrated with in an infinite-dimensional Hilbert space\cite{BraunsteinVanLoock2005}.In these system the principal variables are the quadrature operators which obey specific commutation relations that form the foundation of the system's quantum structure.\cite{Serafini2017}
+Continious variable quantum states are classified into two catogories:Gaussian and non Guassian states.\cite{AdessoRagyLee2014}
+\subsection{Guassian states}
+In a continious variable system quantum system,a Guassian state is a special kind of quantum state whose fourier representation has a guassian form in phase space.These states are completely described by their first and second moments.
+The quadrature operators are
+\begin{equation}
+	X = \frac{1}{\sqrt{2}}(a + a^\dagger), \quad P = \frac{i}{\sqrt{2}}(a^\dagger - a)
+\end{equation}
+These operators satisfy the canonical commutation relation:
+\begin{equation}
+	[X, P] = i
+\end{equation} \cite{Serafini2017}
 
-Quantum correlations have been at the heart of foundational quantum mechanics debates since Einstein, Podolsky, and Rosen (EPR) challenged the completeness of quantum theory in 1935 \cite{einsteinPodolskyRosen1935}. Their paradox highlighted the apparent non-locality inherent in quantum mechanics—that measurements on one system can instantaneously affect another distant system.
+The weigner function of a guassian state is
 
-Over the past century, several types of quantum correlations have been identified and rigorously formalized:
+\begin{equation}
+	W(\boldsymbol{\xi}) = \frac{1}{(2\pi)^{n}\sqrt{\det\boldsymbol{\Upsilon}}}
+	\exp\!\left[-\frac{1}{2}(\boldsymbol{\xi} - \bar{\boldsymbol{\xi}})^{T}
+	\boldsymbol{\Upsilon}^{-1}(\boldsymbol{\xi} - \bar{\boldsymbol{\xi}})\right]
+\end{equation}
 
-\begin{enumerate}
-	\item \textbf{Quantum Entanglement:} Two or more subsystems are in a non-separable state such that the overall state cannot be written as a product of individual subsystem states. Entanglement is symmetric—if subsystem A is entangled with B, then B is entangled with A.
+\noindent
+where 
+\[
+\boldsymbol{\xi} = (X_{1}, P_{1}, \ldots, X_{n}, P_{n})^{T}
+\]
+represents the phase-space vector, 
+\[
+\bar{\boldsymbol{\xi}} = \langle \hat{\boldsymbol{\xi}} \rangle
+\]
+is the displacement vector, and 
+\[
+\boldsymbol{\Upsilon}_{ij} = \frac{1}{2}
+\langle \hat{\xi}_{i}\hat{\xi}_{j} + \hat{\xi}_{j}\hat{\xi}_{i} \rangle
+- \langle \hat{\xi}_{i} \rangle \langle \hat{\xi}_{j} \rangle
+\]
 
-	\item \textbf{Bell Nonlocality:} A stronger form of correlation where measurements on one system cannot be explained by any local hidden-variable model. Violates Bell inequalities. Symmetric under party exchange.
 
-	\item \textbf{Quantum Steering:} An asymmetric correlation where one party's measurements can influence (``steer'') the conditional state of another distant party in a manner incompatible with local realism. First formally defined by Schrödinger \cite{schrodingerDiscussion1935} as a response to the EPR paradox.
+is the covariance matrix.\cite{WeedbrookEtAl2012} \cite{AdessoRagyLee2014}
 
-	\item \textbf{Quantum Discord:} A broader measure of quantum correlations that captures non-classical correlations beyond entanglement. Present in many separable states. Most general measure.
-\end{enumerate}
+
+
+
+All physical properties of the guassian states such as purity,entropy,steering and entanglement can be determined directly from the covariance matrix without full density operator because of the guassian form of weigner function.
+typical examples of guassian states include the coherent states, squeezed states, thermal states and vaccume state.
+
+\subsection{Covariance matrix}
+
+
+
+
+
+
+
+
 
 \subsection{Hierarchy of Quantum Correlations: Discord $\supseteq$ Entanglement $\supseteq$ Steering $\supseteq$ Bell Nonlocality}
 
@@ -137,7 +179,7 @@ These states form the foundation for entanglement generation in parametric proce
 
 Quantum steering is formalized as follows: Party A (Alice) can steer Party B (Bob) if Alice's local measurements on her subsystem produce conditional states for Bob that cannot be explained by any local hidden-variable model compatible with realism.
 
-For Gaussian states with covariance matrix $V$, the steering criterion derived from the PPT (Positive Partial Transpose) condition is \cite{kogiastQuantificationGaussianQuantum2015}:
+For Gaussian states with covariance matrix $V$, the steering criterion derived from the PPT (Positive Partial Transpose) condition is \cite{DrShskitullshPHDPaper2015}:
 \begin{equation}
 S^{A \to B} = \max\left\{0, \frac{1}{2}\log_2\frac{\det V_A}{4\det V_{out}^T}\right\}
 \end{equation}
@@ -193,7 +235,7 @@ For a two-mode cavity system with loss rates $\kappa_1, \kappa_2$, the loss Liou
 
 \subsection{Robustness of Entanglement versus Steering in Waveguides}
 
-Previous work on coupled lossy waveguides \cite{RaiDasAgarwal2010} demonstrated:
+Previous work on coupled lossy waveguides \cite{DrShskitullshPHDPaper2015} demonstrated:
 
 \begin{itemize}
 	\item Entanglement shows considerable robustness against material loss

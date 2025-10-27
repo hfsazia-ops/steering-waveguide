@@ -21,27 +21,30 @@
 \contentsline {chapter}{\numberline {2}Quantum Correlations, Continuous Variables, and Quantum Steering}{9}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction}{10}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Literature Review: Quantum Correlations in Quantum Information}{10}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Overview of Quantum Steering}{10}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Hierarchy of Quantum Correlations: Discord $\supseteq $ Entanglement $\supseteq $ Steering $\supseteq $ Bell Nonlocality}{11}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Quantum states of light}{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Continious variable states}{10}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Guassian states}{10}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Covariance matrix}{11}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Hierarchy of Quantum Correlations: Discord $\supseteq $ Entanglement $\supseteq $ Steering $\supseteq $ Bell Nonlocality}{11}{subsection.2.2.5}%
 \contentsline {section}{\numberline {2.3}Entanglement in Continuous Variables}{12}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Advantages of Continuous-Variable Systems}{12}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Quadrature Operators and Gaussian States}{12}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Quadrature Operators and Gaussian States}{13}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Quantifying Entanglement in CV: Logarithmic Negativity}{13}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Coherent and Squeezed States}{13}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.4}Coherent and Squeezed States}{14}{subsection.2.3.4}%
 \contentsline {section}{\numberline {2.4}Quantum Steering in Continuous Variables}{14}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Formal Definition and Steering Criteria for Gaussian States}{14}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Asymmetry of Steering: The Key Distinction}{14}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Entanglement versus Steering}{14}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.2}Asymmetry of Steering: The Key Distinction}{15}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Entanglement versus Steering}{15}{subsection.2.4.3}%
 \contentsline {section}{\numberline {2.5}Effect of Loss and Decoherence on Quantum Correlations}{15}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Lindblad Master Equation and Loss Operators}{15}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Robustness of Entanglement versus Steering in Waveguides}{15}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.2}Robustness of Entanglement versus Steering in Waveguides}{16}{subsection.2.5.2}%
 \contentsline {section}{\numberline {2.6}Optical Waveguides as Quantum Systems}{16}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Basics of Waveguide Coupling and Evanescent Fields}{16}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Losses in Realistic Systems}{16}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Relevance for Quantum Circuits and Quantum Photonics}{16}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.2}Losses in Realistic Systems}{17}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Relevance for Quantum Circuits and Quantum Photonics}{17}{subsection.2.6.3}%
 \contentsline {section}{\numberline {2.7}Application and Motivation: Why Steering in Lossy Waveguides Matters}{17}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}Role in Photonic Quantum Networks}{17}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Steering vs Entanglement for Practical Applications}{17}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.2}Steering vs Entanglement for Practical Applications}{18}{subsection.2.7.2}%
 \contentsline {subsection}{\numberline {2.7.3}Quantum Internet, Cryptography, and Beyond}{18}{subsection.2.7.3}%
 \contentsline {section}{\numberline {2.8}Chapter Summary}{18}{section.2.8}%
 \contentsline {chapter}{\numberline {3}Raman-Driven Quantum Beat Laser: Model and Dynamics}{20}{chapter.3}%
