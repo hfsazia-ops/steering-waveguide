@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.30)  28 OCT 2025 00:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.30)  28 OCT 2025 00:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -870,9 +870,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 LaTeX Warning: Label `Serafini2017' multiply defined.
 
 
-LaTeX Warning: Label `WeedbrookEtAl2012' multiply defined.
-
-
 LaTeX Warning: Label `AdessoRagyLee2014' multiply defined.
 
 )
@@ -1340,7 +1337,7 @@ a/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/quanta/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/quanta/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/quanta/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MS_Thesis_Steering.pdf (62 pages, 1740087 bytes).
+Output written on MS_Thesis_Steering.pdf (62 pages, 1740102 bytes).
 PDF statistics:
  1234 PDF objects out of 1440 (max. 8388607)
  312 named destinations out of 1000 (max. 500000)
