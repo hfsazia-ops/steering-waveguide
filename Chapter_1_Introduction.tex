@@ -8,175 +8,50 @@
 
 \section{Background and Motivation}
 
-Quantum correlations form the foundational basis of quantum information science and are essential to the operation of emerging quantum technologies such as quantum computing, quantum communication, and quantum cryptography. Among the various forms of quantum correlations, \textbf{quantum steering} stands out as a particularly intriguing and asymmetric nonclassical effect that occupies a unique position between entanglement and Bell nonlocality. Unlike entanglement and Bell nonlocality, which are symmetric under exchange of the two parties, quantum steering is inherently directional—one party may be able to steer another, but the reverse might not hold, highlighting an asymmetry with profound implications for quantum information protocols.
+Quantum correlations is one of the basic aspect of quantum mechanics required for many current technologies in quantum information~\cite{NielsenChuang2000,AdessoRagyLee2014}. The field of quantum information started with the aim of controlling individual quantum bits (qubits), and has led to important concepts, such as quantum computing~\cite{NielsenChuang2000}, quantum
+cryptography~\cite{Ekert1991}, and quantum teleportations~\cite{BennettBrassardCrepeauJozsaPeresWootters1993}.Later researchers discovered an immensely powerful alternative by using continuous-variable (CV) quantum information carriers instead of qubits, offering the quantization of degrees of freedom of bosonic systems, such as the electromagnetic field~\cite{Weedbrook2012,BraunsteinVanLoock2005}. These systems are crucial in quantum communication, as well as for very advanced methods, that are limited only by quantum physics, and are used to detect, sense, and image~\cite{Weedbrook2012}.
 
-The concept of quantum steering was first introduced by Erwin Schrödinger in 1935 as a direct response to the Einstein-Podolsky-Rosen (EPR) paradox \cite{SchrodingerE35}, which questioned the completeness of quantum mechanics. Schrödinger originally termed this phenomenon ``steering'' to describe the scenario where one spatially distant system can influence the state of another through local measurements, despite their physical separation. This directional nature of steering has remained largely unexplored compared to its symmetric counterparts until recent years, when its potential applications in quantum cryptography became apparent.
+In quantum processes involving CVs, it is frequently of interest to consider the Gaussian realm, i.e., Gaussian states and Gaussian transformations, and this is a space where the mathimatics is simple and well-organized. Further,the required optical devices in the laboratory,(such as beam splitters, phase shifters, and squeezers) are simple to access and are readily available in large quantitiese~\cite{Weedbrook2012}.
+This area is referred to as Gaussian quantum information processing, and allows a vast range of important tasks to be performed. The most important of these protocols are quantum correlations, most notably entanglement and quantum steering, which are key to almost all quantum information protocols being implemented successfully~\cite{Weedbrook2012}.
 
-In the context of continuous-variable (CV) quantum systems, steering provides a powerful resource for quantum information processing. Unlike discrete-variable (DV) systems that rely on photon number states and post-selection techniques, CV systems allow for the generation of entangled states deterministically through optical parametric processes and laser-based systems. The measurable quantities in CV systems—such as position, momentum, or the quadrature components of light fields—can be continuously varied, enabling more efficient and robust quantum protocols.
+In 1935 the idea of quantum entanglement gained much attention with the Einstein-Podolsky-Rosen (EPR) paradox raising the question of whether quantum mechanics provides a complete description of reality~\cite{EinsteinPodolskyRosen1935}. Later that year, Schrodinger referred to this effect as entanglement and also proposed a new form of quantum correlation which is now called quantum steering~\cite{Schrodinger1935,Uola2020}. These discoveries formed the basis of the modern theory of quantum correlation, which are crucial for  various quantum information protocols~\cite{Horodecki2009,NielsenChuang2000}.
 
-\subsection{Quantum Steering: Definition and Significance}
+The phenomenon known as quantum steering was introduced in 1935~\cite{Schrodinger1935}. It is a form of quantum correlation that has received considerable attention in quantum information theory, especially after its formalisation in 2007~\cite{WisemanJonesDoherty2007}. Schrodinger first described this phenomenon as "magic" as the effect does not facilitate transmission of information, and it is the ability of one party (Alice) to measure or steer the wave function of another distant party~\cite{Uola2020}.
+One common notion in the modern theory is the inability of the conditional quantum states of one party (Bob) to be described by a local hidden state (LHS) model.A joint bipartite quantum state $\varrho_{AB}$ 
+is said to be steerable if Bob is forced to believe that Alice is influencing his system through some form of action at a distance. conversly,when (LHS) exists for the shared state,then such a bipartite system is referred to as an unsteerable state
+~\cite{Uola2020}.
 
-Quantum steering can be formally defined as follows: A bipartite quantum system in state $\rho_{AB}$ exhibits steering of subsystem B by subsystem A if Alice, through her local measurements on subsystem A, can influence the conditional states of Bob's subsystem B in a manner that cannot be explained by any local hidden-variable model. This asymmetric definition stands in sharp contrast to entanglement (which is symmetric) and Bell nonlocality (which is symmetric under relabeling).
+One-sided device-independent quantum key distribution (QKD) is essential due to quantum steering~\cite{Branciard2012QKD}
+, in which one party is confident in their measurement equipment, whereas the other is not, which is clear in the possibility of secret key distillation and demonstrates the state steerability~\cite{Branciard2012QKD,Uola2020}. It also has randomness certification in this asymmetric case with more extractable randomness than the Bell case with full device-independence~\cite{Law2014}. Besides, steering offers an operational benefit in subchannel discrimination tasks and is conceptually equivalent to quantum teleportation and analysis of security in secret sharing protocols~\cite{PianiWatrous2015,Uola2020}.
 
-The practical significance of steering manifests in several quantum information protocols:
+Quantum entanglement is recognized as a fundamental essence of quantum mechanics and quantum information theory~\cite{Horodecki2009}. Entanglement is described as a physical phenomenon, in which the associated particles remain correlated irrespective of their physical distance between them~\cite{EinsteinPodolskyRosen1935}. This property is deemed important for the practical implementation of the quantum information processing systems. Its importance can be seen in numerous important technological domains such as,quantum computing, quantum cryptography, and quantum teleportation playing a significant part\cite{NielsenChuang2000,Horodecki2009}. Particularly, entanglement is viewed as being crucial to illustrate the supremacy of a quantum computer when comparing it to its classical analogs~\cite{JozsaLinden2003}.
+In connection to this,in coupled lossy waveguides, entanglement is an important concept, as these waveguides can be used as basic parts of quantum circuits~\cite{Politi2008,Peruzzo2010,Crespi2013}. Although the real devices always have some losses, the devices are still useful to quantum information tasks and it is therefore necessary to know how quantum entanglement and quantum steering really behaves in them~\cite{BreuerPetruccione2002,Rai2010,Horodecki2009}.
 
-\begin{itemize}
-	\item \textbf{One-Sided Device-Independent (1sDI) Quantum Key Distribution (QKD):} In traditional QKD schemes, both Alice and Bob must trust their measurement devices. However, in 1sDI-QKD protocols, security can be ensured even when only one party operates a trusted measurement device \cite{BranciardC12}. This substantially reduces the hardware requirements and vulnerability to side-channel attacks.
+An optical waveguide is a structure that guides light along a desired path.Coupled waveguides are very important because they act as basic building blocks for quantum circuits.These waveguides allow efficient control of light and can be effectively used to manipulate light to accomplish quantum information processing, where the manipulation of individual photons in a waveguide is fundamentally involved~\cite{Politi2008,OBrien2009,Peruzzo2010}. In addition, coupled silica waveguides have been extended to make multimode integrated interferometers which can produce arbitrary quantum circuits, as well as can produce two and four photon entangled states analogous to NOON states~\cite{Crespi2013,Politi2008,Matthews2009}. In addition to computation, such structures can be considered to study other important quantum effects such as quantum interference, entanglement and quantum walk~\cite{Peruzzo2010,Bromberg2009,OBrien2009}. An important point of these structures is that it is dealing with real material loss and it still finds that the waveguides hold up well. They are able to maintain their entanglement even though the loss is quite strong~\cite{Rai2010}. This shows that coupled lossy waveguides can still work as useful parts of quantum circuits, making them suitable for many quantum information applications~\cite{Rai2010,Weedbrook2012}.
 
-	\item \textbf{Asymmetric Quantum Networks:} In quantum networks where nodes have unequal capabilities or trust levels, directional steering enables secure communication with minimal trusted resources.
+As quantum technologies have advanced, optical waveguide-based photonic platforms have become the focus of modern quantum hardware.In these Waveguide based devices light is trapped in small, stable cores with high index, and small and extremely scalable quantum circuits are constructed~\cite{Politi2008,OBrien2009}. By making two waveguides close to each other, all the evanescent fields overlaps, leading to evanescent coupling mechanism that enables controlled energy exchange just like a beam splitter. This interaction is the foundation on which to apply on-chip quantum gates and other necessary photonic operations are applied~\cite{Rai2010,Politi2008,OBrien2009}.
 
-	\item \textbf{Quantum Metrology:} The asymmetric nature of steering can be exploited for parameter estimation in scenarios where only one system can be precisely manipulated.
-\end{itemize}
+however, in real devices, some amount of optical loss and noise from the environment
+is always present~\cite{BreuerPetruccione2002}. The energy of the photons decreases as they move, leading to an effective interaction with the empty vaccume modes; the interaction tends to destroy the quantum state of a system, and destroys the distinct quantum correlations between the modes~\cite{GardinerZoller2004,BreuerPetruccione2002}.Such perturbations destroy quantum correlations, i.e quantum entanglement and quantum steering~\cite{Horodecki2009,Uola2020}, and they pose an enormous limitation to photonic architectures which require either large propagation ranges or very precise interactions between gates~\cite{Rai2010,Weedbrook2012,ChenLiuKoehlerTabatabaeiGuoSunYangWangBelingYi2025}.
 
-\subsection{Continuous Variables vs. Discrete Variables}
+For this reason, understanding how quantum correlations behave in coupled waveguides
+when they experience losses is essential for determining whether integrated quantum
+photonic systems can work in practice. By studying how entanglement and steering
+affects under an attenuation, we can evaluate how robust these quantum resources are
+and assess the viability of waveguide-based circuits for future quantum technologies.
 
-Continuous-variable quantum systems offer several practical advantages over discrete-variable systems:
-
-\begin{enumerate}
-	\item \textbf{Deterministic Generation:} Entangled CV states can be generated deterministically (e.g., through squeezed light and parametric down-conversion), without requiring probabilistic post-selection as in DV systems.
-
-	\item \textbf{Optical Compatibility:} CV states are naturally compatible with existing optical infrastructure, including fiber-optic telecommunications networks, enabling long-distance quantum communication.
-
-	\item \textbf{Homodyne Detection:} Measurement of CV observables can be performed using well-established homodyne detection techniques, which are simpler and more efficient than single-photon counting in DV systems.
-
-	\item \textbf{Scalability:} The continuous nature of CV variables allows for greater scalability in quantum computing and information processing implementations.
-\end{enumerate}
-
-\section{Active vs. Passive Quantum Systems}
-
-Recent progress in quantum information science has highlighted the importance of distinguishing between passive and active quantum systems:
-
-\textbf{Passive Systems:} Linear optical elements such as beam splitters, interferometers, and directional couplers. While useful for manipulating quantum states, passive systems are limited in their ability to generate new quantum correlations. Their primary utility lies in redistributing or transforming existing correlations.
-
-\textbf{Active Systems:} Laser-based systems and quantum emitters that actively generate quantum correlations through coherent light-matter interactions. Examples include:
-\begin{itemize}
-	\item Quantum Beat Lasers (QBL) - where two classical driving fields create quantum beat phenomena
-	\item Correlated Emission Lasers (CEL) - three-level atomic systems producing entangled photon pairs
-	\item Parametric Oscillators - producing squeezed and entangled light through nonlinear processes
-\end{itemize}
-
-Active systems are superior for generating robust, tunable quantum correlations that can persist despite dissipation and decoherence.
-
-\section{Raman-Driven Quantum Beat Laser System}
-
-The Raman-driven quantum beat laser (RDQBL) represents an advanced active quantum system that combines several beneficial features for steering generation:
-
-\subsection{Raman Process Fundamentals}
-
-The Raman process involves coherent population transfer between two long-lived atomic states via an intermediate excited state, typically mediated by two classical laser fields. Key advantages of Raman processes include:
-
-\begin{itemize}
-	\item \textbf{Minimal Population in Excited State:} Indirect coupling through the Raman process bypasses significant population accumulation in the excited state, thereby reducing spontaneous emission losses and decoherence.
-
-	\item \textbf{Enhanced Coherence:} By avoiding excited state populations, Raman systems maintain superior coherence properties essential for quantum correlations.
-
-	\item \textbf{Optical Gain:} Raman processes facilitate stimulated emission that can lead to optical amplification in specific modes, creating a gain-driven environment favorable for quantum state engineering.
-\end{itemize}
-
-\subsection{Quantum Beat Phenomena}
-
-When a quantum system is driven by two classical fields with frequencies $\nu_1$ and $\nu_2$, the beat frequency $\Omega_{\text{beat}} = |\nu_1 - \nu_2|$ emerges in the dynamical evolution. Quantum beats manifest as periodic oscillations in observables and correlation functions, allowing for time-dependent control of quantum properties.
-
-\section{Problem Statement and Research Objectives}
-
-\subsection{Motivation for This Work}
-
-While significant theoretical progress has been made in understanding quantum correlations in passive linear systems (e.g., coupled waveguides) and in understanding entanglement in active laser systems (CEL, QBL), the specific problem of \textbf{asymmetric quantum steering in Raman-driven quantum beat lasers remains largely unexplored}.
-
-Most prior work has focused on:
-\begin{itemize}
-	\item Entanglement generation in waveguides (without addressing asymmetry)
-	\item Bell nonlocality in laser systems
-	\item General quantum discord without directional considerations
-\end{itemize}
-
-In contrast, this work addresses the critical gap: How can one systematically generate, control, and quantify \textbf{asymmetric quantum steering} in an active Raman-driven system?
-
-\subsection{Main Research Objectives}
-
-The primary objectives of this research are:
-
-\begin{enumerate}
-	\item \textbf{Develop a comprehensive theoretical framework} for continuous-variable quantum steering in the RDQBL system, including:
-	\begin{itemize}
-		\item Detailed Hamiltonian formulation for the four-level atomic model
-		\item Master equation derivation including cavity damping and atomic decay
-		\item Analytical and numerical solutions for system dynamics
-	\end{itemize}
-
-	\item \textbf{Quantify quantum steering} using established criteria:
-	\begin{itemize}
-		\item Covariance matrix analysis for Gaussian states
-		\item Logarithmic negativity measures
-		\item Verification of the hierarchical structure: Discord $\supseteq$ Entanglement $\supseteq$ Steering $\supseteq$ Bell Nonlocality
-	\end{itemize}
-
-	\item \textbf{Investigate steering tunability} through system parameters:
-	\begin{itemize}
-		\item Effects of Rabi frequency of classical coupling fields
-		\item Relative phase control between driving fields
-		\item Cavity damping rates and their decoherence effects
-		\item Non-classical and purity properties of initial states
-	\end{itemize}
-
-	\item \textbf{Demonstrate asymmetric steering directivity}:
-	\begin{itemize}
-		\item Show that Mode 1 can steer Mode 2 but not vice versa
-		\item Achieve selective steering through parameter optimization
-		\item Map parameter regimes for maximal steering asymmetry
-	\end{itemize}
-
-	\item \textbf{Assess robustness under realistic conditions}:
-	\begin{itemize}
-		\item Evaluate steering persistence under cavity losses
-		\item Study effects of atomic decay rates
-		\item Determine critical thresholds for steering survival
-	\end{itemize}
-\end{enumerate}
-
-\section{Significance and Expected Contributions}
-
-This research is expected to contribute to quantum information science in several ways:
-
-\begin{itemize}
-	\item \textbf{Theoretical Foundation:} Provides a complete theoretical treatment of steering in active laser systems, filling a gap between quantum optics and quantum information theory.
-
-	\item \textbf{Practical Platform Identification:} Demonstrates RDQBL as a viable, experimentally-realizable platform for generating tunable, robust quantum steering resources.
-
-	\item \textbf{Asymmetric Protocol Design:} Offers insights into exploiting directionality for designing advanced 1sDI-QKD and asymmetric quantum network protocols.
-
-	\item \textbf{Decoherence Resilience:} Shows how gain and coherence control can mitigate decoherence—a critical concern for practical quantum technologies.
-
-	\item \textbf{Interdisciplinary Bridge:} Connects quantum optics, laser physics, and quantum information science, enabling future interdisciplinary research.
-\end{itemize}
+This research analyzes the time-dependent dynamics of quantum steering and entanglement
+in a passive two-mode directional coupler with realistic loss, using the Gaussian-states and Guassian transformation
+formalism. The study examines how several key parameters—including the loss coefficient
+$\kappa$, the initial nonclassical depth $\tau$, the purity $\mu$,coupling parameter $J$ and the input squeezing $r$
+of the Gaussian state—collectively determine the preservation or degradation of quantum
+steering and entanglement as the fields propagate through lossy waveguides.
 
 \section{Thesis Layout}
+This thesis is structured as follows:
 
-This dissertation is organized as follows:
-
-\begin{itemize}
-	\item \textbf{Chapter \ref{chp2}:} Presents comprehensive background on quantum mechanics fundamentals, continuous-variable systems, Gaussian state formalism, quantum steering theory, and the RDQBL system architecture. Both theoretical foundations and practical aspects are covered.
-
-	\item \textbf{Chapter \ref{chp3}:} Introduces the physical RDQBL model with its Hamiltonian, four-level atomic configuration, and master equation. Derivations of covariance matrices and steering quantification measures are presented. Both analytical and numerical approaches for solving the dynamics are discussed.
-
-	\item \textbf{Chapter \ref{chp4}:} Presents comprehensive numerical results showing how quantum steering evolves in time for various parameter regimes. Effects of cavity damping, Rabi frequencies, initial state properties, and relative phases are systematically investigated and visualized.
-
-	\item \textbf{Chapter \ref{chp5}:} Provides in-depth discussion of results, comparison with related work, physical interpretations of steering dynamics, and implications for quantum technologies.
-
-	\item \textbf{Chapter \ref{chp6}:} Summarizes the main findings and presents conclusions regarding the viability of RDQBL as a steering source. Future research directions and technological applications are outlined.
-\end{itemize}
-
-\section{Key Contributions of This Work}
-
-To summarize, the key original contributions of this dissertation are:
-
-\begin{enumerate}
-	\item First comprehensive treatment of \textbf{continuous-variable quantum steering} (not just entanglement) in a Raman-driven system
-	\item Demonstration of \textbf{tunable, asymmetric steering} through accessible laser parameters
-	\item Rigorous \textbf{hierarchical analysis} of quantum correlations in RDQBL
-	\item Quantitative assessment of \textbf{steering robustness} under realistic dissipation
-	\item Practical roadmap for \textbf{experimental implementation} and quantum technology applications
-\end{enumerate}
-
-This work thus aspires to deepen our understanding of quantum steering as a resource for quantum information processing and to establish Raman-driven systems as powerful platforms for realizing steering-based quantum technologies in realistic, noisy environments.
-
+Chapter 2 begings with an overview of quantum states of light discussing CV quantum states particularly Guassian states together with their representation through quadrature operators, wigner functions and covariance matrices. After that the discussion moves towards optical waveguides which highlights evanscent coupling , loss and dechorenece in waveguides and applications of optical waveguides in quantum photonics.Moreover, the chapter than reviews the two  important quantum correlations, i.e., quantum steering and quantum entanglement with their quantification,significance, and applications.Last but not the least, the applications and relevance of the optical waveguides in quantum circuits and photonics, and  the applications of  quantum steering and quantum entaglement are overviewed.
+After that Chapter 3 starts with an overview of our physical system.It than describes the systems hamiltonian.it followed by the discusion of the physical interpretation of the coupling.The chapter than discusses the open system dynamics and loss modelling which contains the quantum liouville equation and lindblad operator for waveguide loss.It than describes equations of motion for our system,the expectation value formalism and the moment equations and their solutions.With these moment equations in hands, we calculated covariance matrix and than quantified quantum steering and quantum entanglement. The quantum hierarchy relationship between entanglement and steering is also explained which is than proved from our results.A special type of Gaussian states called squeezed states, Its covariance matrix which we used to evaluate entanglement and steering is discussed at the end of this chapter.  
+Chapter 4 is all about the results,begins the dicussion about the dynamical behaviour of Guassian quantum steering and entanglement in a coupled lossy waveguide system. First of all it took general case in which all the parameters $\kappa$, $\tau$, $\mu$,are kept constant.It than takes specific cases one by one to see the effect of  $\tau$,$\mu$ and $\kappa$ where $J$=1 for all. This chapter than explains the results for the special type of Guassian states such as squeezed states. Initially,we consider describes ideal non lossy case and than discusses the effect of losses on quantum steering and entaglement in squeezed states.Lastly, the effect of coupling parameter $J$ on quantum steering and quantum entanglement is explained.The chapter ends with the summary of the results and discussion.
+In Chapter 5 we have written the conclusion, where we discussed the full summary of the thesis research work and our key findings.
+We have added all the bibliography/citations in Chapter 6.

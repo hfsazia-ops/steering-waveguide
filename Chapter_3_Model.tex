@@ -2,208 +2,650 @@
 %                       Chapter 3: Physical Model and Theoretical Formulation
 %=============================================================================================
 
-\chapter{Raman-Driven Quantum Beat Laser: Model and Dynamics}
+\chapter{Model System and Theoretical Formulations}
 \label{chp3}
 \newpage
 
-\section{Introduction}
+%=================================================
+\section{Physical Model and Assumptions}
 
-This chapter presents the detailed theoretical formulation of the Raman-Driven Quantum Beat Laser (RDQBL) system. We develop the complete quantum mechanical model, derive the master equation governing system evolution, and establish the mathematical framework for analyzing quantum steering in this active quantum system.
+\subsection{Physical System Configuration}
+Our system consist of two identical single mode waveguides which are placed parallel to each other in a close distance such that their evanscent feild overlap and enable coupling between them. The optical modes in each waveguide are represented by creation and anhilation operator $a_1$ and $a_2$ where $a_1$ represents optical mode in waveguide $a_1$ and $a_2$ represents optical modein waveguide $a_2$.Each waveguide mode act as  a bosonic harmonic oscillator.
+The two waveguides are assumed to be
+identical and at the same resonance frequency, and loss rate, which is a realistic assumption.
 
-The chapter is organized as follows: first, we describe the physical system configuration and atomic level structure; next, we present the full Hamiltonian in the interaction picture; then, we derive the density matrix equations of motion including cavity losses and atomic decay; finally, we develop the covariance matrix formalism for quantifying quantum steering in the output field.
+% In your preamble:
+% \usepackage{tikz}
+% \usetikzlibrary{arrows.meta,positioning}
 
-\section{Physical System Configuration}
-
-\subsection{Four-Level Atomic System}
-
-The RDQBL employs a four-level atomic system in cascade configuration with energy levels:
-\begin{itemize}
-	\item $|a\rangle$: Ground state (stable, lifetime $\rightarrow \infty$)
-	\item $|b\rangle$: Intermediate state (stable, lifetime $\rightarrow \infty$)
-	\item $|c\rangle$: Excited state (short-lived, decays rapidly)
-\end{itemize}
-
-The relevant dipole transitions are:
-\begin{itemize}
-	\item $|a\rangle \leftrightarrow |b\rangle$: Resonant with cavity mode 1 (frequency $\nu_1$)
-	\item $|b\rangle \leftrightarrow |c\rangle$: Resonant with cavity mode 2 (frequency $\nu_2$)
-	\item $|a\rangle \leftrightarrow |c\rangle$: Driven by external classical field (Raman process)
-\end{itemize}
-
-\subsection{Schematic Representation}
-
-[Insert Figure 3.1: RDQBL System Schematic showing four-level configuration, cavity modes, and driving fields]
-
-\section{The Hamiltonian}
-
-\subsection{Full Hamiltonian in Interaction Picture}
-
-In the electric dipole and rotating wave approximations, the interaction picture Hamiltonian is:
+%=================================================
+\section{Hamiltonian Description of the Coupled Waveguide System}
+%=================================================
+In this section, we discuss our system hamiltonian, and coupling between waveguide modes
+\subsection{System Hamiltonian}
+The hamiltonian for our system is given by
 \begin{equation}
-H = \hbar g_1 a_1 |a\rangle\langle b| + \hbar g_2 a_2 |b\rangle\langle c| - \frac{\hbar\Omega}{2}e^{-i\phi}|a\rangle\langle c| + \text{H.c.}
+	H = \hbar \omega \left(a_1^{\dagger} a_1 + a_2^{\dagger} a_2\right)
+	+ \hbar J \left(a_1^{\dagger} a_2 + a_2^{\dagger} a_1\right).
 \end{equation}
 
-where:
-\begin{itemize}
-	\item $a_1, a_2$: Annihilation operators for cavity modes 1 and 2
-	\item $g_1, g_2$: Cavity-atom coupling strengths
-	\item $\Omega e^{-i\phi}$: Rabi frequency and phase of external driving field
-	\item H.c.: Hermitian conjugate
-\end{itemize}
+Here, $a_1$ and $a_2$ are the bosonic field operators for the optical modes in each waveguide, satisfying the commutation relations
+$[a_1, a_1^{\dagger}] = 1$ and $[a_2, a_2^{\dagger}] = 1$.
 
-\subsection{Parameters and Their Physical Significance}
+the symbol $\omega$ is angular frequency of the each waveguide mode and the parameter J in the second part of the hamiltonian represents the coupling strength between the two waveguides and its value depends on the seperation distance between the waveguides.
 
-\textbf{Coupling Constants:} $g_1, g_2$ represent the strength of light-matter interaction. Typical values: $g_i \sim 10^6 - 10^7$ Hz.
+The hamiltonian consists of two main parts: 
 
-\textbf{Rabi Frequency:} $\Omega$ characterizes the strength of the external driving field inducing the $|a\rangle \leftrightarrow |c\rangle$ transition. Controllable experimentally via laser intensity.
+\textbf{Free energy terms:} correspond to the free energy of the individual waveguide modes,
+\[
+\hbar \omega \left(a_1^{\dagger} a_1 + a_2^{\dagger} a_2\right).
+\]
 
-\textbf{Relative Phase:} $\phi$ is the relative phase between the two Raman driving fields. This parameter enables control over quantum steering directionality.
+\textbf{Coupling terms:} account for the evanescent coupling between the two waveguide modes,
+\[
+\hbar J \left(a_1^{\dagger} a_2 + a_2^{\dagger} a_1\right).
+\]
+This term is responsible for the transfer of energy between the two waveguide modes and is the main focus of interest in this work.
 
-\section{Equations of Motion}
+\subsection{Physical Interpretation of the Coupling}
 
-\subsection{Density Matrix Evolution}
+The evanescent interaction between the two parallel optical waveguides is represented by the coupling term in the system Hamiltonian. When the waveguides are sufficiently close to each other, the electromagnetic field of the guided mode extends beyond the core of the waveguide and overlaps with the field of the neighboring waveguide.  This overlap allows the coherent exchange of photons between the two modes and is called as evascent overlapping~\cite{Yariv1973,SalehTeich2007}.
 
-The time evolution of density matrix elements is governed by the master equation including decay terms:
+The strength of the coupling between the waveguides is defined by the parameter J which defines the speed with which energy moves between the waveguides. The higher the value of $J$ the higher the mode overlap and higher the speed of oscillatory exchange of photons. when J=0 two entirely waveguides are independent and are considered uncoupled. Physically, such an interaction is similar to a beam splitter, where the photons coherently and simultaneously hopped between the two modes without loss in ideal case~\cite{Yariv1973,Rai2010,Politi2008}.
+
+Without the dissipation, the coherent exchange between the two waveguides results in a periodic oscillation of photon betwenen the two waveguides. In case of losses, such oscillations are slowly damped, although the coupling term still plays the role of creating and maintaining quantum correlations. The coupling is therefore the core of creation maintenance of quantum interactions in integrated photonic systems~\cite{Rai2010,Yariv1973}.
+%=================================================
+\section{Open-System Dynamics and Loss Modelling}
+%=================================================
+In realistic integrated photonic systems, optical modes experience losses. The coupled waveguide system cannot be treated as an isolated
+system, it needs to be formulated in the context of an open quantum
+systems. To include these dissipative effects, the system dynamics is given by using
+a density-matrix functional, in which the interaction with the external environment results in decoherence and energy decay~\cite{BreuerPetruccione2002,Rai2010}
+.
+The time evolution of the coupled waveguide system is  in this section in terms of
+the Lindblad form of the quantum Liouville (master) equation. This approach allows inclusion of photon loss without changing the nature of the Gaussian states. This preservation is necessary for the analysis of quantum steering and entanglement~\cite{BreuerPetruccione2002,GardinerZoller2004,Weedbrook2012,Rai2010}.
+
+\subsection{Quantum Liouville (Master) Equation}
+
+we can determine how this system evolve with loss by quantum louiville equation.
 \begin{equation}
-\dot{\rho}_{ij} = -\frac{i}{\hbar}\sum_k(V_{ik}\rho_{kj} - \rho_{ik}V_{kj}) - \frac{1}{2}\sum_k(\Gamma_{ik}\rho_{kj} + \rho_{ik}\Gamma_{kj})
+	\dot{\rho} = -\frac{i}{\hbar}[H, \rho] + \mathcal{L}\rho
 \end{equation}
+this equation is know as quantum  louiville equation, it has two parts~\cite{BreuerPetruccione2002,GardinerZoller2004}:
 
-where $\Gamma_{ik}$ are decay coefficients for atomic transitions.
+\textbf{The Commutator}:\[
+\boldsymbol{[H,\rho]}
+\]
+which generates time evolution and is responsible for oscillatory exchange of energy and quantum correlation
+between the waveguides due to J.
 
-\subsection{Relevant Density Matrix Elements}
+\textbf{Lindblad($L\rho$) term}: deals with material loss, decoherence and decays due to interaction with the environment~\cite{BreuerPetruccione2002,Rai2010}.
 
-For the cascade system, the relevant coherences are:
-\begin{itemize}
-	\item $\rho_{ab} = \langle a|\rho|b\rangle$: Coherence between ground and intermediate states
-	\item $\rho_{bc} = \langle b|\rho|c\rangle$: Coherence between intermediate and excited states
-	\item $\rho_{ac} = \langle a|\rho|c\rangle$: Coherence between ground and excited states (driven by external field)
-\end{itemize}
 
-\subsubsection{Equations for Coherences}
 
+
+\subsection{Lindblad Operators for Waveguide Loss}
 \begin{align}
-\dot{\rho}_{ab} &= -\gamma\rho_{ab} + \frac{i\Omega}{2}e^{-i\phi}\rho_{cb} - ig_1(a_1\rho_{bb} - \rho_{aa}a_1) + ig_2\rho_{ac}a_2^\dagger \\
-\dot{\rho}_{bc} &= -\gamma\rho_{bc} - \frac{i\Omega}{2}e^{-i\phi}\rho_{ba} - ig_2(a_2\rho_{cc} - \rho_{bb}a_2) - ig_1a_1^\dagger\rho_{ac}
+	\mathcal{L}\rho
+	&= -k_1\left(a_1^\dagger a_1\rho + \rho a_1^\dagger a_1 - 2a_1\rho a_1^\dagger\right)
+	\nonumber\\
+	&\quad -k_2\left(a_2^\dagger a_2\rho + \rho a_2^\dagger a_2 - 2a_2\rho a_2^\dagger\right),
 \end{align}
 
-where $\gamma$ is the atomic decay rate for the excited state $|c\rangle$.
+$k_1$ and $k_2$ represents the loss rates of modes $a_1$ and $a_2$ ,and $a_1$, $a_1^{\dagger}$ are the   creation and annihilation operators for mode $a_1$, while $\rho$ is the density matrix.  $a_2$ and $a_2^{\dagger}$ are the creation and annihilation operators for mode $a_2$~\cite{BreuerPetruccione2002,Rai2010}
+.
 
-\section{Cavity Field Dynamics}
 
-\subsection{Master Equation for Reduced Density Operator}
 
-Tracing over atomic degrees of freedom and focusing on the cavity field, the evolution of $\rho_f$ (field reduced density matrix) is:
+%=================================================
+\section{Dynamical Equations of the Model System}
+%=================================================
+This section deals with the derivation of the dynamical equations of the coupled
+waveguide system. Through the calculation of expectation values, the open-system
+dynamics may be defined as a closed set of second-order moments, which is
+sufficient to describe the Gaussian states.
+
+\subsection{Expectation-Value Formalism}
+The time evolution of any system observable $O$ is obtained from~\cite{BreuerPetruccione2002}
+
 \begin{equation}
-\dot{\rho}_f = \frac{1}{\hbar}[H_{\text{eff}}, \rho_f] + \mathcal{L}_{\text{cavity}}[\rho_f]
+	\frac{d}{dt}\langle O\rangle
+	= \mathrm{Tr}(O\dot{\rho})
+	= -i\langle[O,H]\rangle + \langle \mathcal{L}^\dagger(O)\rangle .
 \end{equation}
 
-where the cavity loss Liouvillian is:
-\begin{equation}
-\mathcal{L}_{\text{cavity}}[\rho_f] = \kappa_1(a_1\rho_f a_1^\dagger - \frac{1}{2}\{a_1^\dagger a_1, \rho_f\}) + \kappa_2(a_2\rho_f a_2^\dagger - \frac{1}{2}\{a_2^\dagger a_2, \rho_f\})
-\end{equation}
-
-with cavity decay rates $\kappa_1, \kappa_2$.
-
-\section{Covariance Matrix Formulation}
-
-\subsection{Quadrature Operators}
-
-The quadrature operators for the two cavity modes are defined as:
+\subsection{Definition of Relevant Second-Order Moments}
+% (tTo characterize the dynamical behavior of the coupled waveguide system, we introduce the following relevant second-order moments of the field operators:
 \begin{align}
-X_1 &= \frac{1}{\sqrt{2}}(a_1 + a_1^\dagger), \quad P_1 = \frac{i}{\sqrt{2}}(a_1^\dagger - a_1) \\
-X_2 &= \frac{1}{\sqrt{2}}(a_2 + a_2^\dagger), \quad P_2 = \frac{i}{\sqrt{2}}(a_2^\dagger - a_2)
+	n_1(t) &= \langle a_1^\dagger(t)\, a_1(t) \rangle, \\
+	n_2(t) &= \langle a_2^\dagger(t)\, a_2(t) \rangle, \\
+	m_1(t) &= \langle a_1(t)\, a_1(t) \rangle, \\
+	m_2(t) &= \langle a_2(t)\, a_2(t) \rangle, \\
+	c(t)   &= \langle a_1^\dagger(t)\, a_2(t) \rangle, \\
+	s(t)   &= \langle a_1(t)\, a_2(t) \rangle .
 \end{align}
 
-\subsection{Two-Mode Covariance Matrix}
+Here, $n_1(t)$ and $n_2(t)$ represent the mean photon numbers in the first and second waveguides, respectively. The moments $m_1(t)$ and $m_2(t)$ describe single-mode squeezing correlations, while $c(t)$ and $s(t)$ quantify inter-mode correlations responsible for quantum entanglement and steering between the two waveguides.o be written)
 
-For a two-mode Gaussian state, all correlations are captured by the covariance matrix:
-\begin{equation}
-V = \begin{pmatrix}
-V_1 & C_{12} \\
-C_{12}^T & V_2
-\end{pmatrix}
-\end{equation}
+%=================================================
+%=================================================
+%=================================================
+\section{Moment Equations of Motion}
+in this section we discuss the moment equations we have got after 
+\subsection{Coupled Differential Equations}
+Using
+$\frac{d}{dt}\langle O\rangle=\mathrm{Tr}(O\dot{\rho})$,
+the equations of motion for the relevant second-order moments are obtained as
 
-where:
 \begin{align}
-V_1 &= \begin{pmatrix}
-\langle X_1^2 \rangle - \langle X_1 \rangle^2 & \frac{1}{2}(\langle X_1 P_1 + P_1 X_1 \rangle - 2\langle X_1\rangle\langle P_1 \rangle) \\
-\frac{1}{2}(\langle X_1 P_1 + P_1 X_1 \rangle - 2\langle X_1\rangle\langle P_1 \rangle) & \langle P_1^2 \rangle - \langle P_1 \rangle^2
-\end{pmatrix} \\
-C_{12} &= \begin{pmatrix}
-\langle X_1 X_2 \rangle - \langle X_1\rangle\langle X_2 \rangle & \frac{1}{2}(\langle X_1 P_2 + P_2 X_1 \rangle - 2\langle X_1\rangle\langle P_2 \rangle) \\
-\frac{1}{2}(\langle X_2 P_1 + P_1 X_2 \rangle - 2\langle X_2\rangle\langle P_1 \rangle) & \langle P_1 P_2 \rangle - \langle P_1\rangle\langle P_2 \rangle
-\end{pmatrix}
+	\frac{d}{dt}\langle a_1^\dagger a_1\rangle
+	&= iJ\Big(\langle a_2^\dagger a_1\rangle-\langle a_1^\dagger a_2\rangle\Big)
+	- k_1\langle a_1^\dagger a_1\rangle, \\[6pt]
+	\frac{d}{dt}\langle a_2^\dagger a_2\rangle
+	&= iJ\Big(\langle a_1^\dagger a_2\rangle-\langle a_2^\dagger a_1\rangle\Big)
+	- k_2\langle a_2^\dagger a_2\rangle, \\[6pt]
+	\frac{d}{dt}\langle a_1^\dagger a_2\rangle
+	&= iJ\Big(\langle a_2^\dagger a_2\rangle-\langle a_1^\dagger a_1\rangle\Big)
+	-\frac{k_1+k_2}{2}\langle a_1^\dagger a_2\rangle, \\[6pt]
+	\frac{d}{dt}\langle a_2^\dagger a_1\rangle
+	&= iJ\Big(\langle a_1^\dagger a_1\rangle-\langle a_2^\dagger a_2\rangle\Big)
+	-\frac{k_1+k_2}{2}\langle a_2^\dagger a_1\rangle, \\[10pt]
+	\frac{d}{dt}\langle a_1 a_1\rangle
+	&= -2iJ\langle a_1 a_2\rangle
+	- k_1\langle a_1 a_1\rangle, \\[6pt]
+	\frac{d}{dt}\langle a_2 a_2\rangle
+	&= -2iJ\langle a_1 a_2\rangle
+	- k_2\langle a_2 a_2\rangle, \\[6pt]
+	\frac{d}{dt}\langle a_1 a_2\rangle
+	&= -iJ\Big(\langle a_1 a_1\rangle+\langle a_2 a_2\rangle\Big)
+	-\frac{k_1+k_2}{2}\langle a_1 a_2\rangle.
 \end{align}
 
-\section{Quantifying Quantum Steering}
+These equations form a closed set due to the quadratic form of the Hamiltonian and the
+Gaussian-preserving nature of the Lindblad dissipation.
 
-\subsection{Steering Criterion for Gaussian States}
-
-For the two-mode Gaussian state with covariance matrix $V$, steering from subsystem 1 to subsystem 2 is quantified as:
+\subsection{Reduction of Independent Variables}
+Although seven coupled moment equations are obtained, not all of them are independent.
+The inter-mode coherence moments satisfy the Hermitian relation
 \begin{equation}
-S^{1 \to 2} = \max\left\{0, \frac{1}{2}\log_2\frac{\det V_1}{4\det V_{\text{out}}^T}\right\}
+	\langle a_2^\dagger a_1\rangle = \langle a_1^\dagger a_2\rangle^{*}.
+\end{equation}
+As a result, the system dynamics can be fully described by six independent second-order
+moments, while the remaining coherence follows directly from this relation.
+
+%=================================================
+\section{Analytical Solutions of the Moment Equations}
+%=================================================
+
+\subsection{Equal-Loss Approximation}
+For identical waveguides, we assume equal loss rates,
+\begin{equation}
+	k_1 = k_2 = \kappa .
 \end{equation}
 
-where $V_{\text{out}}^T$ is evaluated from the conditional state after projective measurements by party 1.
+\subsection{General Analytical Solutions}
+Without imposing any restriction on the initial correlations, the exact solutions of the
+moment equations are given by
 
-\subsection{Symplectic Eigenvalues}
+\begin{align}
+	\langle a_1^\dagger a_1\rangle(t)
+	&= \frac{e^{-\kappa t}}{2}\Big[
+	\langle a_1^\dagger a_1\rangle_0+\langle a_2^\dagger a_2\rangle_0
+	+(\langle a_1^\dagger a_1\rangle_0-\langle a_2^\dagger a_2\rangle_0)\cos(2Jt)
+	\nonumber\\
+	&\qquad
+	+i(\langle a_2^\dagger a_1\rangle_0-\langle a_1^\dagger a_2\rangle_0)\sin(2Jt)
+	\Big],\\[8pt]
+	%
+	\langle a_2^\dagger a_2\rangle(t)
+	&= \frac{e^{-\kappa t}}{2}\Big[
+	\langle a_1^\dagger a_1\rangle_0+\langle a_2^\dagger a_2\rangle_0
+	-(\langle a_1^\dagger a_1\rangle_0-\langle a_2^\dagger a_2\rangle_0)\cos(2Jt)
+	\nonumber\\
+	&\qquad
+	-i(\langle a_2^\dagger a_1\rangle_0-\langle a_1^\dagger a_2\rangle_0)\sin(2Jt)
+	\Big],\\[10pt]
+	%
+	\langle a_1^\dagger a_2\rangle(t)
+	&= e^{-\kappa t}\Bigg[
+	\frac{\langle a_1^\dagger a_2\rangle_0+\langle a_2^\dagger a_1\rangle_0}{2}
+	+\frac{\langle a_1^\dagger a_2\rangle_0-\langle a_2^\dagger a_1\rangle_0}{2}\cos(2Jt)
+	\nonumber\\
+	&\qquad
+	-\frac{i}{2}\big(\langle a_1^\dagger a_1\rangle_0-\langle a_2^\dagger a_2\rangle_0\big)\sin(2Jt)
+	\Bigg],\\[10pt]
+	%
+	\langle a_2^\dagger a_1\rangle(t)
+	&= e^{-\kappa t}\Bigg[
+	\frac{\langle a_1^\dagger a_2\rangle_0+\langle a_2^\dagger a_1\rangle_0}{2}
+	-\frac{\langle a_1^\dagger a_2\rangle_0-\langle a_2^\dagger a_1\rangle_0}{2}\cos(2Jt)
+	\nonumber\\
+	&\qquad
+	+\frac{i}{2}\big(\langle a_1^\dagger a_1\rangle_0-\langle a_2^\dagger a_2\rangle_0\big)\sin(2Jt)
+	\Bigg],\\[10pt]
+	%
+	\langle a_1 a_1\rangle(t)
+	&= \frac{e^{-\kappa t}}{2}\Big[
+	\langle a_1 a_1\rangle_0-\langle a_2 a_2\rangle_0
+	+(\langle a_1 a_1\rangle_0+\langle a_2 a_2\rangle_0)\cos(2Jt)
+	-2i\langle a_1 a_2\rangle_0\sin(2Jt)
+	\Big],\\[8pt]
+	%
+	\langle a_2 a_2\rangle(t)
+	&= \frac{e^{-\kappa t}}{2}\Big[
+	-(\langle a_1 a_1\rangle_0-\langle a_2 a_2\rangle_0)
+	+(\langle a_1 a_1\rangle_0+\langle a_2 a_2\rangle_0)\cos(2Jt)
+	-2i\langle a_1 a_2\rangle_0\sin(2Jt)
+	\Big],\\[10pt]
+	%
+	\langle a_1 a_2\rangle(t)
+	&= e^{-\kappa t}\Big[
+	\langle a_1 a_2\rangle_0\cos(2Jt)
+	-\frac{i}{2}\big(\langle a_1 a_1\rangle_0+\langle a_2 a_2\rangle_0\big)\sin(2Jt)
+	\Big].
+\end{align}
 
-For Gaussian states, the steering criterion can equivalently be expressed using symplectic eigenvalues of the partial transpose of the covariance matrix:
+\subsection{Special Case: Independently Prepared Input Modes}
+For independently prepared input modes, the initial inter-mode correlations vanish,
+\[
+\langle a_1^\dagger a_2\rangle_0=\langle a_1 a_2\rangle_0=0,
+\]
+leading to simplified expressions that are used throughout the remainder of this thesis.
+
+\subsection{Compact Representation Using Gaussian Moments}
+
+
+
+For convenience, we give the following names to the moments:
+\[
+n_{1}(t)=\langle a_{1}^{\dagger}a_{1}\rangle(t),\quad
+n_{2}(t)=\langle a_{2}^{\dagger}a_{2}\rangle(t),
+\]
+\[
+c(t)=\langle a_{1}^{\dagger}a_{2}\rangle(t),\quad
+m_{1}(t)=\langle a_{1}a_{1}\rangle(t),\quad
+m_{2}(t)=\langle a_{2}a_{2}\rangle(t),\quad
+s(t)=\langle a_{1}a_{2}\rangle(t).
+\]
+
+Defining the constants
+\[
+C_{1}=\langle a_{1}^{\dagger}a_{1}\rangle_{0}+\tfrac{1}{2},\qquad
+C_{2}=\langle a_{2}^{\dagger}a_{2}\rangle_{0}+\tfrac{1}{2},
+\]
+\[
+D_{1}=\langle a_{1}a_{1}\rangle_{0},\qquad
+D_{2}=\langle a_{2}a_{2}\rangle_{0},
+\]
+ The term $\tfrac{1}{2}$ accounts for the unavoidable vacuum (zero-point) fluctuations of the bosonic field.
+
+The Gaussian moments evolve as:
+\[
+\begin{aligned}
+	n_{1}(t) &= \frac{e^{-\kappa t}}{2}\big[(C_{1}+C_{2}-1)+(C_{1}-C_{2})\cos(2Jt)\big],\\
+	n_{2}(t) &= \frac{e^{-\kappa t}}{2}\big[(C_{1}+C_{2}-1)-(C_{1}-C_{2})\cos(2Jt)\big],\\
+	c(t) &= \frac{i\,e^{-\kappa t}}{2}(C_{2}-C_{1})\sin(2Jt),\\
+	m_{1}(t) &= \frac{e^{-\kappa t}}{2}\big[(D_{1}+D_{2})\cos(2Jt)+(D_{1}-D_{2})\big],\\
+	m_{2}(t) &= \frac{e^{-\kappa t}}{2}\big[(D_{1}+D_{2})\cos(2Jt)+(D_{2}-D_{1})\big],\\
+	s(t) &= -\frac{i\,e^{-\kappa t}}{2}(D_{1}+D_{2})\sin(2Jt).
+\end{aligned}
+\]
+
+These expressions are used directly in the numerical evaluations of
+Gaussian steering and entanglement throughout this thesis.
+
+A single-mode Gaussian state is fully characterized by the parameters of its covariance matrix.
+The diagonal element \(c_j\) quantifies the local quadrature variance of the \(j\)-th mode and is
+directly related to the mean photon number according to
 \begin{equation}
-S^{1 \to 2} > 0 \iff \tilde{\nu}_- < \frac{1}{2}
+	\langle a_j^\dagger a_j \rangle_0 = c_j - \tfrac{1}{2},
+\end{equation}
+where the term \(\tfrac{1}{2}\) accounts for the unavoidable vacuum (zero-point) fluctuations of the
+bosonic field.
+
+Within the nonclassicality–purity parametrization, the same quantity \(c_j\) can be expressed in
+terms of the nonclassicality \(\tau_j\) and the purity \(\mu_j\) as
+\begin{equation}
+	c_j =
+	\frac{
+		\sqrt{\tau_j^2 - \tau_j + \dfrac{1}{(2\mu_j)^2} - \dfrac{1}{4}}
+	}{1 - 2\tau_j}
+	+ \tfrac{1}{2},
+\end{equation}
+which guarantees that the corresponding covariance matrix satisfies the Heisenberg uncertainty
+principle.
+
+The off-diagonal covariance parameter \(d_j\) is defined through the anomalous second-order moment
+\begin{equation}
+	\langle a_j a_j \rangle_0 = - d_j ,
+\end{equation}
+where \(d_j = |d_j| e^{i\phi_j}\) is, in general, a complex quantity. Within the same
+nonclassicality–purity parametrization, its magnitude is given by
+\begin{equation}
+	|d_j| =
+	\frac{
+		\sqrt{\tau_j - \tau_j^2 + \dfrac{1}{(2\mu_j)^2} - \dfrac{1}{4}}
+	}{1 - 2\tau_j}.
 \end{equation}
 
-where $\tilde{\nu}_-$ is the smallest symplectic eigenvalue.
+These two parameters, \(c_j\) and \(d_j\), together fully specify the single-mode Gaussian input
+state, with \(c_j\) determining the phase-insensitive fluctuations and \(d_j\) encoding the
+phase-sensitive correlations of the field~\cite{Rong2006}.
 
-\subsection{Comparison with Entanglement}
 
-Logarithmic negativity (entanglement):
+%=================================================
+\section{Covariance Matrix and Quantification of Quantum Steering and Entanglement}
+%=================================================
+
+Moments obtained in this chapter are entirely sufficient to determine the quantum state of the system at all times.
+
+The moments,
+ $n_1(t)$, $n_2(t)$, $m_1(t)$, $m_2(t)$, $c(t)$, $s(t)$
+calculates the covariance of a pair of modes optical field. This covariance matrix is the basic object of measuring the Gaussian quantum correlations.
+These moments are directly used to calculate using the covariance matrix formalism ,the quantification of quantum steering and quantum  entanglement. The analytic expressions derived in this chapter creates a connection between the physical parameters(strength of coupling, loss rate and initial state properties) of the waveguide system and the dynamical behavior of quantum correlations~\cite{Serafini2017,Weedbrook2012}
+
+
+\subsubsection{Covariance Matrix of the Two-Mode System}
+
+The covariance matrix is given in complex operator form, $(a_1,a_1^\dagger,a_2,a_2^\dagger)$ as
 \begin{equation}
-E = \max\{0, -\log_2(2\tilde{\nu}_-)\}
+	\boldsymbol{\Upsilon}(t)=
+	\begin{pmatrix}
+		\mathbf{M}(t) & \mathbf{L}(t)\\
+		\mathbf{L}^\dagger(t) & \mathbf{N}(t)
+	\end{pmatrix},
+	\label{eq:CM_block}
+\end{equation}
+In this matrix, M N and L are 2x2 matrices, where M and N that represent the local variations in the first and second modes in the waveguides, and L is the matrix that represents the correlation between the modes.
+Explicitly, these blocks are given by
+\begin{equation}
+	\mathbf{M}=
+	\begin{pmatrix}
+		\langle a_1^\dagger a_1\rangle+\tfrac12 & -\langle a_1 a_1\rangle\\
+		-\langle a_1 a_1\rangle^* & \langle a_1^\dagger a_1\rangle+\tfrac12
+	\end{pmatrix},
+	\qquad
+	\mathbf{N}=
+	\begin{pmatrix}
+		\langle a_2^\dagger a_2\rangle+\tfrac12 & -\langle a_2 a_2\rangle\\
+		-\langle a_2 a_2\rangle^* & \langle a_2^\dagger a_2\rangle+\tfrac12
+	\end{pmatrix},
+	\label{eq:MN_blocks}
+\end{equation}
+and
+\begin{equation}
+	\mathbf{L}=
+	\begin{pmatrix}
+		\langle a_1 a_2^\dagger\rangle & -\langle a_1 a_2\rangle\\
+		-\langle a_1 a_2\rangle^* & \langle a_1 a_2^\dagger\rangle^*
+	\end{pmatrix}.
+	\label{eq:L_block}
+\end{equation}
+The covariance matrix in Eq.~\eqref{eq:CM_block} fully characterizes the Gaussian state itself, and it offers the means of identifying different quantum correlations.~\cite{Serafini2017,WeedbrookEtAl2012,AdessoRagyLee2014}.
+
+
+This block-structured covariance matrix is the starting point for evaluating both
+Gaussian entanglement and quantum steering.
+
+\section{Gaussian Quantum Steering}
+%=================================================
+
+Gaussian steering is determined by building the conditional covariance matrix of one mode conditional on measurements made on the other mode. Mathematically, we do it by the Schur complement of the total covariance. The conditional covariance matrix to transform mode 1 mode 2 is.
+\begin{equation}
+	\boldsymbol{\Upsilon}_{2|1}
+	=
+	\mathbf{N}
+	-
+	\mathbf{L}^\dagger \mathbf{M}^{-1}\mathbf{L}.
 \end{equation}
 
-Key difference: Steering criterion depends on determinant of subsystem 1 covariance ($\det V_1$), while entanglement criterion depends on determinants of both subsystems and their cross-correlations.
-
-\section{Initial Conditions and System Parameters}
-
-\subsection{Input Cavity Field State}
-
-We consider the initial cavity field as a product of two independent single-mode Gaussian states:
+The degree of Gaussian steering from mode~1 to mode~2 is quantified by~\cite{Kogias2015}.
 \begin{equation}
-\rho_{\text{in}} = \rho_1 \otimes \rho_2
+	S_{1\to2}
+	=
+	\max\!\left[
+	0,\;
+	\frac12\log_2
+	\frac{\det \mathbf{N}}{\det \boldsymbol{\Upsilon}_{2|1}}
+	\right].
 \end{equation}
 
-Each single-mode state is characterized by:
-\begin{itemize}
-	\item Non-classicality parameter: $\tau$ (ranging 0 to 1/2 for squeezed states)
-	\item Purity: $\mu$ (ranging 0 for maximally mixed to 1 for pure)
-\end{itemize}
+\subsection{Gaussian Entanglement}
+%=================================================
+With the covariance matrix we can detect the Gaussian entanglement by performing the partial transposition operation, which is the laxity of the time of one part of the system in phase space.
+This can easily be expressed in the form of the smallest symplectic.
+eigenvalue $\tilde{\nu}_-$ of the partially transposed covariance matrix of eigenvalue
+and the logarithmic negativity($E_N$) is the measure of the degree of entanglement.
 
-\subsection{Typical Parameters}
+\begin{equation}
+	E_N=\max\!\left[0,-\log_2(2\tilde{\nu}_-)\right].
+\end{equation}
+This applies to both subsystems and provides a test that is necessary and sufficient to test bipartite Gaussian entanglement~\cite{Rai2010}.
 
-Realistic RDQBL parameters for simulations:
-\begin{itemize}
-	\item Coupling strengths: $g_1 = g_2 = 16$ kHz
-	\item External field Rabi frequency: $\Omega = 2160$-$3160$ kHz (tunable)
-	\item Relative phase: $\phi \in [0, 2\pi]$ (tunable)
-	\item Atomic decay rate: $\gamma = 20$ kHz
-	\item Cavity decay rates: $\kappa_1, \kappa_2 = 0$-$0.1$ kHz
-	\item Atom injection rate: $r_a = 10$ kHz
-\end{itemize}
 
-\section{Chapter Summary}
+For a two-mode Gaussian state, the smallest symplectic eigenvalue
+$\tilde{\nu}_{-}$ of the partially transposed covariance matrix is given by
+\[
+\tilde{\nu}_{-}
+=
+\sqrt{
+	\frac{\tilde{\Delta}
+		-\sqrt{\tilde{\Delta}^{2}-4\,\det\boldsymbol{\sigma}}}{2}
+},
+\]
+where
+\[
+\tilde{\Delta}=\det\mathbf{A}+\det\mathbf{B}-2\det\mathbf{C}.
+\]
+~\cite{Rai2010}
 
-This chapter has provided:
-\begin{enumerate}
-	\item Complete description of the RDQBL four-level system configuration
-	\item Full quantum Hamiltonian in interaction picture
-	\item Master equations for cavity field evolution including losses
-	\item Covariance matrix formalism for Gaussian state analysis
-	\item Mathematical criteria for steering quantification
-	\item Physical interpretation of tunable parameters
-	\item Realistic system parameters for numerical studies
-\end{enumerate}
+%=================================================
+\paragraph{Covariance-matrix representation and PPT criterion.}
+In continuous-variable Gaussian systems, bipartite entanglement can be
+fully characterized at the level of second-order moments through the
+covariance matrix $\boldsymbol{\sigma}$. In this work, the covariance
+matrix of the two-mode Gaussian state is naturally constructed from the
+field operators in the complex operator basis
+$(a_{1},a_{1}^{\dagger},a_{2},a_{2}^{\dagger})$, as it directly follows
+from the Heisenberg equations of motion for the coupled waveguide modes.
+The corresponding real quadrature operators are defined as
+\[
+\hat{Q}_{j}=\frac{1}{\sqrt{2}}(a_{j}+a_{j}^{\dagger}), \qquad
+\hat{R}_{j}=\frac{i}{\sqrt{2}}(a_{j}^{\dagger}-a_{j}),
+\]
+which satisfy the canonical commutation relation
+$[\hat{Q}_{j},\hat{R}_{k}]=i\delta_{jk}$ and are related to the operator
+basis through a linear symplectic transformation.
 
-These foundations enable the numerical investigations presented in Chapter \ref{chp4}, where we solve the system dynamics and analyze steering generation and control.
+Although the covariance matrix is expressed in the operator basis, all
+quantities relevant for entanglement detection depend only on symplectic
+invariants. In particular, the determinants of the block matrices
+$A$, $B$, and $C$, as well as $\det\boldsymbol{\sigma}$, remain invariant
+under symplectic transformations between the operator and quadrature
+representations~\cite{AdessoSerafiniIlluminati2004,Serafini2017}.
+Consequently, the logarithmic negativity can be evaluated directly using
+the positive partial transpose (PPT) criterion, which for Gaussian states
+reduces to the condition that the smallest symplectic eigenvalue
+$\tilde{\nu}_{<}$ of the partially transposed covariance matrix satisfies
+$\tilde{\nu}_{<}<\tfrac{1}{2}$. The corresponding PPT symplectic invariant
+is
+\[
+\tilde{\Delta}=\det A+\det B-2\det C,
+\]
+which is algebraically equivalent to performing partial transposition in
+the quadrature representation. This approach is standard in the analysis
+of Gaussian entanglement and is widely employed in continuous-variable
+quantum optics~\cite{Simon2000,Adesso2007,Rai2010}.
+
+
+\subsection{Relation Between Entanglement and Steering}
+
+Despite the fact that logarithmic negativity and Gaussian steering are derived from the same
+covariance matrix, they explore different aspects of quantum correlations.
+Entanglement is detected by the partial transposition of the covariance
+matrix and is symmetric between the subsystems, whereas steering is detected
+through conditional uncertainty relation and is intrinsically directional.
+All the steerable Gaussian states are therefore entangled, but not all entangled
+states exhibit steering~\cite{Uola2020,WisemanJonesDoherty2007}
+.
+
+The hierarchy relation between quantum correlations is  
+For continuous-variable Gaussian states, the same strict hierarchy holds~\cite{WisemanJonesDoherty2007}:
+\begin{equation}
+	\text{Bell nonlocality}
+	\;\subsetneq\;
+	\text{Gaussian Steering}
+	\;\subsetneq\;
+	\text{Gaussian Entanglement}.
+\end{equation}
+
+For our Gaussian states, the hierarchy reduces to
+\begin{equation}
+	\text{Gaussian Steering}
+	\;\subsetneq\;
+	\text{Gaussian Entanglement}.
+\end{equation}
+
+it means quantum steering is a subset of quantum entanglement~\cite{Uola2020}.
+
+
+%=================================================
+
+
+\section{squeezed states}
+
+\subsection{Squeezed covariance matrix}
+
+
+
+We define the bosonic operator vector as,
+\begin{equation}
+	\hat{\mathbf A}
+	=
+	\bigl(
+	\hat a_1,\,
+	\hat a_1^{\dagger},\,
+	\hat a_2,\,
+	\hat a_2^{\dagger}
+	\bigr)^{T},
+	\qquad
+	[\hat a_j,\hat a_k^{\dagger}]=\delta_{jk}.
+\end{equation}
+
+For a zero-mean Gaussian state, we collect the \emph{raw} second moments in the bosonic basis as
+\begin{equation}
+	M_A(\theta)
+	=
+	\left\langle
+	\hat{\mathbf A}\,
+	\hat{\mathbf A}^{T}
+	\right\rangle,
+	\label{eq:MA_def}
+\end{equation}
+so that each entry is of the form $\bigl[M_A(\theta)\bigr]_{ij}=\langle \hat A_i \hat A_j\rangle$.
+
+In the ordered basis $(\hat a_1,\hat a_1^\dagger,\hat a_2,\hat a_2^\dagger)$, the second-moment
+matrix can be written explicitly as
+\begin{equation}
+	M_A(\theta)
+	=
+	\begin{pmatrix}
+		\langle \hat a_1 \hat a_1 \rangle
+		&
+		\langle \hat a_1 \hat a_1^{\dagger} \rangle
+		&
+		\langle \hat a_1 \hat a_2 \rangle
+		&
+		\langle \hat a_1 \hat a_2^{\dagger} \rangle
+		\\[6pt]
+		\langle \hat a_1^{\dagger} \hat a_1 \rangle
+		&
+		\langle \hat a_1^{\dagger} \hat a_1^{\dagger} \rangle
+		&
+		\langle \hat a_1^{\dagger} \hat a_2 \rangle
+		&
+		\langle \hat a_1^{\dagger} \hat a_2^{\dagger} \rangle
+		\\[6pt]
+		\langle \hat a_2 \hat a_1 \rangle
+		&
+		\langle \hat a_2 \hat a_1^{\dagger} \rangle
+		&
+		\langle \hat a_2 \hat a_2 \rangle
+		&
+		\langle \hat a_2 \hat a_2^{\dagger} \rangle
+		\\[6pt]
+		\langle \hat a_2^{\dagger} \hat a_1 \rangle
+		&
+		\langle \hat a_2^{\dagger} \hat a_1^{\dagger} \rangle
+		&
+		\langle \hat a_2^{\dagger} \hat a_2 \rangle
+		&
+		\langle \hat a_2^{\dagger} \hat a_2^{\dagger} \rangle
+	\end{pmatrix}.
+	\label{eq:MA_full}
+\end{equation}
+
+For the lossy separable two-mode squeezed input considered here, the only nonzero
+anomalous moments are $\langle \hat a_j \hat a_j\rangle$ and the coupling-induced intermodal
+moment $\langle \hat a_1 \hat a_2\rangle$. In particular, the following mixed creation--annihilation
+cross correlations vanish:
+\begin{equation}
+	\langle \hat a_1 \hat a_2^{\dagger}\rangle
+	=
+	\langle \hat a_2 \hat a_1^{\dagger}\rangle
+	=
+	\langle \hat a_1^{\dagger} \hat a_2\rangle
+	=
+	\langle \hat a_2^{\dagger} \hat a_1\rangle
+	=0,
+	\label{eq:zero_bosonic_terms}
+\end{equation}
+so that Eq.~\eqref{eq:MA_full} reduces to
+\begin{equation}
+	M_A(\theta)
+	=
+	\begin{pmatrix}
+		\langle \hat a_1 \hat a_1 \rangle
+		&
+		\langle \hat a_1 \hat a_1^{\dagger} \rangle
+		&
+		\langle \hat a_1 \hat a_2 \rangle
+		&
+		0
+		\\[6pt]
+		\langle \hat a_1^{\dagger} \hat a_1 \rangle
+		&
+		\langle \hat a_1^{\dagger} \hat a_1^{\dagger} \rangle
+		&
+		0
+		&
+		\langle \hat a_1^{\dagger} \hat a_2^{\dagger} \rangle
+		\\[6pt]
+		\langle \hat a_2 \hat a_1 \rangle
+		&
+		0
+		&
+		\langle \hat a_2 \hat a_2 \rangle
+		&
+		\langle \hat a_2 \hat a_2^{\dagger} \rangle
+		\\[6pt]
+		0
+		&
+		\langle \hat a_2^{\dagger} \hat a_1^{\dagger} \rangle
+		&
+		\langle \hat a_2^{\dagger} \hat a_2 \rangle
+		&
+		\langle \hat a_2^{\dagger} \hat a_2^{\dagger} \rangle
+	\end{pmatrix}.
+	\label{eq:MA_reduced}
+\end{equation}
+
+The remaining entries follow from Hermitian conjugation together with bosonic commutation
+relations, in particular
+\begin{equation}
+	\langle \hat a_j \hat a_j^{\dagger}\rangle
+	=
+	\langle \hat a_j^{\dagger} \hat a_j\rangle+1.
+\end{equation}
+
 

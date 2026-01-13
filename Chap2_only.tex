@@ -1,0 +1,64 @@
+\documentclass[12pt,a4paper]{report}
+
+% ===== copy your preamble exactly =====
+\usepackage[left=1.5in,right=1.0in,top=1.0in,bottom=1.0in]{geometry}
+\usepackage{times}
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.4}
+
+\usepackage[titles]{tocloft}
+\usepackage{afterpage}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{lettrine}
+\usepackage{lipsum}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage{rotating}
+\usepackage{float}
+
+\usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{amsmath,bm}
+\usepackage{braket}
+\usepackage{cases}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{lscape}
+
+\usepackage[english]{babel}
+\usepackage{parskip}
+\usepackage{url}
+\usepackage[acronym]{glossaries}
+\usepackage{nomencl}
+
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+\usepackage[T1]{fontenc}
+\usepackage[colorlinks=true, allcolors=blue, bookmarks=true, bookmarksnumbered=true]{hyperref}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\allsectionsfont{\usefont{OT1}{times}{bc}{n}\bf\selectfont}
+\titleformat{\chapter}[display]{\vspace{7.5cm}\Large\bfseries\centering}{\chaptername~\thechapter}{1ex}{}
+\renewcommand{\contentsname}{\textbf{TABLE OF CONTENTS\normalsize\centering}}
+\renewcommand{\listfigurename}{LIST OF FIGURES}
+\renewcommand{\listtablename}{LIST OF TABLES}
+\parskip 1ex
+% ======================================
+
+\begin{document}
+
+% If you want chapter numbering to start at 2:
+\setcounter{chapter}{1}  % so the next \chapter is Chapter 2
+
+% Include ONLY Chapter 2 file:
+\include{Chapter_2_Theory}  % or \input{Chapter_2_Theory} if you prefer
+
+\end{document}

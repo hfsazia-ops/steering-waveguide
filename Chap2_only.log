@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.30)  13 JAN 2026 22:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.30)  20 NOV 2025 22:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./MS_Thesis_Steering.tex
-(MS_Thesis_Steering.tex
+**./Chap2_only.tex
+(Chap2_only.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -865,55 +865,27 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
 \Hy@SectionHShift=\skip109
-) (MS_Thesis_Steering.aux (Chapter_1_Introduction.aux)
-(Chapter_2_Theory.aux) (Chapter_3_Model.aux) (Chapter_4_Results.aux)
-(Chapter_5_Discussion.aux) (Chapter_6_Conclusions.aux
+) (Chap2_only.aux (Chapter_2_Theory.aux))
+\openout1 = `Chap2_only.aux'.
 
-LaTeX Warning: Label `chp3' multiply defined.
-
-) (Chapter_7_References.aux
-
-LaTeX Warning: Label `Serafini2017' multiply defined.
-
-
-LaTeX Warning: Label `AdessoRagyLee2014' multiply defined.
-
-
-LaTeX Warning: Label `Zhahir2022' multiply defined.
-
-
-LaTeX Warning: Label `PianiWatrous2015' multiply defined.
-
-
-LaTeX Warning: Label `Crespi2013' multiply defined.
-
-
-LaTeX Warning: Label `WallsMilburn' multiply defined.
-
-
-LaTeX Warning: Label `BreuerPetruccione2002' multiply defined.
-
-))
-\openout1 = `MS_Thesis_Steering.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -978,471 +950,256 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 75.
- (MS_Thesis_Steering.out) (MS_Thesis_Steering.out)
+Package hyperref Info: Link coloring ON on input line 56.
+ (Chap2_only.out) (Chap2_only.out)
 \@outlinefile=\write3
-\openout3 = `MS_Thesis_Steering.out'.
+\openout3 = `Chap2_only.out'.
 
-<QAU_enhanced_Logo.jpg, id=299, 4111.36pt x 3577.365pt>
-File: QAU_enhanced_Logo.jpg Graphic file (type jpg)
-<use QAU_enhanced_Logo.jpg>
-Package pdftex.def Info: QAU_enhanced_Logo.jpg  used on input line 87.
-(pdftex.def)             Requested size: 219.08612pt x 190.61475pt.
- [1
-
-{C:/Users/quanta/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/qua
-nta/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./QAU_enhanced_
-Logo.jpg>]
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.120 \end{titlepage}
-                      [1] [8
-
-] [9
-
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 146
-.
-
-(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 146
-.
-
-(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-[10
-
-]
-Overfull \vbox (46.42673pt too high) has occurred while \output is active []
-
-
-[11] (MS_Thesis_Steering.toc [12
-
-]
-Overfull \hbox (2.6493pt too wide) in paragraph at lines 22--22
- [][] [][][]\T1/ptm/m/n/12 Relevance Of Op-ti-cal Waveg-uides For Quan-tum Cir-
-cuits/Photonics[][] []  
- []
-
-[13])
-\tf@toc=\write4
-\openout4 = `MS_Thesis_Steering.toc'.
-
- [14] (MS_Thesis_Steering.lof)
-\tf@lof=\write5
-\openout5 = `MS_Thesis_Steering.lof'.
-
- [15
-
-] (MS_Thesis_Steering.lot)
-\tf@lot=\write6
-\openout6 = `MS_Thesis_Steering.lot'.
-
- [16
-
-]
-\openout2 = `Chapter_1_Introduction.aux'.
-
-
-(Chapter_1_Introduction.tex
-Chapter 1.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.7 \newpage
-             [1
-
-
-]
-LaTeX Font Info:    Trying to load font information for OT1+times on input line
- 9.
-LaTeX Font Info:    No file OT1times.fd. on input line 9.
-
-
-LaTeX Font Warning: Font shape `OT1/times/bc/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 9.
-
-[2]
-Overfull \hbox (0.39075pt too wide) in paragraph at lines 24--26
-[]\T1/ptm/m/n/12 One-sided device-independent quan-tum key dis-tri-bu-tion (QKD
-) is es-sen-tial due to quan-
- []
-
-[3] [4]) [5] [6]
 \openout2 = `Chapter_2_Theory.aux'.
 
  (Chapter_2_Theory.tex
 Chapter 2.
-[7
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[1
 
 
 
+{C:/Users/quanta/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/qua
+nta/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+LaTeX Font Info:    Trying to load font information for OT1+times on input line
+ 16.
+LaTeX Font Info:    No file OT1times.fd. on input line 16.
 
-]
 
-LaTeX Warning: Citation `WeedbrookAl2012' on page 8 undefined on input line 15.
+LaTeX Font Warning: Font shape `OT1/times/bc/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 16.
 
 
-[8] [9] [10]
-Overfull \hbox (22.93808pt too wide) in paragraph at lines 136--143
-[]\T1/ptm/m/n/12 Physically-platform wise, squeezed states are usu-ally cre-ate
-d by us-ing para-met-ric (quadratic)
+LaTeX Warning: Citation `BraunsteinVanLoock2005' on page 2 undefined on input l
+ine 18.
+
+
+LaTeX Warning: Citation `Serafini2017' on page 2 undefined on input line 18.
+
+
+LaTeX Warning: Citation `AdessoRagyLee2014' on page 2 undefined on input line 1
+9.
+
+
+LaTeX Warning: Citation `Serafini2017' on page 2 undefined on input line 32.
+
+[2]
+
+LaTeX Warning: Citation `WeedbrookEtAl2012' on page 3 undefined on input line 6
+7.
+
+
+LaTeX Warning: Citation `AdessoRagyLee2014' on page 3 undefined on input line 6
+7.
+
+
+LaTeX Warning: Citation `AdessoSerafiniIlluminati2004' on page 3 undefined on i
+nput line 92.
+
+
+LaTeX Warning: Citation `Fu2002' on page 3 undefined on input line 95.
+
+
+Overfull \hbox (5.47836pt too wide) in paragraph at lines 95--96
+\T1/ptm/m/n/12 ma-te-ri-als and the light is trapped within the core through to
+-tal in-ter-nal re-frelction.Photons
  []
 
-[11]
-Overfull \hbox (4.785pt too wide) in paragraph at lines 157--162
-[] []\T1/ptm/b/n/12 Con-nec-tion to co-vari-ance ma-tri-ces[] \T1/ptm/m/n/12 Wh
-ereas the bosonic the-ory char-ac-ter-izes squeez-
- []
 
-[12] [13]
-Overfull \hbox (17.11867pt too wide) in paragraph at lines 267--269
+LaTeX Warning: Citation `Yariv1973' on page 3 undefined on input line 98.
+
+[3]
+
+LaTeX Warning: Citation `BourassinBouchetEtAl2020' on page 4 undefined on input
+ line 101.
+
+
+LaTeX Warning: Citation `ChenLiuKoehlerTabatabaeiGuoSunYangWangBelingYi2025' on
+ page 4 undefined on input line 102.
+
+
+Overfull \hbox (17.11867pt too wide) in paragraph at lines 101--103
 \T1/ptm/m/n/12 In real op-ti-cal waveg-uide sys-tem, the per-for-mance is un-de
 r-mined by two pro-cesses:classical
  []
 
 
-Overfull \hbox (33.95496pt too wide) in paragraph at lines 269--269
-|[]\T1/ptm/b/n/14.4 Relevance Of Op-ti-cal Waveg-uides For Quan-tum Cir-cuits/P
+Overfull \hbox (29.95856pt too wide) in paragraph at lines 101--103
+\T1/ptm/m/n/12 op-ti-cal power loss(attenuation $\OML/cmm/m/it/12 $ \T1/ptm/m/
+n/12 ) and quan-tum in-for-ma-tion loss( de-co-her-ence, $\OT1/cmr/m/n/12 ^^@$\
+T1/ptm/m/n/12 ).Exponential
+ []
+
+
+Overfull \hbox (10.88618pt too wide) in paragraph at lines 104--104
+|[]\T1/ptm/b/n/14.4 Relevance of op-ti-cal waveg-uides for quan-tum cir-cuits/p
 hotonics| 
  []
 
-[14] [15] [16] [17] [18] [19] [20]
-Overfull \hbox (14.73146pt too wide) in paragraph at lines 387--391
-\T1/ptm/m/n/12 Quantum steer-ing is a form of quan-tum cor-re-la-tion that has 
-been in-tro-duced by Schrodinger
+
+LaTeX Warning: Citation `ChenLiuKoehlerTabatabaeiGuoSunYangWangBelingYi2025' on
+ page 4 undefined on input line 105.
+
+
+LaTeX Warning: Citation `KatiyiKarabchevsky2025' on page 4 undefined on input l
+ine 105.
+
+[4]
+
+LaTeX Warning: Citation `Uola2020' on page 5 undefined on input line 108.
+
+
+LaTeX Warning: Citation `Uola2020' on page 5 undefined on input line 108.
+
+
+LaTeX Warning: Citation `Wang2015' on page 5 undefined on input line 108.
+
+
+LaTeX Warning: Citation `Uola2020' on page 5 undefined on input line 108.
+
+
+LaTeX Warning: Citation `Uola2020' on page 5 undefined on input line 108.
+
+
+LaTeX Warning: Citation `Wang2015' on page 5 undefined on input line 108.
+
+
+LaTeX Warning: Citation `Reid2013' on page 5 undefined on input line 109.
+
+
+LaTeX Warning: Citation `Uola2020' on page 5 undefined on input line 109.
+
+
+LaTeX Warning: Citation `Reid2013' on page 5 undefined on input line 113.
+
+[5]
+
+LaTeX Warning: Citation `Uola2020' on page 6 undefined on input line 117.
+
+[6]
+
+LaTeX Warning: Citation `Kogias2015' on page 7 undefined on input line 152.
+
+
+LaTeX Warning: Citation `Masada2016' on page 7 undefined on input line 157.
+
+
+LaTeX Warning: Citation `Horodecki2009' on page 7 undefined on input line 157.
+
+
+LaTeX Warning: Citation `Zhahir2022' on page 7 undefined on input line 157.
+
+
+LaTeX Warning: Citation `Masada2016' on page 7 undefined on input line 157.
+
+
+LaTeX Warning: Citation `Adesso2007' on page 7 undefined on input line 157.
+
+
+LaTeX Warning: Citation `Zhahir2022' on page 7 undefined on input line 158.
+
+[7]
+
+LaTeX Warning: Citation `Rai2010' on page 8 undefined on input line 175.
+
+
+LaTeX Warning: Citation `Alicki2004' on page 8 undefined on input line 178.
+
+
+LaTeX Warning: Citation `Alicki2004' on page 8 undefined on input line 178.
+
+
+LaTeX Warning: Citation `Strunz2002' on page 8 undefined on input line 178.
+
+
+LaTeX Warning: Citation `Zurek2003' on page 8 undefined on input line 179.
+
+[8]
+
+LaTeX Warning: Citation `Alicki2004' on page 9 undefined on input line 182.
+
+
+LaTeX Warning: Citation `Alicki2004' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation `Alicki2004' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation `Zurek2003' on page 9 undefined on input line 184.
+
+
+LaTeX Warning: Citation `Schlosshauer2005' on page 9 undefined on input line 18
+5.
+
+
+LaTeX Warning: Citation `Rai2010' on page 9 undefined on input line 194.
+
+[9]
+
+LaTeX Warning: Citation `Zhahir2022' on page 10 undefined on input line 198.
+
+
+LaTeX Warning: Citation `Zhahir2022' on page 10 undefined on input line 198.
+
+
+LaTeX Warning: Citation `Volya2024' on page 10 undefined on input line 198.
+
+
+LaTeX Warning: Citation `Volya2024' on page 10 undefined on input line 199.
+
+
+LaTeX Warning: Citation `Zhahir2022' on page 10 undefined on input line 199.
+
+
+LaTeX Warning: Citation `Zhahir2022' on page 10 undefined on input line 199.
+
+
+LaTeX Warning: Citation `Rai2010' on page 10 undefined on input line 199.
+
+
+LaTeX Warning: Citation `Volya2024' on page 10 undefined on input line 200.
+
+
+LaTeX Warning: Citation `Volya2024' on page 10 undefined on input line 203.
+
+
+LaTeX Warning: Citation `Volya2024' on page 10 undefined on input line 204.
+
+
+LaTeX Warning: Citation `Kogias2015' on page 10 undefined on input line 204.
+
+
+LaTeX Warning: Citation `Cavalcanti2017' on page 10 undefined on input line 205
+.
+
+
+LaTeX Warning: Citation `Volya2014SteeringStates' on page 10 undefined on input
+ line 205.
+
+[10]
+
+LaTeX Warning: Citation `Rai2010' on page 11 undefined on input line 208.
+
+)
+Overfull \hbox (15.6899pt too wide) in paragraph at lines 208--62
+\T1/ptm/m/n/12 their vi-a-bil-ity as ba-sic units of quan-tum cir-cuits in in-t
+e-grated pho-tonic ap-pli-ca-tions.Discrete
  []
 
-[21]) [22]
-\openout2 = `Chapter_3_Model.aux'.
-
- (Chapter_3_Model.tex
-Chapter 3.
-[23
-
-
-
-
-] [24]
-
-LaTeX Warning: Citation `SalehTeich2007' on page 25 undefined on input line 52.
-
-
-[25] [26] [27] [28]
-Overfull \hbox (49.63046pt too wide) detected at line 246
-[]
- []
-
-[29] [30]
-Overfull \hbox (1.17017pt too wide) in paragraph at lines 306--308
-[]\T1/ptm/m/n/12 Within the non-clas-si-cal-ity^^Upurity parametriza-tion, the 
-same quan-tity $\OML/cmm/m/it/12 c[]$ \T1/ptm/m/n/12 can be ex-pressed
- []
-
-[31]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 348.
-
-
-LaTeX Warning: Citation `WeedbrookEtAl2012' on page 32 undefined on input line 
-384.
-
-[32]
-Overfull \hbox (3.21263pt too wide) in paragraph at lines 444--452
-[] []\T1/ptm/b/n/12 Co-vari-ance--ma-trix rep-re-sen-ta-tion and PPT cri-te-rio
-n.[] \T1/ptm/m/n/12 In continuous-variable Gaus-
- []
-
-[33] [34] [35]) [36]
-\openout2 = `Chapter_4_Results.aux'.
-
- (Chapter_4_Results.tex
-Chapter 4.
-[37
-
-
-
-
-]
-<graphs/A_GUASSIAN_EN.png, id=960, 570.933pt x 368.0952pt>
-File: graphs/A_GUASSIAN_EN.png Graphic file (type png)
-<use graphs/A_GUASSIAN_EN.png>
-Package pdftex.def Info: graphs/A_GUASSIAN_EN.png  used on input line 21.
-(pdftex.def)             Requested size: 416.83289pt x 268.75218pt.
- [38]
-<graphs/A_GUASSIAN_STEERING.png, id=967, 570.933pt x 368.577pt>
-File: graphs/A_GUASSIAN_STEERING.png Graphic file (type png)
-<use graphs/A_GUASSIAN_STEERING.png>
-Package pdftex.def Info: graphs/A_GUASSIAN_STEERING.png  used on input line 23.
-
-(pdftex.def)             Requested size: 416.83289pt x 269.10394pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 33.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\tau' on input line 33.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 33.
-
-[39 <./graphs/A_GUASSIAN_EN.png> <./graphs/A_GUASSIAN_STEERING.png>]
-<graphs/A_EN_TAU.png, id=974, 570.2103pt x 369.0588pt>
-File: graphs/A_EN_TAU.png Graphic file (type png)
-<use graphs/A_EN_TAU.png>
-Package pdftex.def Info: graphs/A_EN_TAU.png  used on input line 44.
-(pdftex.def)             Requested size: 416.83289pt x 269.79361pt.
-<graphs/A_STEERING_TAU.png, id=975, 570.2103pt x 369.0588pt>
-File: graphs/A_STEERING_TAU.png Graphic file (type png)
-<use graphs/A_STEERING_TAU.png>
-Package pdftex.def Info: graphs/A_STEERING_TAU.png  used on input line 48.
-(pdftex.def)             Requested size: 416.83289pt x 269.79361pt.
- [40 <./graphs/A_EN_TAU.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 62.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 62.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 62.
-
-<graphs/MU.png, id=981, 611.4042pt x 352.1958pt>
-File: graphs/MU.png Graphic file (type png)
-<use graphs/MU.png>
-Package pdftex.def Info: graphs/MU.png  used on input line 73.
-(pdftex.def)             Requested size: 426.79134pt x 245.85825pt.
-
-Overfull \hbox (9.95845pt too wide) in paragraph at lines 73--74
- [] 
- []
-
-[41 <./graphs/A_STEERING_TAU.png>]
-<graphs/MU_STR.png, id=987, 611.1633pt x 352.1958pt>
-File: graphs/MU_STR.png Graphic file (type png)
-<use graphs/MU_STR.png>
-Package pdftex.def Info: graphs/MU_STR.png  used on input line 77.
-(pdftex.def)             Requested size: 426.79134pt x 245.9496pt.
-
-Overfull \hbox (9.95845pt too wide) in paragraph at lines 77--78
- [][] 
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 86.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kappa' on input line 86.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 86.
-
-[42 <./graphs/MU.png> <./graphs/MU_STR.png>]
-<graphs/A_EN_KAPPA.png, id=994, 562.5015pt x 361.8318pt>
-File: graphs/A_EN_KAPPA.png Graphic file (type png)
-<use graphs/A_EN_KAPPA.png>
-Package pdftex.def Info: graphs/A_EN_KAPPA.png  used on input line 95.
-(pdftex.def)             Requested size: 398.33858pt x 256.2288pt.
-<graphs/A_STEERING_KAPPA.png, id=995, 562.5015pt x 361.8318pt>
-File: graphs/A_STEERING_KAPPA.png Graphic file (type png)
-<use graphs/A_STEERING_KAPPA.png>
-Package pdftex.def Info: graphs/A_STEERING_KAPPA.png  used on input line 99.
-(pdftex.def)             Requested size: 398.33858pt x 256.2288pt.
- [43 <./graphs/A_EN_KAPPA.png>]
-<graphs/en_squeezed_non_lossy.png, id=1001, 566.5968pt x 369.2997pt>
-File: graphs/en_squeezed_non_lossy.png Graphic file (type png)
-<use graphs/en_squeezed_non_lossy.png>
-Package pdftex.def Info: graphs/en_squeezed_non_lossy.png  used on input line 1
-21.
-(pdftex.def)             Requested size: 398.33858pt x 259.6294pt.
-
-[44 <./graphs/A_STEERING_KAPPA.png>]
-<graphs/squeezed_lossless_steer.png, id=1008, 566.5968pt x 369.0588pt>
-File: graphs/squeezed_lossless_steer.png Graphic file (type png)
-<use graphs/squeezed_lossless_steer.png>
-Package pdftex.def Info: graphs/squeezed_lossless_steer.png  used on input line
- 125.
-(pdftex.def)             Requested size: 398.33858pt x 259.46004pt.
- [45 <./graphs/en_squeezed_non_lossy.png> <./graphs/squeezed_lossless_steer.png
->]
-<graphs/en_squeezed_lossy.png, id=1015, 578.16pt x 375.804pt>
-File: graphs/en_squeezed_lossy.png Graphic file (type png)
-<use graphs/en_squeezed_lossy.png>
-Package pdftex.def Info: graphs/en_squeezed_lossy.png  used on input line 141.
-(pdftex.def)             Requested size: 398.33858pt x 258.92084pt.
-<graphs/sqzd_str_loss.png, id=1016, 578.16pt x 375.804pt>
-File: graphs/sqzd_str_loss.png Graphic file (type png)
-<use graphs/sqzd_str_loss.png>
-Package pdftex.def Info: graphs/sqzd_str_loss.png  used on input line 145.
-(pdftex.def)             Requested size: 398.33858pt x 258.92084pt.
- [46 <./graphs/en_squeezed_lossy.png>]
-[47 <./graphs/sqzd_str_loss.png>]
-<graphs/EN_STR_KT.png, id=1027, 570.6921pt x 513.117pt>
-File: graphs/EN_STR_KT.png Graphic file (type png)
-<use graphs/EN_STR_KT.png>
-Package pdftex.def Info: graphs/EN_STR_KT.png  used on input line 163.
-(pdftex.def)             Requested size: 398.33858pt x 358.14595pt.
- [48 <./graphs/EN_STR_KT.png>]) [49] [50]
-\openout2 = `Chapter_5_Discussion.aux'.
-
-
-(Chapter_5_Discussion.tex
-Chapter 5.
-[51
-
-
-
-
-]) [52]
-\openout2 = `Chapter_6_Conclusions.aux'.
-
- (Chapter_6_Conclusions.tex
-Chapter 6.
-[53
-
-
-
-
-] [54] [55]
-Chapter 7.
-[56
-
-] [57] [58] [59] [60]
-Overfull \hbox (9.82306pt too wide) detected at line 320
-\OML/cmm/m/it/12 c\OT1/times/bc/n/12 (\OML/cmm/m/it/12 t\OT1/times/bc/n/12 ) = 
-\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 a[]a[]\OMS/cmsy/m/n/12 i\OT1/times/bc/n/12 (
-\OML/cmm/m/it/12 t\OT1/times/bc/n/12 )\OML/cmm/m/it/12 ;  m[]\OT1/times/bc/n/12
- (\OML/cmm/m/it/12 t\OT1/times/bc/n/12 ) = \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 a
-[]a[]\OMS/cmsy/m/n/12 i\OT1/times/bc/n/12 (\OML/cmm/m/it/12 t\OT1/times/bc/n/12
- )\OML/cmm/m/it/12 ;  m[]\OT1/times/bc/n/12 (\OML/cmm/m/it/12 t\OT1/times/bc/n/
-12 ) = \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 a[]a[]\OMS/cmsy/m/n/12 i\OT1/times/bc
-/n/12 (\OML/cmm/m/it/12 t\OT1/times/bc/n/12 )\OML/cmm/m/it/12 ;  s\OT1/times/bc
-/n/12 (\OML/cmm/m/it/12 t\OT1/times/bc/n/12 ) = \OMS/cmsy/m/n/12 h\OML/cmm/m/it
-/12 a[]a[]\OMS/cmsy/m/n/12 i\OT1/times/bc/n/12 (\OML/cmm/m/it/12 t\OT1/times/bc
-/n/12 )\OML/cmm/m/it/12 :
- []
-
-) [61]
-\openout2 = `Chapter_7_References.aux'.
-
- (Chapter_7_References.tex [62
-
-
-
-
-] [63
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Serafini
-2017}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.49 \bibitem{Serafini2017}
-                           
-Underfull \hbox (badness 3343) in paragraph at lines 99--104
-\T1/ptm/m/n/12 ing,'' \T1/ptm/m/it/12 Re-views of Mod-ern Physics\T1/ptm/m/n/12
- , vol. 92, no. 1, pp. 015001, 2020.
- []
-
-[64
-pdfTeX warning (ext4): destination with the same identifier (name{cite.AdessoRa
-gyLee2014}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.111 
-      ]
-Underfull \hbox (badness 1521) in paragraph at lines 133--138
-[]\T1/ptm/m/n/12 A. A. Zhahir, S. M. Mohd, M. I. M. Shuhud, B. Idrus, H. Zain-u
-d-din,
- []
-
-
-Underfull \hbox (badness 3058) in paragraph at lines 154--159
-[]\T1/ptm/m/n/12 K. M. R. Au-de-naert and M. B. Ple-nio, ``When are cor-re-la-t
-ions quan-
- []
-
-
-Underfull \hbox (badness 1360) in paragraph at lines 161--166
-[]\T1/ptm/m/n/12 A. Rai, S. Das, and G. S. Agar-wal, ``Quan-tum en-tan-gle-ment
- in cou-pled
- []
-
-
-Underfull \hbox (badness 1087) in paragraph at lines 161--166
-\T1/ptm/m/n/12 lossy waveg-uides,'' \T1/ptm/m/it/12 Op-tics Ex-press\T1/ptm/m/n
-/12 , vol. 18, no. 6, pp. 6241--6254, 2010.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--173
-[]\T1/ptm/m/n/12 R. Al-icki, ``Pure De-co-her-ence in Quan-tum Sys-tems,'' \T1/
-ptm/m/it/12 Open Sys-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--173
-\T1/ptm/m/it/12 tems & In-for-ma-tion Dy-nam-ics\T1/ptm/m/n/12 , vol. 11, no. 1
-, pp. 53--61, 2004.
- []
-
-[65]
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Zhahir20
-22}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.197 \bibitem{Zhahir2022}
-                          
-Underfull \hbox (badness 1533) in paragraph at lines 250--253
-[]\T1/ptm/m/n/12 C. Bran-ciard, D. Ros-set, Y.-C. Liang, and N. Gisin, ``One-si
-ded device-
- []
-
-[66] [67
-pdfTeX warning (ext4): destination with the same identifier (name{cite.PianiWat
-rous2015}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.312 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Crespi20
-13}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.312 
-      ]
-pdfTeX warning (ext4): destination with the same identifier (name{cite.WallsMil
-burn}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.323 \bibitem{WallsMilburn}
-                            
-pdfTeX warning (ext4): destination with the same identifier (name{cite.BreuerPe
-truccione2002}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.328 \bibitem{BreuerPetruccione2002}
-                                     ) [68] (MS_Thesis_Steering.aux
-(Chapter_1_Introduction.aux) (Chapter_2_Theory.aux) (Chapter_3_Model.aux)
-(Chapter_4_Results.aux) (Chapter_5_Discussion.aux) (Chapter_6_Conclusions.aux)
-(Chapter_7_References.aux))
+[11] (Chap2_only.aux (Chapter_2_Theory.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1454,49 +1211,34 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-
-Package rerunfilecheck Warning: File `MS_Thesis_Steering.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MS_Thesis_Steering.out':
-(rerunfilecheck)             Before: 74A9936D1741BE541C96B48B93759BC3;17890
-(rerunfilecheck)             After:  E3D174298A46A41602D77FF506C1F3C6;17890.
+Package rerunfilecheck Info: File `Chap2_only.out' has not changed.
+(rerunfilecheck)             Checksum: EB99F1E2CEE24BD8EDDB560AA3028617;5298.
  ) 
 Here is how much of TeX's memory you used:
- 25499 strings out of 474486
- 482152 string characters out of 5743283
- 1947542 words of memory out of 5000000
- 47048 multiletter control sequences out of 15000+600000
- 594578 words of font info for 95 fonts, out of 8000000 for 9000
+ 24813 strings out of 474486
+ 466872 string characters out of 5743283
+ 1934542 words of memory out of 5000000
+ 46668 multiletter control sequences out of 15000+600000
+ 580499 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,12n,117p,2508b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
- exist, replaced by a fixed one
-
-<C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmex10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmmi12.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/quanta/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/quanta/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/quanta/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/q
-uanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
-/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy8.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/f
-onts/type1/urw/times/utmb8a.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/
-fonts/type1/urw/times/utmr8a.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX
-/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MS_Thesis_Steering.pdf (79 pages, 4973472 bytes).
+ 110i,6n,117p,2500b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmex10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi12.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/quanta/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/quanta/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/quanta/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/qu
+anta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
+:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/symbols/msbm10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type
+1/urw/times/utmb8a.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/urw/times/utmr8a.pfb>
+Output written on Chap2_only.pdf (11 pages, 185806 bytes).
 PDF statistics:
- 1265 PDF objects out of 1440 (max. 8388607)
- 301 named destinations out of 1000 (max. 500000)
- 663 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 227 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

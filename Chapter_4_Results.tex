@@ -2,192 +2,186 @@
 %                               Chapter 4: Results and Analysis
 %=============================================================================================
 
-\chapter{Quantum Steering Generation and Dynamics}
-\label{chp4}
-\newpage
+\chapter{Results and discussion}
+In this chapter,we studied the dynamical behaviour of the Gaussian Quantum Steering and Gaussian Quantum Entanglement in a coupled lossy waveguide system using the Covariance matrix formalism.This analysis was conducted by initially considering a general reference case where the nonclassicality depth, purity and loss parameters were held constant and then by considering the action of each of these parameters separately. we investigated the effect of these parameters by keeping the coupling term  $J$  constant  i,e 1 and by plotting Quantum Entanglement and Quantum Steering against $ \frac{Jt}{\pi} $,where $J$ =1.We also studied a special kind of guassian states called squeezed states and analyzed the effect of squeezing on Quantum Entanglement and Quantum Steering.with the same consideration i,e $J$ =1 and plotting Quantum Entanglement and Quantum Steering against $ \frac{Jt}{\pi} $.
+we further investigated effect of coupling term  $J$ on Quantum Entanglement and  Quantum Steering by keeping $\kappa$
+constant i,e 1, and plotted Quantum Entanglement and Quantum Steering against $\kappa t$
+ to see the effect.
 
-\section{Introduction}
+\section{Time Evolution of Gaussian Steering and Entanglement}
 
-This chapter presents comprehensive numerical and analytical results investigating continuous-variable quantum steering in the RDQBL system. We systematically explore how steering is generated, sustained, and controlled through various system parameters. The results are organized to address the key research questions: (1) Can steering be generated reliably? (2) What parameters control steering directionality? (3) How robust is steering under realistic dissipation?
+This section discusses the analysis of the general time dynamics of the Gaussian Quantum Steering and Gaussian Entanglement in a coupled lossy waveguide system.The nonclassical depth $\tau$, purity $\mu$, and loss parameter $\kappa$ are kept fixed, and time evolution dynamics of Entanglement and Steering is investigated.
+The evolution of the logarithmic negativity $E_{\mathcal{N}}$ and the Gaussian steering $\mathcal{S}$ with the normalized propagation time is illustrated by Fig 4.1.The quantum correlations are also periodic, which means the coherent exchange between quantum correlations of the two interacting waveguide modes. The maxima and minima of Gaussian steering and entanglement are situated in the same propagation lengths meaning that both the correlations can be related to the same underlying mode -coupling dynamics that is brought about by the evanescent interaction between the waveguides.
+It is also noted that the value of Gaussian steering is never greater than that of the Gaussian entanglement with time. This is agreeing with this fact of quantum correlations: steering is a more limited, but more effective form of nonclassicality than entanglement. As time passes, the steering and entanglement sluggishly reduce owing to the energy loss of the waveguides which signifies that the dissipation harms the conservation of the quantum correlations.
 
-\section{Time Evolution of Quantum Steering}
 
-\subsection{Baseline Scenario: Lossless System}
+\vspace{2cm}
 
-Figure \ref{fig:steering_evolution} presents the time evolution of steering signals $S^{1 \to 2}$ and $S^{2 \to 1}$ for the lossless case.
 
-[Insert Figure 4.1: Time evolution of steering $S^{1 \to 2}$ and $S^{2 \to 1}$ vs dimensionless time $\Omega t$]
+\includegraphics[width=1.0\textwidth]{graphs/A_GUASSIAN_EN.png}
 
-\textbf{Key Observations:}
-\begin{itemize}
-	\item Steering emerges and reaches maximum around $\Omega t \approx \pi/4$
-	\item Clear asymmetry: $S^{1 \to 2} > S^{2 \to 1}$ for certain time windows
-	\item Oscillatory behavior reflects quantum beat dynamics
-	\item Both steering signals vanish periodically as predicted by theoretical model
-\end{itemize}
+\includegraphics[width=1.0\textwidth]{graphs/A_GUASSIAN_STEERING.png}
 
-\section{Effect of Rabi Frequency}
+%\includegraphics[width=7.7cm]{graphs/A_STEERING_TAU.png} 
+\textbf{Fig4.1}shows two kind of quantum correlations:(a)Quantum Entanglement,(b)Quantum Steering against dimensionless time,for fixed parameters: $\mu_1=\mu_2=\mu=1$,  $\tau_1=\tau_2=\tau=0.35$, $\kappa_1=\kappa_2=\kappa=0$ and $\phi_1=0$ and $\phi_2=\pi/2$.
 
-\subsection{Variation with External Driving Field}
 
-The Rabi frequency $\Omega$ of the external Raman driving field is a critical parameter.
+\vspace{1cm}
 
-[Insert Figure 4.2: Steering vs time for varying $\Omega$: 2160 kHz, 2660 kHz, 3160 kHz]
 
-\textbf{Findings:}
-\begin{itemize}
-	\item Increased $\Omega$ enhances steering strength (higher $S_{\max}$)
-	\item Time duration of steering window increases with $\Omega$
-	\item Maximum steering is achieved at $\Omega \approx 2660$ kHz for these parameters
-	\item Trade-off: Very large $\Omega$ reduces steering time window
-\end{itemize}
 
-\section{Effect of Relative Phase Control}
+\section{Effect of Nonclassical Depth $\tau$}
 
-\subsection{Phase-Dependent Steering Directionality}
+In this section, we consider the effects of non classicality, referred to as nonclassicality depth, $\tau$ on Gaussian quantum steering and Gaussian Quantum entanglement,we have kept the purity $\mu$ and the loss parameter $\kappa$ fixed in this analysis.
 
-The relative phase $\phi$ between the two Raman driving fields provides direct control over steering asymmetry.
+Figure 4.2 indicates that the greater the nonclassical depth the stronger becomes both Quantum Entanglement and Quantum Gaussian steering. The larger the $\tau$ the larger the peaks, the larger the Quantum correlations as they travel.This is to imply that the greater the nonclassicality of the initial Gaussian state is, the greater the ability it has to generate and maintain quantum correlations in the coupled waveguide system.
 
-[Insert Figure 4.3: Phase-dependent steering: (a) $\phi = 0$, (b) $\phi = \pi/4$, (c) $\phi = \pi/2$]
+In addition, the Gaussian steering responds more to variation in the nonclassical depth in comparison to entanglement. This increased sensitivity is an indication that steering is more strict that entanglement requires stronger quadrature correlations.
 
-\textbf{Key Results:}
-\begin{itemize}
-	\item At $\phi = 0$: Nearly symmetric steering $S^{1 \to 2} \approx S^{2 \to 1}$
-	\item At $\phi = \pi/2$: Strong asymmetry, $S^{1 \to 2} \gg S^{2 \to 1}$
-	\item Steering directionality is continuously tunable through $\phi$
-	\item Optimal asymmetry parameter regimes can be identified
-\end{itemize}
+\vspace{2cm}
 
-\section{Cavity Damping Effects}
+\begin{center}
+	\includegraphics[width=1.0\textwidth]{graphs/A_EN_TAU.png}
+	
+	\vspace{0.8cm}
+	
+	\includegraphics[width=1.0\textwidth]{graphs/A_STEERING_TAU.png}
+\end{center}
 
-\subsection{Loss-Induced Steering Degradation}
 
-Figure \ref{fig:damping} shows how cavity damping ($\kappa_1, \kappa_2$) affects steering survival.
+%\includegraphics[width=7.7cm]{graphs/A_STEERING_TAU.png} 
+\textbf{Fig4.2} represents two kinds of quantum correlations: (a) quantum entanglement and (b) quantum steering,
+with $\kappa_1=\kappa_2=\kappa=0.05$, $\mu_1=\mu_2=\mu=1$, $\phi_1=0$ and $\phi_2=\pi/2$.
+In each case, the solid blue, dashed red, dash-dotted black, and dotted red lines
+correspond to $\tau_1=\tau_2=\tau=0.15$, $0.20$, $0.25$, and $0.30$, respectively.
 
-[Insert Figure 4.4: Steering decay with increasing cavity damping rates]
 
-\textbf{Observations:}
-\begin{itemize}
-	\item Moderate damping ($\kappa \lesssim 0.005$ kHz) shows minimal steering degradation
-	\item At $\kappa = 0.01$ kHz, steering magnitude reduced by $\sim 30\%$
-	\item Steering persists even at experimentally realistic damping rates
-	\item Time-window for steering detection shrinks with increased loss
-\end{itemize}
+\vspace{1cm}
 
-\subsection{Comparison: Steering vs Entanglement under Loss}
 
-[Insert Figure 4.5: Comparative robustness of steering vs entanglement]
+\section{Effect of Purity $\mu$}
+In this section,we are examining the impact of state purity  $\mu$ on the development of Gaussian quantum steering and Gaussian Quantum Entanglement.
 
-\textbf{Finding:} Steering shows comparable or superior robustness compared to entanglement under cavity damping, supporting the thesis that active systems effectively preserve quantum correlations.
+Fig. 4.3 demonstrates that in case of the reduction of the purity $\mu$, the size of both quantum correlations decreases significantly.
 
-\section{Non-Classicality and Purity Effects}
+We observe that, as the purity reduces, both Quantum steering and Quantum Entanglement decreases, indicating that these are vulnerable to noise and decoherence.
 
-\subsection{Initial State Non-Classicality}
 
-The non-classicality parameter $\tau$ of initial cavity modes significantly influences steering dynamics.
+\vspace{2cm}
 
-[Insert Figure 4.6: Effect of non-classicality on steering: $\tau = 0.34, 0.37, 0.40$]
+\begin{center}
+	\includegraphics[width=15cm]{graphs/MU.png}
+	
+	\vspace{0.8cm}
+	
+	\includegraphics[width=15cm]{graphs/MU_STR.png}
+\end{center}
 
-\textbf{Results:}
-\begin{itemize}
-	\item Increased $\tau$ (higher non-classicality) enhances steering strength
-	\item Non-classical initial states generate steering more efficiently
-	\item Steering time-window extends with increased non-classicality
-	\item Effect is more pronounced for steering than for entanglement
-\end{itemize}
+\textbf{Fig4.2} shows two kinds of quantum correlations: (a) quantum entanglement and (b) quantum steering,
+with $\kappa_1=\kappa_2=\kappa=0.05$, $\tau_1=\tau_2=\tau=0.35$, $\phi_1=0$ and $\phi_2=\pi/2$.
+In each case, the solid blue, dashed red, dashed-dotted black, and dotted red lines
+correspond to $\mu_1=\mu_2=\mu=0.80$, $0.90$, $0.95$, and $1.0$, respectively.
 
-\subsection{Purity of Initial States}
+\vspace{1cm}
+\section{Effect of Loss Parameter $\kappa$}
 
-[Insert Figure 4.7: Effect of purity on steering: $\mu = 0.75, 0.85, 1.0$]
+Here, we can see what happens to Gaussian quantum steering and Gaussian entanglement in the coupled waveguide system when the loss parameter $\kappa$ is changed.
 
-\textbf{Key Findings:}
-\begin{itemize}
-	\item Pure initial states ($\mu = 1$) show maximum steering
-	\item Mixed initial states ($\mu = 0.75$) still generate steering but at reduced magnitude
-	\item Purity effect is more pronounced than non-classicality effect for steering
-	\item Practical implication: High-purity initial states required for robust steering
-\end{itemize}
+Figure 4.4 indicates that the quantum correlations decrease significantly as the loss parameter increases.it is observed that Quantum Steering is less than Quantum Entanglement for all values of $\kappa$ ob.
 
-\section{Hierarchy Verification: Discord $\supseteq$ Entanglement $\supseteq$ Steering}
+\vspace{2cm}
 
-\subsection{Temporal Ordering of Quantum Correlations}
+\begin{center}
+	\includegraphics[width=14cm]{graphs/A_EN_KAPPA.png}
+	
+	\vspace{0.8cm}
+	
+	\includegraphics[width=14cm]{graphs/A_STEERING_KAPPA.png}
+\end{center}
 
-[Insert Figure 4.8: Time evolution of all four quantum correlations: Discord, Entanglement, Steering, Bell Nonlocality]
+\textbf{Fig4.3} represents two kinds of quantum correlations: (a) quantum entanglement and (b) quantum steering,
+with $\tau_1=\tau_2=\tau=0.35$, $\phi_1=0$ and $\phi_2=\pi/2$, and $\mu_1=\mu_2=\mu=1$.
+In each case, the solid blue, dashed blue, dashed-dotted black, and dotted green lines
+correspond to $\kappa_1=\kappa_2=\kappa=0$, $0.20$, $0.35$, and $0.60$, respectively.
 
-\textbf{Verification:}
-\begin{itemize}
-	\item Discord exhibits longest survival time, reaching steady state
-	\item Entanglement emerges after discord and persists longer than steering
-	\item Steering appears after entanglement and vanishes earlier
-	\item Bell nonlocality (if present) shows shortest lifetime
-	\item Temporal order confirms theoretical hierarchy
-\end{itemize}
+\vspace{1cm}
 
-\subsection{Boundary Regions}
 
-[Insert Table 4.1: Parameter ranges for correlation existence]
+\section{Gaussian Steering and Entanglement in Squeezed States}
 
-Clear identification of parameter regimes where only certain correlations exist supports the strict hierarchy.
+here we explore the phenomenon of Gaussian quantum steering and Gaussian entanglement of a special type of Gaussian state, called squeezed state.
 
-\section{Optimized Steering Regimes}
+In the lossless regime, squeezing generates a strong Gaussian entanglement and steering which can be observed in Fig4.5.The strong quadrature correlations which squeezed states possess lead to the high peak values of both quantum correlations.
+where as loss effect entanglement and steering in squeezed states,quantum entanglement and quantum steering decreases with increasing loss rate.
+It is observed that for every value of  $\kappa$ quantum steering is less than quantum entanglement.
 
-\subsection{Parameter Space Mapping}
+\vspace{2cm}
 
-[Insert Figure 4.9: 2D parameter map showing steering strength as function of ($\Omega$, $\phi$)]
+\begin{center}
+	\includegraphics[width=14cm]{graphs/en_squeezed_non_lossy.png}
+	
+	\vspace{0.8cm}
+	
+	\includegraphics[width=14cm]{graphs/squeezed_lossless_steer.png}
+\end{center}
 
-This contour plot identifies optimal parameter combinations for maximum steering with controlled asymmetry.
+\textbf{Fig4.3} shows two kinds of quantum correlations: (a) quantum entanglement and (b) quantum steering,
+with $\kappa_1=\kappa_2=\kappa=0$ and squeezing factor $r=0.5$.
+The solid blue curve represents entanglement, while the solid red curve represents
+steering under the same parameters.
 
-\textbf{Practical Guidelines:}
-\begin{itemize}
-	\item For symmetric steering: $\phi \approx 0$, $\Omega \approx 2400$ kHz
-	\item For asymmetric steering (Mode 1 steering Mode 2): $\phi \approx \pi/2$, $\Omega \approx 2660$ kHz
-	\item For reverse asymmetry: $\phi \approx 3\pi/2$, $\Omega \approx 2660$ kHz
-\end{itemize}
+\vspace{1cm}
 
-\section{Comparison with CEL Results}
+\subsection{Effect of loss on squeezed states}
+In this subsection we see the effect of loss on Quantum entanglement and Quantum steering in Squeezed states.
+In Fig4.6 we can see that both Entanglement and Steering is degraded by loss and the degradation depends on the mangnitude of loss rate and steering is always less than entanglement for every value of  $\kappa$ considered.
+\vspace{2cm}
 
-\subsection{RDQBL vs Correlated Emission Laser}
+\begin{center}
+	\includegraphics[width=14cm]{graphs/en_squeezed_lossy.png}
+	
+	\vspace{0.8cm}
+	
+	\includegraphics[width=14cm]{graphs/sqzd_str_loss.png}
+\end{center}
 
-[Insert Figure 4.10: Steering comparison between RDQBL (this work) and CEL (Ullah et al. 2019)]
+\textbf{Fig4.4} shows two kinds of quantum correlations:(a) quantum entanglement and (b) quantum steering,
+with squeezing factor $r=0.5$.
+In each case, the solid blue, dashed red, dash dotted black, and dotted green lines
+correspond to $\kappa_1=\kappa_2=\kappa=0.1$, $0.2$, $0.3$, and $0.4$, respectively.
 
-\textbf{Advantages of RDQBL:}
-\begin{itemize}
-	\item Stronger directional control through phase tuning
-	\item Enhanced robustness against cavity damping
-	\item More efficient steering generation per unit Rabi frequency
-	\item Better compatibility with quantum beat control
-\end{itemize}
+\vspace{1cm}
+\section{Effect of coupling strength}
+Finally, In this section we investigate the effect of the coupling strength $J$ on Gaussian quantum entanglement and Gaussian steering, we kept the loss parameter $\kappa$ fixed and set to unity in this analysis.The quantum correlations are plotted versus the scaled parameter $\kappa t$, which represents the propagation time in the presence of loss. By fixing $\kappa$=1, we have observed variations in the dynamical behavior of Quantum entanglement and Quantum steering by changing the coupling strength $J$.
+As the coupling becomes stronger, both Gaussian entanglement and Gaussian steering amplitude maximum values are significantly attained. This demonstrates that a higher coupling assists in the generation and transport of quantum correlations across the waveguides that partially compensates the adverse impact of loss. Moreover, the stronger the coupling, the stronger the oscillations, which means that there is a bigger rate of coherent exchange of energy between the coupled modes.
+The findings indicate that better coupling enhances the generation of quantum correlations and both entanglement and steering peaks are larger. The increase in the level of coupling facilitates easier movement of photons between the waveguides hence increasing the strength of the correlations between modes despite some level of loss. In the weaker connection, the correlations are narrow and fade away more rapidly with the wave transmission. The findings reveal that the enhancement of the formation of quantum correlations is achieved by stronger coupling, which provides higher peaks of both Gaussian entanglement and Gaussian steering. The increased coupling causes the photons to travel between the waveguides with lesser effort and hence the correlations between the modes become stronger even when a certain amount of loss is experienced. Conversely, when the coupling strengths are weaker the correlations generated are finite and they decay faster as they propagate.
+It is also observed that,regardless of the strength of the coupling between the two systems, Gaussian entanglement is always bigger than Gaussian steering.
 
-\textbf{Trade-offs:}
-\begin{itemize}
-	\item RDQBL requires phase stabilization (more stringent experimental requirement)
-	\item CEL may be simpler to implement in some configurations
-\end{itemize}
+\vspace{2cm}
 
-\section{Analytical Validation}
+\begin{center}
+	\includegraphics[width=14cm]{graphs/EN_STR_KT.png}
+\end{center}
 
-\subsection{Comparison with Strongly-Driven Limit Approximation}
 
-In the strongly driven limit ($\Omega \gg \gamma$), we derived analytical expressions for key observables.
+\textbf{Fig4.5} Two kinds of quantum correlations: (a) quantum entanglement and (b) quantum steering
+are plotted as functions of the dimensionless time $\kappa t$ for different coupling
+strengths $J=4.5$, $6$, and $7.5$.
+In each panel, the solid blue curve represents the entanglement $E_N$, while the dashed
+red curve represents the Gaussian steering $S_{1\rightarrow 2}$.
 
-[Insert Figure 4.11: Analytical vs Numerical solutions for steering evolution]
+\vspace{2cm}
 
-\textbf{Validation Result:}
-Maximum deviation between analytical approximation and full numerical solution: $\sim 5\%$ for $\Omega \geq 2160$ kHz, confirming validity of approximation scheme.
 
-\section{Chapter Summary}
 
-Key findings of this chapter:
 
-\begin{enumerate}
-	\item Continuous-variable quantum steering can be reliably generated in RDQBL systems
-	\item Steering strength and directionality are tunable through accessible parameters ($\Omega$, $\phi$)
-	\item Relative phase provides unprecedented control over steering asymmetry
-	\item Steering shows robustness comparable to or exceeding entanglement under realistic losses
-	\item Quantum correlation hierarchy (Discord $\supseteq$ Entanglement $\supseteq$ Steering) is verified numerically
-	\item Optimal parameter regimes identified for practical implementation
-	\item RDQBL offers advantages over existing platforms for steering generation
-\end{enumerate}
-
-These results establish the RDQBL as a promising platform for steering-based quantum technologies and provide a roadmap for experimental realization, discussed further in Chapter \ref{chp5}.
-
+\section{Summary}
+The key findings of this chapter can be summarized as follows:
+This chapter has included an in-depth exploration of the dynamical performance of Gaussian quantum entanglement and Gaussian quantum steering within a coupled lossy waveguide system by the covariance matrix framework. This analysis has been done through the systematic investigation of the role of important physical parameters that determine the dynamics of the system.
+First of all we have learned the overall time evolution of entanglement and steering by setting the nonclassical depth, purity and loss parameters fixed. The experiment found an oscillatory behavior of both quantum correlations as functions of the normalized propagation time, and was due to the coherent mode-coupling interaction between the waveguides. It was found that maxima and minima in entanglement as well as steering take identical propagation lengths which validated their physical origins. As the process continued, the Gaussian steering was always smaller than the Gaussian entanglement, as it was known in the hierarchy of quantum correlations.
+After that, the influence of nonclassical depth was analyzed. It was revealed that the increase in nonclassical depth positively affected the Gaussian entanglement and steering, and steering was more sensitive to nonclassicality changes. This shows the more high demands of steering, which have high quadrature correlation requirements compared to entanglement.
+The effect of purity by the state was then examined. The purity decrease resulted in a major degradation of the entanglement and steering, thus showing the susceptibility of the two to noise and decoherence. This establishes that the only way to maintain quantum correlations in real systems is to ensure that the systems are higher purified.
+The effects of the loss was also examined. An increment in the loss parameter led to a sharp reduction of the quantum correlations i,e quantum entanglement and quantum steering.
+We then studied the role of squeezing with reference to squeezed Gaussian states. Squeezing in the absence of its loss has high entanglement and steering due to the increased quadrature correlations. Both of the correlations decreases by introducting loss.Although loss decreases quantum correlations but it doesnot vanish them , they are correlated even with effect of loss.
+Lastly, the influence of the strength of coupling was investigated by holding the loss parameter constant. It was discovered that high coupling increases evanscent coupling signifying more efficient transfer of photons,hence increases number of oscillation which  produce great improvement in the amplitudes and persistence of entanglement and steering.which even compensate the effect of loss parameter which is kept 1.however,Steering was always less than entanglement which proves the hierarchy.
+On the whole, this chapter confirms that the nonclassicality, purity, loss, squeezing, and the strength of the coupling in coupled waveguide systems have a strong impact on the Gaussian quantum entanglement and steering.Both Entanglement and steerinf are found to be robust and steering is less than entanglement for all values which proves the quantum hierarchy. 
