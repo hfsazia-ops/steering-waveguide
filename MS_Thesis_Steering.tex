@@ -9,7 +9,6 @@
 % Typography & Formatting
 \usepackage[titles]{tocloft}
 \usepackage{afterpage}
-\usepackage{sectsty}
 \usepackage{titlesec}
 \usepackage{lettrine}
 \usepackage{lipsum}
@@ -57,8 +56,7 @@
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
-% Section Font Formatting
-\allsectionsfont{\usefont{OT1}{times}{bc}{n}\bf\selectfont}
+% Section Font Formatting - Sections are bold by default with titlesec
 
 % Title Formatting - Main Chapters
 \titleformat{\chapter}[display]{\vspace{7.5cm}\Large\bfseries\centering}{\chaptername~\thechapter}{1ex}{}
@@ -71,6 +69,13 @@
 % Paragraph Spacing
 \parskip 1ex
 
+% ============================= EXTRA PACKAGES FOR FIGURES =============================
+\usepackage{tikz}        % only if using TikZ/PGFPlots (optional)
+\usepackage{pgfplots}    % only if using \begin{axis} plots (optional)
+	\pgfplotsset{compat=1.18}
+	\usepackage{subcaption}  % only if using subfigure environments (optional)
+
+
 % ============================= BEGIN DOCUMENT =============================
 \begin{document}
 
@@ -79,7 +84,7 @@
 	\centering
 
 	% Title
-	{\LARGE \textbf{ Gaussian Quantum Steering and Entanglement Dynamics in Coupled Lossy Waveguides } \par}
+	{\LARGE \textbf{ Generation of Gaussian Quantum Steering and Entanglement in Coupled Lossy Waveguides } \par}
 
 	\vspace{1.5cm}
 
@@ -101,7 +106,7 @@
 
 	% Department and University
 	{\Large\textbf{Department of Physics} \par}
-	{\textbf{Quaid-i-Azam University, Islamabad, Pakistan} \par}
+	{\textbf{Quaid-e-Azam University, Islamabad, Pakistan} \par}
 	{(Spring 2024--2026) \par}
 
 \end{titlepage}
@@ -116,7 +121,7 @@
 	{\Large \textbf{Dedication}}
 \end{center}
 \vspace{0.4cm}
-\centering {I dedicate this work to my parents, whose unconditional support and encouragement  have been the backbone of my academic journey.I also dedicate it to my husband, whose confidence in me and constant support have greatly encouraged and strengthened my academic journey.}\\
+\centering {I dedicate this work to my parents, whose unconditional support and encouragement  have been the backbone of my academic journey. I also dedicate it to my husband, whose confidence in me and constant support have greatly encouraged and strengthened my academic journey.}\\
 \end{titlepage}
 
 % ============================= FRONT MATTER - ROMAN NUMERALS =============================
@@ -128,42 +133,85 @@
 \addcontentsline{toc}{chapter}{Acknowledgments}
 \chapter*{Acknowledgments}
 I would like to express my sincere gratitude to my supervisor, Dr. Shakir Ullah, for his guidance, valuable suggestions, and constant support throughout this research. His knowledge in quantum optics and quantum information has helped me learn and think more deeply, and I am truly thankful for that.
-I am grateful to the Department of Physics, Quaid-i-Azam University, for providing the research environment and facilities needed for this work.
-A special thanks to my husband, whose patience, support, and motivation kept me going.His belief in me made this work possible.
-Lastly, I acknowledge the efforts of researchers whose previous studies in quantum steering and laser physics laid the groundwork on which this research is built
+I am grateful to the Department of Physics, Quaid-e-Azam University, for providing a supportive research environment throughout this work.
+I would like to express my heartfelt gratitude to my parents, whose unwavering support and encouragement have been the backbone of my academic journey.
+A special thanks to my husband, whose patience, support, and motivation kept me going. His belief in me made this work possible.
+Lastly, I acknowledge the efforts of researchers whose previous studies laid the groundwork on which this research is built.
 \newpage
 
 % ============================= ABSTRACT =============================
 \addcontentsline{toc}{chapter}{Abstract}
-\chapter*{Abstract}
+\begin{abstract}
+	
+	Quantum correlations play an important role in quantum information science and are basis for the operation of modern quantum technologies. Particularly, quantum entanglement and quantum steering are key resources for continuous-variable quantum information processing. In this thesis, the covariance matrix formalism is used to study the time-dependent dynamics of quantum entanglement and Gaussian quantum steering in a coupled lossy optical waveguide system. The paper is concerned with realistic integrated photonic structures, taking the optical losses and environmental interactions into account.
+	
+    The physical system consist of two optical waveguides which are coupled evanescently, the coherent energy exchange between the modes is described by the Hamiltonian while the dissipation and attenuation mechanisms are modeled by a Lindblad master equation that allows the system to be analysed as an open quantum system. Within the Gaussian-state formalism, the first and the second moments of field quadratures give the full description of all the physical properties of the system. Quantum entanglement is quantified using logarithmic negativity ($E_N$), while quantum steering is quantified using the Gaussian steering measure ($S$).
+	
+	It has been found that both quantum entanglement and quantum steering are oscillatory functions of propagation time due to the coherent transfer of energy between the coupled waveguide modes. These quantum correlations are however affected by dissipation and are found to be dependent on the loss rate ($\kappa$), the purity of the initial Gaussian state ($\mu$), and the nonclassicality depth ($\tau$). It is also found that quantum steering is more fragile than quantum entanglement in the same physical conditions, which proves the hierarchical nature of quantum correlations. In addition, increasing the coupling strength ($J$) is shown to partially compensate the degrading effects of losses.
+	
+	These findings show that, despite realistic loss mechanisms, coupled optical waveguides can preserve nonclassical correlations over relevant propagation lengths. The results highlight the potential of integrated photonic platforms for applications in photonic quantum information processing, one-sided device-independent quantum key distribution, and quantum teleportation
+	
+\end{abstract}
 
 \newpage
 
 % ============================= ABBREVIATIONS =============================
-\addcontentsline{toc}{chapter}{List of Abbreviations}
+
 \chapter*{List of Abbreviations}
 
-\begin{tabular}{ll}
-CV & Continuous Variable \\
-DV & Discrete Variable \\
-1sDI & One-Sided Device-Independent \\
-QKD & Quantum Key Distribution \\
-1sDI-QKD & One-Sided Device-Independent Quantum Key Distribution \\
-PPT & Positive Partial Transpose \\
-TMGS & Two-Mode Gaussian State \\
-NOON & N-Photon State \\
-HOM & Hong-Ou-Mandel (interference) \\
-QIT & Quantum Information Theory \\
-EPR & Einstein-Podolsky-Rosen \\
-EN & Entanglement via Logarithmic Negativity \\
-$E_N$ & Logarithmic Negativity Measure \\
-$S^{A \to B}$ & Steering from Party A to Party B \\
-$V$ & Covariance Matrix \\
-$\rho$ & Density Matrix \\
-$\gamma$ & Loss Rate (decay) \\
-$J$ & Coupling Strength (waveguides) \\
-$\gamma/J$ & Loss-to-Coupling Ratio \\
-\end{tabular}
+\begin{tabbing}
+	XXXXXX \= XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \kill
+	
+	CV      \> Continuous Variable \\
+	DV      \> Discrete Variable \\
+	QIT     \> Quantum Information Theory \\
+	QKD     \> Quantum Key Distribution \\
+	1sDI    \> One-Sided Device-Independent \\
+	1sDI-QKD \> One-Sided Device-Independent Quantum Key Distribution \\
+	
+	EPR     \> Einstein–Podolsky–Rosen \\
+	LHS     \> Local Hidden State \\
+	PPT     \> Positive Partial Transpose \\
+	TMGS    \> Two-Mode Gaussian State \\
+	NOON    \> N-Photon Entangled State \\
+	HOM     \> Hong–Ou–Mandel Interference \\
+	
+	$E_N$   \> Logarithmic Negativity (Entanglement Measure) \\
+	$S_{A\rightarrow B}$ \> Gaussian Quantum Steering from Party A to Party B \\
+	$H_2$   \> Rényi-2 Entropy \\
+	K       \> Secure Key Rate \\
+	
+	$\rho$  \> Density Matrix \\
+	$\sigma$ \> Covariance Matrix \\
+	$\tilde{\sigma}$ \> Partially Transposed Covariance Matrix \\
+	$\Omega$ \> Symplectic Matrix \\
+	$\nu$   \> Symplectic Eigenvalue \\
+	$\tilde{\nu}$ \> Smallest Symplectic Eigenvalue \\
+	
+	$\hat{a}, \hat{a}^\dagger$ \> Bosonic Annihilation and Creation Operators \\
+	$Q, R$  \> Field Quadrature Operators \\
+	$W(z)$  \> Wigner Function \\
+	
+	$J$     \> Evanescent Coupling Strength Between Waveguides \\
+	$\kappa$ \> Optical Loss Rate (Damping Constant) \\
+	$\kappa/J$ \> Loss-to-Coupling Ratio \\
+	$\omega$ \> Angular Frequency of Waveguide Mode \\
+	
+	$n_1, n_2$ \> Mean Photon Numbers \\
+	$m_1, m_2$ \> Single-Mode Squeezing Moments \\
+	$c(t)$  \> Inter-Mode Coherence \\
+	$s(t)$  \> Two-Mode Correlation Function \\
+	
+	$\tau$  \> Nonclassical Depth \\
+	$\mu$   \> Purity of the Gaussian State \\
+	$r$     \> Squeezing Parameter \\
+	$\theta$ \> Squeezing Phase \\
+	
+	MIQS    \> Measurement-Induced Quantum Steering \\
+	CNOT    \> Controlled-NOT Gate \\
+	
+\end{tabbing}
+
 
 \newpage
 

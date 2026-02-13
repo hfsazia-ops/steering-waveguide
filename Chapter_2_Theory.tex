@@ -6,33 +6,33 @@
 
 \label{chp2}
 % ============================= SECTION 2.1: INTRODUCTION =============================
-This chapter gives a  review of the theoretical background of quantum correlations in integrated photonic circuits. It begins with a review of continuous-variable quantum states, particularly of Gaussian states,the properties of which are fully characterized by a covariance matrix, extracted out of the field quadratures.This is in turn followed by a discussion of the physical platform of optical waveguides, how the light is localized within the guiding medium and interaction between adjacent modes through evanescent interaction, provide ordinary optical attenuation($\alpha$) couples the system to the vacuum and causes the system to decay ($\Gamma$), making it hard to preserve quantum information. The chapter also summarizes two important quantum resources discussed in this work, quantum steering, denoted by the Gaussian steering measure, denoted by the symbol  ($\mathcal{S}$), and quantum entanglement, characterized by the logarithmic negativity $E_N$.All the above factors together are the conceptual framework that must be used to research the dynamical development of these resources in coupled waveguide architectures.
+This chapter gives a  review of the theoretical background of quantum correlations in integrated photonic circuits. It begins with a review of continuous-variable quantum states, particularly of Gaussian states, the properties of which are fully characterized by a covariance matrix, extracted out of the field quadratures. This is in turn followed by a discussion of the physical platform of optical waveguides, how the light is localized within the guiding medium and interaction between adjacent modes through evanescent interaction, provide ordinary optical attenuation ($\alpha$) couples the system to the vacuum and causes the system to decay ($\Gamma$), making it hard to preserve quantum information. The chapter also summarizes two important quantum correlations investigated in this work, that is, Gaussian quantum steering, denoted by ($\mathcal{S}$), and quantum entanglement, characterized by the logarithmic negativity $E_N$.All the above factors together are the conceptual framework that are used in the dynamical development of these resources in coupled waveguide architechtures.
 This chapter ends with the discussion of the vital uses of entanglement, steering, and waveguides.
  
 % ============================= SECTION 2.2: LITERATURE REVIEW =============================
 \section{Quantum States Of Light}
-The quantum states of light are defined to be quantum-mechanical characterisations of the electromagnetic field, in which the field is considered a quantised bosonic system under a quantum system instead of a classical wave, which are characterised by state vectors of density operators acting on the Hilbert space of modes of a field~\cite{WallsMilburn}.
-These states, unlike classical light, can have nonclassical characteristics, including squeezing, entanglement and quantum correlations, which are of paramount importance to Continuous-variable quantum information and quantum technologies~\cite{Weedbrook2012}. Quantum states of light are classified into pure and mixed states, Fock (number) states, coherent states, squeezed states, entangled states and more generally the Gaussian and non-Gaussian states~\cite{WallsMilburn,WeedbrookAl2012}.
-In terms of information encoding and measurement information quantum states of light can either be modeled in a discrete-variable model, in terms of photon-number observables, or in a Continuous-variable model, where information is encoded in field quadratures with continuous spectra~\cite{BraunsteinVanLoock2005,Weedbrook2012}.
-\subsection{Continious Variable States}
-In quantum mechanics, a Continious variable state is a quantum state where the physical observables i.e, momentum and position vary continiously unlike discrete variable state where observables can take only discrete values.These system are illustrated with in an infinite-dimensional Hilbert space~\cite{BraunsteinVanLoock2005}.In these system the principal variables are the quadrature operators which obey specific commutation relations that form the foundation of the system's quantum structure~\cite{Serafini2017}.
-Continious variable quantum states are classified into two categories:Gaussian and non-Guassian states~\cite{AdessoRagyLee2014}.
+Quantum states of light represent the quantized description of the electromagnetic field, where the field is treated as a bosonic system governed by quantum mechanics. These states are typically expressed using state vectors or density matrices~\cite{WallsMilburn}.
+These states, unlike classical light, can have nonclassical characteristics, including squeezing, entanglement and quantum correlations, which are of paramount importance to Continuous variable quantum information and quantum technologies~\cite{Weedbrook2012}. Quantum states of light are classified into pure and mixed states~\cite{WallsMilburn,Weedbrook2012}.
+In terms of information encoding and processing quantum states of light can either be modeled in a discrete variable model, in terms of photon-number observables, or in a continuous variable model, where information is encoded in field quadratures with continuous spectra~\cite{BraunsteinVanLoock2005,Weedbrook2012}.
+\subsection{Continuous Variable States}
+In quantum mechanics, a continuous variable state is a quantum state where the physical observables, i.e, momentum and position vary continiously unlike discrete variable state where observables can take only discrete values. These system are illustrated with in an infinite-dimensional Hilbert space~\cite{BraunsteinVanLoock2005}. In these system the principal variables are the quadrature operators which obey specific commutation relations that form the foundation of the system's quantum structure~\cite{Serafini2017}.
+Continious variable quantum states are classified into two categories: Gaussian and non-Guassian states~\cite{AdessoRagyLee2014}.
 
-\subsection{Guassian States}
-In a Continious variable system quantum system,a Gaussian state is a special kind of quantum state whose fourier representation has a guassian form in phase space.These states are completely described by their first and second moments~\cite{Weedbrook2012}.
-The quadrature operators are~\cite{WallsMilburn}
+\subsection{Gaussian States}
+In a Continious variable framework, a Gaussian state is a special kind of quantum state whose Fourier representation has a Guassian form in phase space. These states are completely described by their first and second moments~\cite{Weedbrook2012}.
+The quadrature operators can be defined in terms of bosonic operators~\cite{WallsMilburn}.
 
 \begin{equation}
 	\hat{Q} = \frac{1}{\sqrt{2}}(\hat{a} + \hat{a}^\dagger), 
 	\qquad 
-	\hat{R} = \frac{i}{\sqrt{2}}(\hat{a}^\dagger - \hat{a}),
+	\hat{P} = \frac{i}{\sqrt{2}}(\hat{a}^\dagger - \hat{a}),
 \end{equation}
 
 
 which satisfy the canonical commutation relation
 
 \begin{equation}
-	[\hat{Q},\hat{R}] = i.
+	[\hat{Q},\hat{P}] = \frac{i}{\hbar}.
 \end{equation}
 
 The Wigner function of a Gaussian state is
@@ -47,67 +47,73 @@ The Wigner function of a Gaussian state is
 	\right].
 \end{equation}
 
+Here, $m$ denotes the number of bosonic modes. The single-mode Wigner function is obtained by setting $m=1$ in the above expression\cite{Serafini2017,Weedbrook2012}.
 
 \noindent
-Here,
+and,
 \[
-\hat{\mathbf{z}} = (\hat{Q}_{1}, \hat{R}_{1}, \ldots, \hat{Q}_{m}, \hat{R}_{m})^{T}
+\hat{\mathbf{z}} = (\hat{Q}_{1}, \hat{P}_{1}, \ldots, \hat{Q}_{m}, \hat{P}_{m})^{T}
 \]
 is the phase-space vector, whose components are denoted by $\hat{z}_i$,
-\[
-\bar{\mathbf{z}} = \langle \hat{\mathbf{z}} \rangle
-\]
-is the displacement vector, and
-\[
-\sigma_{ij} =
-\frac{1}{2}\langle \hat{z}_{i}\hat{z}_{j} + \hat{z}_{j}\hat{z}_{i} \rangle
-- \langle \hat{z}_{i} \rangle \langle \hat{z}_{j} \rangle
-\]
+\begin{equation}
+	\bar{\mathbf{z}} = \langle \hat{\mathbf{z}} \rangle .
+	\label{eq:first_moments}
+\end{equation}
+
+is the displacement vector, and $\sigma_{ij}$ is the co
+variance matrix, with matrix elements\begin{equation}
+	\sigma_{ij} =
+	\frac{1}{2}\langle \hat{z}_{i}\hat{z}_{j} + \hat{z}_{j}\hat{z}_{i} \rangle
+	- \langle \hat{z}_{i} \rangle \langle \hat{z}_{j} \rangle .
+	\label{eq:covariance_matrix}
+\end{equation}
+
 is the covariance matrix.
 
 
 
 
 
-All physical properties of the Guassian states such as purity,entropy,steering and entanglement can be determined directly from the covariance matrix without full density operator because of the guassian form of Wigner function.
-typical examples of guassian states include the coherent states, squeezed states, thermal states and vaccume state~\cite{Weedbrook2012,AdessoRagyLee2014}.
+All physical properties of the Gaussian states, such as purity, entropy, steering and entanglement can be determined directly from the covariance matrix without full density operator because of the Gaussian form of its Wigner function.
+Typical examples of gaussian states include the coherent states, squeezed states, thermal states and vacuum state~\cite{Weedbrook2012,AdessoRagyLee2014}.
 
 
 \subsection{Squeezed States}
 
-A special type of Gaussian state are squeezed states. As a Gaussian states, they are fully determined by their first and second statistic moments~\cite{Weedbrook2012,AdessoRagyLee2014}. These initial moments are associated with the averages of the quadrature operators which are displacements of the phase space~\cite{Weedbrook2012}. The second moments are grouped into a positive-definite, symmetric and real matrix called the covariance matrix~\cite{Weedbrook2012,AdessoRagyLee2014}. The action of a displacement and a squeezing on the vacuum state could create any pure Gaussian state~\cite{AdessoRagyLee2014}.
+A special type of Gaussian states are squeezed states. As a Gaussian states, they are fully determined by their first and second statistical moments~\cite{Weedbrook2012,AdessoRagyLee2014}. The first moments are associated with the averages  which are displacements operators in the phase space~\cite{Weedbrook2012}. The second moments are grouped into a positive-definite, symmetric and real matrix called the covariance matrix~\cite{Weedbrook2012,AdessoRagyLee2014}. The action of a displacement and a squeezing operator on the vacuum state could create a squeezed  state~\cite{AdessoRagyLee2014}.
 
 
 The theoretical description of squeezed states begins with the bosonic annihilation and creation operators $\hat{a}$ and $\hat{a}^\dagger$, which satisfy the canonical commutation relation
 \[
 [\hat{a},\hat{a}^\dagger]=1.
 \]
-The field quadrature operators, analogous to position and momentum, are defined as
-\[
-\hat{Q}=\frac{1}{\sqrt{2}}\left(\hat{a}+\hat{a}^\dagger\right), \qquad
-\hat{R}=\frac{i}{\sqrt{2}}\left(\hat{a}^\dagger-\hat{a}\right).
-\]
-\cite{Weedbrook2012,AdessoRagyLee2014}
-These quadratures obey the canonical commutation relation~\cite{WallsMilburn}
-\[
-[\hat{Q},\hat{R}]=i,
-\]
-which leads to the uncertainty relation
-\[
-\Delta Q\,\Delta R \ge \tfrac{1}{2}.
-\]
-\cite{Walls1983,AdessoRagyLee2014}
 
-A single-mode squeezed vacuum state is generated by applying the unitary squeezing operator $\hat{S}(\zeta)$ to the vacuum state $\lvert 0\rangle$:
+which leads to the uncertainty relation\cite{Walls1983,AdessoRagyLee2014}
+\[
+\Delta Q\,\Delta P \ge \tfrac{1}{2}.
+\]
+
+A single-mode squeezed vacuum state is generated by applying the unitary
+squeezing operator $\hat{S}(\zeta)$ to the vacuum state $|0\rangle$.
+The squeezing operator is defined as
 \begin{equation}
-	\hat{S}(\zeta)=\exp\!\left[\tfrac{1}{2}\left(\zeta^{*}\hat{a}^{2}-\zeta\,\hat{a}^{\dagger 2}\right)\right].
+	\hat{S}(\zeta)
+	= \exp\!\left[\tfrac{1}{2}\left(\zeta^{*}\hat{a}^{2}
+	- \zeta\,\hat{a}^{\dagger 2}\right)\right],
+	\tag{2.4}
 \end{equation}
-Here, the complex squeezing parameter $\zeta=s e^{i\theta}$ determines the squeezing strength $s$ and the squeezing phase $\theta$~\cite{Walls1983,AdessoRagyLee2014}.
+where the complex squeezing parameter $\zeta = r e^{i\theta}$ determines
+the squeezing strength $r$ and the squeezing phase $\theta$
+~\cite{Walls1983,AdessoRagyLee2014,WallsMilburn,Weedbrook2012}.
+The corresponding single-mode squeezed vacuum state is then given by
+\begin{equation}
+	|\zeta\rangle = \hat{S}(\zeta)\,|0\rangle .
+\end{equation}
 
 The Heisenberg picture represents the squeezing transformation that actually elongates and rotates the quadrature axes. In the case of rotated quadratures that are duly rotated $Y_1$ and $Y_2$, the variances become
 \[
-V(Y_1)=\tfrac{1}{2}e^{-2s}, \qquad
-V(Y_2)=\tfrac{1}{2}e^{2s},
+V(Y_1)=\tfrac{1}{2}e^{-2r}, \qquad
+V(Y_2)=\tfrac{1}{2}e^{2r},
 \]
 It is evidently indicating that quantum noise in one quadrature has been reduced below the amount in the vacuum at the cost of increasing the fluctuations in the conjugate quadrature~\cite{Walls1983}.
 
@@ -119,21 +125,20 @@ annihilation operators in the Heisenberg picture~\cite{Walls1983}:
 	\hat a\cosh r- e^{i\theta}\hat a^\dagger\sinh r.
 	\label{eq:bogoliubov_singlemode}
 \end{equation}
-Such mixing is the operator level source of the smaller quantum fluctuations: this mixing creates
-\emph{anomalous} (pair) correlations of the form $\langle \hat a\hat a\rangle$ and
+Such mixing creates \emph{anomalous} (pair) correlations of the form $\langle \hat a\hat a\rangle$ and
 $\langle \hat a^\dagger\hat a^\dagger\rangle$ which vanish for coherent and thermal states.
 For the squeezed vacuum, the bosonic moments satisfy the well-known relations.
 \begin{equation}
 	\langle \hat a^\dagger \hat a\rangle=\sinh^2 r,
 	\qquad
-	\langle \hat a \hat a\rangle=-\frac{1}{2}e^{i\theta}\sinh(2r),
+	\langle \hat a \hat a\rangle=-\frac{1}{2}e^{i\theta}\sinh(2r).
 \end{equation}
-it is important to point out that the squeezer is coded directly on the level of second-order operator moments~\cite{Walls1983,Weedbrook2012}.
+It is important to point out that the squeezer is coded directly on the level of second-order operator moments~\cite{Walls1983,Weedbrook2012}.
 Because Gaussian states are completely characterized by first and second moments, this bosonic
 moment structure provides an efficient route for treating squeezed states in linear optical
 networks and open-system models~\cite{Weedbrook2012,AdessoRagyLee2014}.
 
-Physically-platform wise, squeezed states are usually created by using parametric (quadratic) interactions which are naturally bosonic.Typical examples would be degenerate parametric amplification and four-wave mixing, whose good Hamiltonians include terms which are proportional to $\hat a^{\dagger 2}$ and $\hat a^2$ and
+practically, squeezed states are usually created by using parametric (quadratic) interactions which are naturally bosonic. Typical examples would be degenerate parametric amplification and four-wave mixing, whose Hamiltonian include terms which are proportional to $\hat a^{\dagger 2}$ and $\hat a^2$ and
 therefore directly implement the generator appearing in $\hat S(\zeta)$~\cite{Walls1983}.
 In integrated photonics and waveguide settings, such bosonic operator descriptions are
 particularly convenient because propagation, evanescent coupling, and loss can all be modeled
@@ -141,7 +146,7 @@ as linear transformations and damping channels acting on $\hat a_j$ and $\hat a_
 allowing one to obtain closed equations for moments such as
 $\langle \hat a_j^\dagger \hat a_k\rangle$ and $\langle \hat a_j \hat a_k\rangle$~\cite{Weedbrook2012}.
 
-\paragraph{Two-Mode Squeezing and Operator Correlations}
+\subsubsection{Two-Mode Squeezing and Operator Correlations}
 Beyond single-mode squeezing, the bosonic literature also highlights the importance of
 \emph{two-mode squeezed states}, generated by the two-mode squeezing operator
 \begin{equation}
@@ -151,23 +156,20 @@ which creates strong intermodal pair correlations such as $\langle \hat a_1 \hat
 and $\langle \hat a_1^\dagger \hat a_2^\dagger\rangle$~\cite{Weedbrook2012,AdessoRagyLee2014}.
 These anomalous cross moments are the operator-level signatures of EPR-type correlations and
 constitute the microscopic origin of Gaussian entanglement and steering when the state is
-analyzed in the covariance-matrix framework~\cite{AdessoRagyLee2014}.
+analyzed in the covariance matrix framework~\cite{AdessoRagyLee2014}.
 
-\paragraph{Connection to covariance matrices}
-Whereas the bosonic theory characterizes squeezing through transformations of operators and anomalous.
-it can be termed moments, and is entirely identical to the quadrature covariance-matrix description utilized to measure steering and Gaussian entanglement~\cite{Weedbrook2012,AdessoRagyLee2014}.
+\subsubsection{Connection to covariance matrices}
+Whereas the bosonic theory characterizes squeezing through transformations of operators.
+the transformation interms of bosonic operatorst is entirely identical to the quadrature covariance matrix description utilized to measure steering and Gaussian entanglement~\cite{Weedbrook2012,AdessoRagyLee2014}.
 Realistically, it is common to solve the dynamics in the bosonic basis to get second moments,
-and then projects these moments onto the quadrature covariance matrix that is the input.
-to engage and control in further analysis~\cite{Weedbrook2012}.
+and then project these moments onto the quadrature covariance matrix which can be easily manipulated and controlled to engage and control in further analysis~\cite{Weedbrook2012}.
 
 
 
 
 \section{Covariance Matrix}
 
-In Continuous-variable (CV) quantum information, the covariance matrix serves as a
-fundamental tool for characterizing the properties of quantum states, particularly
-Gaussian states, which are completely described by their first and second statistical
+In CV quantum information theory, the covariance matrix provides a compact and practical way to describe the properties of quantum states, especially Gaussian states, which are completely described by their first and second statistical
 moments~\cite{AdessoSerafiniIlluminati2004}. While Gaussian states exist in
 infinite-dimensional Hilbert spaces, the covariance matrix provides a technically
 accessible description using a finite number of degrees of freedom%
@@ -175,10 +177,10 @@ accessible description using a finite number of degrees of freedom%
 
 The covariance matrix $\boldsymbol{\sigma}$ is a real, symmetric, and positive-definite
 matrix of size $2n \times 2n$ for a system of $n$ bosonic modes%
-~\cite{AdessoRagyLee2014,Weedbrook2012}. It represents the two-point correlation
+~\cite{AdessoRagyLee2014,Weedbrook2012}. It represents the two-mode correlation
 functions between canonical mode operators~\cite{AdessoRagyLee2014}.
 
-The covariance matrix for $n$ bosonic modes is represented by
+The elements of covariance matrix for $n$ bosonic modes are represented by
 \begin{equation}
 	\sigma_{ij} =
 	\tfrac{1}{2}
@@ -190,11 +192,11 @@ The covariance matrix for $n$ bosonic modes is represented by
 where $\hat{\mathbf{z}}$ is the phase-space vector and is defined as
 \begin{equation}
 	\hat{\mathbf{z}} =
-	(\hat{Q}_{1}, \hat{R}_{1}, \ldots, \hat{Q}_{n}, \hat{R}_{n})^{T}.
+	(\hat{Q}_{1}, \hat{P}_{1}, \ldots, \hat{Q}_{n}, \hat{P}_{n})^{T}.
 \end{equation}
 
 The degrees of freedom of the bosonic modes are represented by the quadrature operators
-$\hat{Q}_{k}$ and $\hat{R}_{k}$.
+$\hat{Q}_{k}$ and $\hat{P}_{k}$.
 
 Here, $\boldsymbol{\sigma}$ is a real, symmetric matrix that must satisfy the quantum
 uncertainty principle in order to represent a physical Gaussian state
@@ -208,12 +210,12 @@ can be written in block form as~\cite{AdessoRagyLee2014,Weedbrook2012}
 	\begin{pmatrix}
 		\mathbf{M} & \mathbf{L} \\
 		\mathbf{L}^{T} & \mathbf{N}
-	\end{pmatrix},
+	\end{pmatrix}.
 \end{equation}
 
 
-Here, the diagonal blocks i.e.\ $\mathbf{M}$ and $\mathbf{N}$ are $2\times2$ real symmetric
-matrices describing only local noise and squeezing of each mode, whereas the
+Here, the diagonal blocks, i.e., \ $\mathbf{M}$ and $\mathbf{N}$ are $2\times2$ real symmetric
+matrices describing only local noise and squeezing of each mode, resepectively, whereas the
 off-diagonal blocks $\mathbf{L}$ and $\mathbf{L}^{T}$ are $2\times2$ real matrices
 containing all cross-quadrature moments and therefore fully encode the correlations
 between the two modes~\cite{AdessoRagyLee2014}.
@@ -230,15 +232,16 @@ The covariance matrix in its standard form can be written as
 \end{equation}
 The variances $a$ and $b$, and the covariances $c_{1}$ and $c_{2}$ can be determined using
 the four local symplectic invariants. For example, the determinant of the covariance
-matrix $\boldsymbol{\sigma}_{MN}$ is given by $(ab - c_{1}^{2})(ab - c_{2}^{2})$, while
+matrix is $MN = (ab - c_{1}^{2})(ab - c_{2}^{2})$
+ while
 the determinants of the local covariance matrices are $\det \mathbf{M} = a^{2}$ and
 $\det \mathbf{N} = b^{2}$, and the determinant of the correlation matrix is
 $\det \mathbf{L} = c_{1}c_{2}$. Consequently, every arbitrary two--mode covariance
-matrix admits a unique standard form.
-\cite{BraunsteinVanLoock2005,Weedbrook2012,AdessoRagyLee2014}
+matrix admits a unique standard form
+\cite{BraunsteinVanLoock2005,Weedbrook2012,AdessoRagyLee2014}.
 
 
-\paragraph{Physicality Condition}A matrix is said to be physically valid covariance matrix if and only
+A matrix is said to be physically valid covariance matrix, or represents a physical system, if and only
 if it satisfies the Robertson--Schr\"odinger uncertainty principle. This condition can be
 expressed as the matrix inequality~\cite{AdessoRagyLee2014,Weedbrook2012}
 \begin{equation}
@@ -258,31 +261,31 @@ form~\cite{AdessoRagyLee2014,Weedbrook2012}
 
 
 \section{Optical Waveguides as Quantum Systems}
-An optical waveguide is a structure that guides light along a desired path.It consists of thin, high-refractive-index core layer positioned between low-refractive-index cladding material and the light is trapped within the core through total internal reflection.Photons passes through these waveguides in particular patterns known as modes~\cite{Fu2002}.
+An optical waveguide is a structure that guides light along a desired path. It consists of thin, high-refractive-index core layer positioned between low-refractive-index cladding material and the light is trapped within the core through total internal reflection\cite{Ihn2020}. Photons passes through these waveguides in particular patterns known as modes~\cite{Fu2002}.
 
-\subsection{Evanscent Overlap/Coupled Mode Theory}
-When light passes through a waveguide system,the electric field is mostly trapped in the high-refractive-index core.Yet, a part of the field can penetrate into the surrounding lower-index cladding.We call this decaying field as the evanscent field. If we place another waveguide in this region i,e the evanescent field reach typically less than 1-2 wavelenghts away light can tunnel between these two waveguides. We call this transfer of energy through coupling of evanescent feilds as evanescent coupling. The coupling strenght between the waveguides depends on the separtion distance between the waveguides,refractive index and mode shapes~\cite{Yariv1973}.
+\subsection{Evanescent Overlap/Coupled Mode Theory}
+When light passes through a waveguide system, the electric field is mostly trapped in the high-refractive-index core. Yet, a part of the field can penetrate into the surrounding lower-index cladding and this decaying field is known as the evanescent field~\cite{Marcuse1974,Ihn2020}. If we place another waveguide in this region, i.e., Within the evanescent field, Which typically extends less than 1-2 wavelenghts, light can tunnel between these two waveguides. We call this transfer of energy through coupling of evanescent feild as evanescent coupling. The coupling strenght between the waveguides depends on the separtion distance between the waveguides, refractive index and mode~\cite{Yariv1973}.
 
-\subsection{Loss and Decoherence In Real Waveguide Systems}
-In real optical waveguide system, the performance is undermined by two processes:classical optical power loss, attenuation $\alpha$ and quantum information loss, decoherence $\Gamma$. Exponential decay of optical intensity as light propagates is called attenuation while decoherence is the process in which a quantum system loses its correlation properties i,e superposition or entanglement due to interaction with the environment,results in losing the neccessary phase relationship and limiting visibility of interferance~\cite{BourassinBouchetEtAl2020,BreuerPetruccione2002,Yariv1973}.
-In quantum photonics the two problems are interconnected, classical optical loss($\alpha$) act as primary source of quantum decoherence.when a photon is lost from the waveguide system,its quantum state becomes coupled to unobserved vaccume port which results in transfering quantum information to the environment irreversibly and thus decoheres the entanglement and other nonclassical quantum resources. This loss mechanism is as an amplitude damping channel~\cite{BreuerPetruccione2002,ChenLiuKoehlerTabatabaeiGuoSunYangWangBelingYi2025}
+\subsection{Loss and Decoherence in Real Waveguide Systems}
+In real optical waveguide system, the performance is undermined by two processes: classical optical power loss (attenuation) and quantum information loss (decoherence). Exponential decay of optical intensity as light propagates is called attenuation while decoherence is the process in which a quantum system loses its correlation properties i,e superposition or entanglement due to interaction with the environment. This results in losing the necessary phase relationship and limiting visibility of interference~\cite{BourassinBouchetEtAl2020,BreuerPetruccione2002,Yariv1973}.
+In quantum photonics, the classical optical loss and quantum decoherence are strongly interconnected, that is,the former act as a primary source of the later. When a photon is lost from the waveguide system, its quantum state becomes coupled to unobserved vacuum port which results in transferring quantum information to the environment irreversibly and thus decoheres the entanglement and other nonclassical quantum resources. This loss mechanism can be modelled as an amplitude damping channel~\cite{BreuerPetruccione2002,ChenLiuKoehlerTabatabaeiGuoSunYangWangBelingYi2025}
 \subsection{Relevance Of Optical Waveguides For Quantum Circuits/Photonics}
-The optical waveguides are highly necessary in quantum photonics since they have facilitated the researchers to replace large laboratory systems with small chips that can soon be used in quantum technologies. All structures are built on the chip and this enables the researchers to implement quantum logic gates like CNOT, Toffoli and fredkin gate on a chip. They find application in building quantum computers, secure communication and quantum sensors.Low loss photonic materials like silicon, silicon nitride and lithium niobite are highly essential in this fact since optical waveguides are very important in the character of quantum information processing of integrated photonic circuits. Their nonlinear and optical properties can be optimally used in control of generation, manipulation, and detection of quantum states with very low propagation loss. When photon sources, beam spliters, phase shifters, and detectors are implemented on a single chip on a waveguide basis the resultant circuit is compact, stable, and scalable ~\cite{ChenLiuKoehlerTabatabaeiGuoSunYangWangBelingYi2025,KatiyiKarabchevsky2025}.
+The optical waveguides are highly necessary in quantum photonics since they have facilitated the researchers to replace large laboratory systems with small chips that can soon be used in quantum technologies~\cite{OBrien2009,Politi2008}. All structures are built on the chip and this enables the researchers to implement quantum logic gates like CNOT, Toffoli and fredkin gates on a chip. They find practical applications in building quantum computers, secure communication and quantum sensors\cite{OBrien2007,Politi2008,OBrien2009}. Low loss photonic materials like silicon, silicon nitride and lithium niobite are highly essential in this fact since optical waveguides are very important in the character of quantum information processing of integrated photonic circuits. Their nonlinear and optical properties can be optimally used in control of generation, manipulation, and detection of quantum states with very low propagation loss. When photon sources, beam spliters, phase shifters, and detectors are implemented on a single chip on a waveguide basis the resultant circuit is compact, stable, and scalable ~\cite{ChenLiuKoehlerTabatabaeiGuoSunYangWangBelingYi2025,KatiyiKarabchevsky2025}.
 
 \section{Quantum Steering}
-The phenomenon known as quantum steering was introduced in 1935~\cite{Schrodinger1935}. It is a form of quantum correlation that has received considerable attention in quantum information theory, especially after its formalisation in 2007~\cite{WisemanJonesDoherty2007}. Schrodinger first described this phenomenon as "magic" as the effect does not facilitate transmission of information, and it is the ability of one party (Alice) to measure or steer the wave function of another distant party~\cite{Uola2020}.
-One common notion in the modern theory is the inability of the conditional quantum states of one party (Bob) to be described by a local hidden state (LHS) model.A joint bipartite quantum state $\varrho_{AB}$ 
-is said to be steerable if Bob is forced to believe that Alice is influencing his system through some form of action at a distance. conversly,when (LHS) exists for the shared state,then such a bipartite system is referred to as an unsteerable state~\cite{ Uola2020,Wang2015}. Steering lies between entanglement and Bell nonlocality, that is, only steerable quantum correlations can be verified in one-sided device independent scenario, entanglement cannot~\cite{Uola2020,Wang2015}.
-In Continuous-variable (CV) systems, generally implemented using optical field quadratures $X$ and $P$, the steering-detection problem is often formulated in terms of criteria based on the Heisenberg uncertainty relation for conditional measurements. A state shared between $A$ and $B$ is steerable if the product of the minimum inferred variances of Bob's position ($X_B$) and momentum ($P_B$) quadratures, in terms of the measurements of Alice, is lower than the quantum limit: ~\cite{Reid2013,Uola2020}
+The phenomenon known as quantum steering was first introduced in 1935~\cite{Schrodinger1935}. It is a form of quantum correlation that has received considerable attention in quantum information theory~\cite{WisemanJonesDoherty2007}. Schrodinger first described this phenomenon as "magic" as the effect does not facilitate transmission of information, and it is the ability of one party (Alice) to measure or steer the wave function of another distant party~\cite{Uola2020}.
+One common notion in the modern theory is the inability of the conditional quantum states of one party (Bob) to be described by a local hidden state (LHS) model. A joint bipartite quantum state $\varrho_{AB}$ 
+is said to be steerable if Bob is forced to believe that Alice is influencing his system through some form of action at a distance. Conversely, when (LHS) exists for the shared state, then such a bipartite system is referred to as an unsteerable state~\cite{ Uola2020,Wang2015}. Steering lies between entanglement and Bell nonlocality, that is, only steerable quantum correlations can be verified in one-sided device independent scenario, entanglement cannot~\cite{Uola2020,Wang2015}.
+In CV systems, generally implemented using optical field quadratures $Q$ and $R$, the steering-detection problem is often formulated in terms of criteria based on the Heisenberg uncertainty relation for conditional measurements. A state shared between $A$ and $B$ is steerable if the product of the minimum inferred variances of Bob's position  position $(Q_B)$ and momentum $(R_B)$ quadratures, in terms of the measurements of Alice, is lower than the quantum limit: ~\cite{Reid2013,Uola2020}
 \begin{equation}
-	V_{\mathrm{inf}}(X_B)\,V_{\mathrm{inf}}(P_B) < 1 .
+V_{\mathrm{inf}}(Q_B)\,V_{\mathrm{inf}}(P_B) < 1.
 \end{equation}
-For CV Gaussian states where both the states and measurements are Gaussian, this EPR criterion is both necessary and sufficient to detect bipartite steering\cite{Reid2013}.Remarkably, a bipartite Gaussian state is unsteerable with Gaussian measurements if and only if a specific matrix inequality involving the covariance matrix $V_{AB}$ is satisfied:
+For CV Gaussian states where both the states and measurements are Gaussian, this EPR criterion is both necessary and sufficient to detect bipartite steering\cite{Reid2013}. Remarkably, a bipartite Gaussian state is unsteerable with Gaussian measurements if and only if a specific matrix inequality involving the covariance matrix $V_{AB}$ is satisfied:
 \begin{equation}
 	V_{AB} + i\left( 0_{A} \oplus \Omega_{B} \right) \ge 0 .
 \end{equation}
 If a quantum state is steerable with Gaussian measurements, it is also steerable with a certain pair of canonical quadratures~\cite{Uola2020}.
-\subsection{Quantification Of Quantum Steering Using Gaussian Steering Measure}
+\subsection{Quantification of Quantum Steering using Gaussian Steering Measure}
 
 
 The Gaussian $1 \rightarrow 2$ steerability $\mathcal{S}_{1 \rightarrow 2}(\sigma_{MN})$ is defined based on the symplectic eigenvalues $\{\bar{\nu}^{N}_{j}\}$ of the Schur complement matrix $M_{\sigma_{N}}$, calculated from the state's covariance matrix $\sigma_{MN}$:
@@ -299,37 +302,19 @@ For the specific case of two-mode Gaussian states (where the steered party has o
 \end{equation}
 where $H_{2}(\sigma)$ denotes the Rényi-2 entropy~\cite{Kogias2015}.
 
-\paragraph{Properties and Hierarchy:}
-The Gaussian steering measure satisfies several desirable mathematical properties: it is invariant under local unitaries, convex, additive, and monotonically non-increasing under quantum operations performed on the untrusted party (Alice). It vanishes if and only if the state is nonsteerable by Gaussian measurements. Moreover, it respects the hierarchy of correlations:
-\begin{equation}
-	\mathcal{S}_{1 \rightarrow 2}(\sigma_{MN}) \leq \mathcal{E}_{2}(\sigma_{MN}),
-\end{equation}
-where $\mathcal{E}_{2}$ denotes the Gaussian Rényi-2 measure of entanglement.  
-For pure states,
-\begin{equation}
-	\mathcal{S}_{1 \rightarrow 2}(\sigma_{MN}^{p}) = \mathcal{E}_{2}(\sigma_{MN}^{p}).
-\end{equation}
-
-
-\paragraph{Operational Meaning:}
-For two-mode Gaussian states, Gaussian steerability has a direct operational interpretation in one-sided device-independent QKD:
-\begin{equation}
-	\mathcal{K} \geq \max \left\{ 0,\; \mathcal{S}_{2 \rightarrow 1}(\sigma_{MN}) + \ln 2 - 1 \right\},
-\end{equation}
-where $\mathcal{K}$ is the guaranteed secure key rate~\cite{Kogias2015}.
 
 % =======================================================
 
-\section{Entanglement In Continious Variable Systems}
-Entanglement is fundamental property of a quantum theory, and it is a central resource for most quantum information science and emerging quantum technologies~\cite{Masada2016}. Originating from conceptual structures identified by Einstein, Podolsky, and Rosen (EPR) and Schrödinger, entanglement describes nonlocal correlations within composite quantum systems that cannot be replicated by classical systems~\cite{Horodecki2009}. It is a physical fact that two or more particles show correlations which cannot be explained classically, and these particles will be correlated no matter how far they are from each other~\cite{NielsenChuang2000,Horodecki2009}.Historically considered  a "spooky" phenomenon, entanglement is now an important part of engineering essential quantum protocols such as quantum computing and quantum teleportation in CV systems associated with infinite dimensional Hilbert spaces, provide the advantage of allowing deterministic and unconditional quantum operations of which is often a shortcoming in DV schemes due to relying on an imperfect single-photon generation and detection~\cite{Masada2016}. Within the CV framework, the family of Gaussian states is the most applicable one, and it is the subject of entanglement research~\cite{Adesso2007}.
+\section{Quantum Entanglement In Continious Variable Systems}
+Entanglement is a fundamental property of a quantum mechanics, and it is a central resource for most quantum information processing protocols and emerging quantum technologies~\cite{Masada2016}. Originating from conceptual structures identified by Einstein, Podolsky, and Rosen (EPR) and Schrödinger, entanglement describes nonlocal correlations within composite quantum systems that cannot be replicated by classical systems~\cite{Horodecki2009}. It is a physical fact that two or more particles show correlations which cannot be explained classically, and these particles will be correlated no matter how far they are from each other~\cite{NielsenChuang2000,Horodecki2009}. Historically considered  a "spooky" phenomenon, entanglement is now an important part of engineering essential quantum protocols, such as, quantum computing and quantum teleportation in CV systems associated with infinite dimensional Hilbert spaces, provide the advantage of allowing deterministic and unconditional quantum operations of which is often a shortcoming in DV schemes due to relying on an imperfect single-photon generation and detection~\cite{Masada2016}. Within the CV framework, the family of Gaussian states is mostly used for the generation and manipulation of entangled states~\cite{Adesso2007}.
 The quantitative way to determine the intensity or the extent of entanglement within a quantum system is termed as entanglement quantification. Quantification is needed and important because the measured degree of entanglement directly influences the performance of quantum information tasks~\cite{NielsenChuang2000,Horodecki2009,Zhahir2022}.
 
 \subsection{Entanglement Quantification Measures}
-To measure the entanglement created and maintained in a system in a quantitative way, scientists use appropriate measures\cite{NielsenChuang2000}
+To measure the entanglement created in a system in a quantitative way, scientists adopted various  measures\cite{NielsenChuang2000}
 . 
-One of the most commonly used measure is logarithmic negativity $E_{N}$~\cite{VidalWerner2002,Plenio2005}.
+One of the most commonly used measure is logarithmic negativity $E_{N}$.
 
-$E_{N}$ is defined as
+$E_{N}$~\cite{VidalWerner2002,Plenio2005}, which is defined as
 \begin{equation}
 	E_{N}(t) = \log_{2} \left\| \rho_{MN}^{T_{N}} \right\|_{1},
 \end{equation}
@@ -339,9 +324,9 @@ and $\|\cdot\|_{1}$ represents the trace norm.
 A non-zero value for $E_{N}$
 confirms that the state is entangled.
 
-For Gaussian states, and sub Gaussian states such as squeezed states, the measure of entanglement, $E_{N}$, 
+For a two mode Gaussian state, the measure of entanglement, $E_{N}$, 
 is determined by the symplectic eigenvalues ($\tilde{\nu}$) of the partially transposed covariance matrix ($\tilde{\sigma}_{MN}$).
-The state is entangled if the smallest symplectic eigenvalue,$\tilde{\nu}$ satisfies
+The state is entangled if the smallest symplectic eigenvalue, $\tilde{\nu}$ satisfies
 \begin{equation}
 	\tilde{\nu} < \frac{1}{2}.
 \end{equation}
@@ -353,20 +338,31 @@ Logarithmic negativity in this context is given by
 
 and serves as an upper bound to the distillable entanglement~\cite{VidalWerner2002,Plenio2005,Rai2010}
 .
+Here, $\tilde{\nu}$ is the minimum eigen value of the covariance matrix.
 
+\paragraph{Properties and Hierarchy:}
+The Gaussian steering measure satisfies several desirable mathematical properties, for example, it is invariant under local unitaries, convex, additive, and monotonically non-increasing under quantum operations performed on the untrusted party (Alice). It vanishes if and only if the state is nonsteerable by Gaussian measurements. Moreover, quantum entanglement and steering satisfy strict hierarchy relation, such that
+\begin{equation}
+	\mathcal{S}_{1 \rightarrow 2}(\sigma_{MN}) \leq \mathcal{E}_{2}(\sigma_{MN}),
+\end{equation}
+where $\mathcal{E}_{2}$ denotes the Gaussian Rényi-2 measure of entanglement.  
+For pure states,
+\begin{equation}
+	\mathcal{S}_{1 \rightarrow 2}(\sigma_{MN}^{p}) = \mathcal{E}_{2}(\sigma_{MN}^{p}).
+\end{equation}
 
 \section{Loss and Decoherence}
 Decoherence has become a prominent subject in modern physics, It is motivated by the desire to understand the border between the classical and quantum world, and the manner in which it is detrimental to the processing of quantum information~\cite{Alicki2004}. Fundamentally, decoherence is nothing but the irreversible and uncontrollable accumulation of quantum correlations, such as entanglement and steering, between a system and its environment~\cite{Alicki2004,Strunz2002}.
-Decoherence has attracted a lot of interest because of its relevance in explaining the quantum-classical boundary as well as its harmful effects on quantum information processing technologies. The main mechanism is that the environment actively monitors some system observables and hence, the decoherence of non-preferred states takes place. This monitoring thus imposes the choice of pointer states, which are robust against environmental interactions\cite{Zurek2003,Alicki2004}.
-These pointer states continue to correlate with their environment while remaining stable under environmental interactions. The rapid conversion of quantum superpositions to mixtures is the reason why superposition states, which are commonly known as "Schrodinger cat" states, do not seem to appear. The selection of such preferred states is known as Environment-Induced Superselection (Einselection). Einselection places a basic limitation on the bulk of the system's Hilbert space, causing it to be restricted to a small classical domain that is made up of pointer states~\cite{Zurek2003}.
+Decoherence has attracted a lot of interest because of its relevance in explaining the quantum-classical boundary as well as its harmful effects on quantum information processing technologies. The main mechanism is that the environment actively monitors some system observable and hence, the decoherence of non-preferred states takes place. This monitoring thus imposes the choice of pointer states, which are robust against environmental interactions\cite{Zurek2003,Alicki2004}.
+These pointer states continue to correlate with their environment while remaining stable under environmental interactions. The rapid conversion of quantum superposition to mixtures is the reason why superposition states, which are commonly known as "Schrodinger cat" states, do not seem to appear. The selection of such preferred states is known as Environment-Induced Superselection (Einselection). Einselection places a basic limitation on the bulk of the system's Hilbert space, causing it to be restricted to a small classical domain that is made up of pointer states~\cite{Zurek2003}.
 
 \subsection{Loss (Dissipation) and Pure Decoherence}
-Decoherence is usually accompanied by dissipation, which refers to the net exchange of energy with the environment~\cite{Alicki2004}. But there are certain theoretical cases that focus on pure decoherence (or dephasing), in which there is no energy exchange with the environment. The phenomenon of pure decoherence is of special interest in explaining why macroscopic superpositions do not occur, since the mechanism that leads to this is proposed to rely on the distinguishability of quantum states rather than on the differences in their energy~\cite{Alicki2004}. Pure decoherence can occur when the system Hamiltonian ($H_{S}$)  approximately commutes with the system-bath interaction Hamiltonian  ($H_{\mathrm{int}}$), or when the system initial states vary at a rate significantly slower than the decoherence timescale. Pure decoherence is considered very important in theoretical models which attempt to explain the apparent lack of superpositions of macroscopically distinguishable states, including Schrodinger-cat states~\cite{Alicki2004}.
+Decoherence is usually accompanied by dissipation, which refers to the net exchange of energy with the environment~\cite{Alicki2004}. But there are certain theoretical cases that focus on pure decoherence (or dephasing), in which there is no energy exchange with the environment. The phenomenon of pure decoherence is of special interest in explaining why macroscopic superposition do not occur, since the mechanism that leads to this is proposed to rely on the distinguishability of quantum states rather than on the differences in their energy~\cite{Alicki2004}. Pure decoherence can occur when the system Hamiltonian ($H_{S}$)  approximately commutes with the system-bath interaction Hamiltonian  ($H_{\mathrm{int}}$), or when the system initial states vary at a rate significantly slower than the decoherence timescale. Pure decoherence is considered very important in theoretical models which attempt to explain the apparent lack of superposition of macroscopically distinguishable states, including Schrodinger-cat states~\cite{Alicki2004}.
 The roles of these phenomena should be differentiated: relaxation and noise (loss) are the processes in which the environment perturbs the system, decoherence and einselection are the processes in which the system perturbs the environment~\cite{Zurek2003}.
 Another extremely significant thing about decoherence, particularly in macroscopic systems, is the separation of the time scales between decoherence and energy loss (relaxation). The rate at which a system decoheres is often depends on the seperation between the superposed, macroscopically distinct states. In such cases, the dimensionless distance  $D$  can be very large   (e.g., $10^{20}$), so decoherence can be very fast, even when the rate of energy relaxation of the system is very small~\cite{Schlosshauer2005}.
 
-\subsection{Loss Mechanism In Waveguides}
-Loss mechanism ($\kappa$) in waveguides is due to the loss in the material of the waveguide structure itself: Waveguides have often been designed, to be identical, and so the loss rate for the field modes ($a1$ and $a2$) is usually taken to be the same. Loss is theoretically modelled in the framework of system--reservoir interaction by using a quantum--Liouville equation of motion.
+\subsection{Loss Mechanism in Waveguides}
+Loss mechanism ($\kappa$) in waveguides is due to the loss in the material of the waveguide structure itself. Waveguides have often been designed, to be identical, and so the loss rate for the field modes ($a1$ and $a2$) is usually taken to be the same. Loss is theoretically modelled in the framework of system--reservoir interaction by using a quantum-Liouville equation of motion.
 This is the equation of evolution of the density operator ($\rho$) with two terms, the Hamiltonian term to the unitary coupling and the loss term  ($L\rho$) to represent the dissipation:
 \begin{equation}
 	\dot{\rho} = -\frac{i}{\hbar}[H, \rho] + L\rho,
@@ -379,17 +375,17 @@ In this section, we discuss the applications and motivations of quantum entangle
 
 \subsection{Applications of Quantum Entanglement}
 The concept of quantum entanglement is a central pillar of quantum information theory and quantum mechanics and is used to explain highly correlated particles that become linked regardless of the distance separating them~\cite{NielsenChuang2000,Horodecki2009}. This has a critical role in proving the theoretical and algorithmic superiority of quantum computers over its classical counterparts~\cite{Volya2024}.
-An important element of quantum computing is the manipulation of entanglement that results in the enhancement of the capabilities~\cite{Volya2024},and is applied in fundamental quantum information processing systems like quantum cryptography, quantum teleportation and quantum computing~\cite{NielsenChuang2000}. The quantification of entanglement is important in the determination of the intactness and the depth of the level of correlation that has a direct impact on the execution of quantum information tasks. Quantified entanglement measures include concurrence, negativity (Including logarithmic negativity), Schmidt decomposition, and entanglement of formation~\cite{Horodecki2009}. In case of bipartite Gaussian states, entanglement can be quantitatively measured by the logarithmic negativity of the input states, such as squeezed states and photon number states, and the entanglement dynamics is quantitatively measured in terms of logarithmic negativity. In waveguide architecture, the sustainability of generated entanglement can be significantly important in practical implementation of quantum communication and computation tasks, and dynamics of entanglement is studied by using quantitave measure known as logarithmic negativity~\cite{Rai2010}.
+An important element of quantum computing is the manipulation of entanglement that results in the enhancement of the capabilities~\cite{Volya2024}, and is applied in fundamental quantum information tasks like quantum cryptography, quantum teleportation and quantum computing~\cite{NielsenChuang2000}. The quantification of entanglement is important in the determination of the intactness and the depth of the level of correlation that has a direct impact on the execution of quantum information tasks. Quantified entanglement measures include concurrence, negativity (Including logarithmic negativity), Schmidt decomposition, and entanglement of formation~\cite{Horodecki2009}. In case of bipartite Gaussian states, entanglement can be quantitatively measured by the logarithmic negativity. In waveguide architecture, the sustainability of generated entanglement can be significantly important in practical implementation of quantum communication and computation tasks~\cite{Rai2010}.
 Highly entangled states are essential in doing complex quantum information processing and implementing error-correcting code~\cite{Volya2024}.
-In short quantum entanglement is essential for achieving quantum computational advantage and quantum error-correcting codes, it allows safe quantum communication protocols like quantum cryptography and quantum teleportation, it allows quantum information processing with Gaussian states, and it allows scalable on-chip implementations in integrated optical waveguide architectures~\cite{NielsenChuang2000,Horodecki2009,Volya2024,Weedbrook2012,Masada2016,Rai2010}.
+In short quantum entanglement is essential for achieving quantum computational advantage and quantum error-correcting codes, it allows safe quantum communication protocols, scalable on-chip implementations in integrated optical waveguide architectures~\cite{NielsenChuang2000,Horodecki2009,Volya2024,Weedbrook2012,Masada2016,Rai2010}.
 
-\subsection{Applications Of Quantum Steering}
-Quantum steering is a form of quantum correlation that has been introduced by Schrodinger which allows one party, Alice, to change the state of a remote party, Bob, remotely, by acting on local measurements which make use of common entanglement\cite{Schrodinger1935,WisemanJonesDoherty2007,Uola2020}.
-One of the most practical uses of quantum steering is the realization of desired quantum states, the so-called Measurement-Induced Quantum Steering (MIQS), a protocol that can be used to prepare a target quantum state regardless of the initial (mixed) state, in other words, the preparation of quantum states~\cite{Volya2024}. Quantum Steering plays an important role in offering security to one-sided device-independent Quantum Key Distribution (1SDI QKD) protocols, where the amount of steerability (Gaussian) can be used to measure the rate of guaranteed key rate~\cite{Kogias2015}.
-Quantum steering also has a close connection with quantum teleportation, any guassian state that can perform safe teleportation must be two way steerable~\cite{Cavalcanti2017}. Quantum steering also plays an important role in quantum-enhanced metrology~\cite{Volya2014}.
-Hence, quantum steering has important applications in measurement-induced quantum state preparation, one-sided device-independent quantum key distribution, secure continuous-variable quantum teleportation, quantum cryptrograghy, and quantum-enhanced metrology,where steerable correlations can be used to accomplish tasks that cannot be certified using entanglement alone~\cite{WisemanJonesDoherty2007,Uola2020,Kogias2015,Cavalcanti2017,Volya2014}.
+\subsection{Applications of Quantum Steering}
+Quantum steering is a form of quantum correlation that has been introduced by Schrodinger which allows one party, Alice, to change the state of a remote party, Bob, by performing some local measurements which make use of shared entanglement~\cite{Schrodinger1935,WisemanJonesDoherty2007,Uola2020}.
+One of the most practical uses of quantum steering is the realization of desired quantum states, the so-called measurement-Induced quantum Steering (MIQS), a protocol that can be used to prepare a target quantum state regardless of the initial (mixed) state~\cite{Volya2024}. Quantum Steering plays an important role in offering security to one-sided device-independent quantum key distribution (1SDI QKD) protocols, where the amount of steerability (Gaussian) can be used to measure the rate of guaranteed key rate~\cite{Kogias2015}.
+Quantum steering also has a close connection with quantum teleportation, any Gaussian state that can perform safe teleportation must be two way steerable~\cite{Cavalcanti2017}. Quantum steering also plays an important role in quantum-enhanced metrology~\cite{Volya2014}.
+Hence, quantum steering has important applications in measurement-induced quantum state preparation, one-sided device-independent quantum key distribution, secure CV quantum teleportation, quantum cryptrograghy, and quantum-enhanced metrology. In these protocols, steerable can be used to accomplish tasks that cannot be certified using entanglement alone~\cite{WisemanJonesDoherty2007,Uola2020,Kogias2015,Cavalcanti2017,Volya2014}.
 
-\subsection{Appplications Of Waveguides}
-Coupled waveguide designs are significant fundamental components that scientists examine whether they can be employed as straightforward building blocks for quantum circuits in integrated photonic devices. These are discrete optical systems that are quite efficient in controlling the movement of light. Waveguides are useful in executing key activities in quantum computing. They allowed a CNOT gate on a single silicon chip. such architectures form a basis for universal photonic quantum circuits and are relevant for the development of photonic implementations of quantum algorithms, including circuits related to Shor’s quantum factoring algorithm. Beyond computing, waveguide arrays are used to investigate coherent phenomena such as quantum walks and a discrete form of the Talbot effect~\cite{Rai2010,Reck1994,Politi2008,Clements2016}.
-In short, with integrated optical waveguides in place it is now possible to implement quantum logic gates and universal photonic quantum circuits, they give rise to on-chip implementations of quantum algorithms, including Shor-factoring, and enable quantum simulation by coherent phenomena such as quantum walks and Talbot effects, they also provide a scalable environment to study the propagation and stability of nonclassical states in realistic lossy and open quantum systems~\cite{Reck1994,Politi2008,Clements2016,Rai2010}.
+\subsection{Applications of Waveguides}
+Coupled waveguide designs are significant fundamental components that scientists examine whether they can be employed as straightforward building blocks for quantum circuits in integrated photonic devices\cite{Peruzzo2010}. These are discrete optical systems that are quite efficient in controlling the movement of light. Waveguides allowed a CNOT gate on a single silicon chip, which are useful in executing key activities in quantum computing. Such architectures form a basis for universal photonic quantum circuits and are relevant for the development of photonic implementations of quantum algorithms, including circuits related to Shor’s quantum factoring algorithm~\cite{Politi2008,OBrien2007,OBrien2009}. Beyond computing, waveguide arrays are used to investigate coherent phenomena such as quantum walks and a discrete form of the Talbot effect~\cite{Rai2010,Reck1994,Politi2008,Clements2016}.
+In short, with integrated optical Waveguides, it is now possible to implement quantum logic gates and universal photonic quantum circuits, they give rise to on-chip implementations of quantum algorithms, including Shor-factoring, and enable quantum simulation by coherent phenomena such as quantum walks and Talbot effects~\cite{OBrien2007,OBrien2009,Politi2008,Peruzzo2010,Longhi2007}, they also provide a scalable environment to study the propagation and stability of nonclassical states in realistic lossy and open quantum systems~\cite{Reck1994,Politi2008,Clements2016,Rai2010}.
 

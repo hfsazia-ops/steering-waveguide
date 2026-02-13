@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.30)  13 JAN 2026 22:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.30)  13 FEB 2026 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -101,19 +101,6 @@ Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
 \AP@output=\toks19
 \AP@partial=\box51
 \AP@footins=\box52
-)
-(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.sty
-Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
-les
-
-
-LaTeX Warning: Command \underbar  has changed.
-               Check if current package is valid.
-
-
-LaTeX Warning: Command \underline  has changed.
-               Check if current package is valid.
-
 )
 (C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
@@ -865,13 +852,451 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
 \Hy@SectionHShift=\skip109
-) (MS_Thesis_Steering.aux (Chapter_1_Introduction.aux)
-(Chapter_2_Theory.aux) (Chapter_3_Model.aux) (Chapter_4_Results.aux)
-(Chapter_5_Discussion.aux) (Chapter_6_Conclusions.aux
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz
+.sty
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
 
-LaTeX Warning: Label `chp3' multiply defined.
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.s
+ty
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-common.tex
+\pgfutil@everybye=\toks44
+\pgfutil@tempdima=\dimen309
+\pgfutil@tempdimb=\dimen310
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-latex.def
+\pgfutil@abb=\box73
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs
+.code.tex
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex
+)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 
-) (Chapter_7_References.aux
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore
+.sty
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys
+.sty
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+s.code.tex
+\pgfkeys@pathtoks=\toks45
+\pgfkeys@temptoks=\toks46
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+slibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks47
+))
+\pgf@x=\dimen311
+\pgf@y=\dimen312
+\pgf@xa=\dimen313
+\pgf@ya=\dimen314
+\pgf@xb=\dimen315
+\pgf@yb=\dimen316
+\pgf@xc=\dimen317
+\pgf@yc=\dimen318
+\pgf@xd=\dimen319
+\pgf@yd=\dimen320
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count354
+\c@pgf@countb=\count355
+\c@pgf@countc=\count356
+\c@pgf@countd=\count357
+\t@pgf@toka=\toks48
+\t@pgf@tokb=\toks49
+\t@pgf@tokc=\toks50
+\pgf@sys@id@count=\count358
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.
+cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+yssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count359
+\pgfsyssoftpath@bigbuffer@items=\count360
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+re.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil
+.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpars
+er.code.tex
+\pgfmath@dimen=\dimen321
+\pgfmath@count=\count361
+\pgfmath@box=\box74
+\pgfmath@toks=\toks51
+\pgfmath@stack@operand=\toks52
+\pgfmath@stack@operation=\toks53
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.basic.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.trigonometric.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.random.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.comparison.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.base.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.round.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.misc.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.integerarithmetics.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc
+.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloa
+t.code.tex
+\c@pgfmathroundto@lastzeros=\count362
+))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code
+.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen322
+\pgf@picmaxx=\dimen323
+\pgf@picminy=\dimen324
+\pgf@picmaxy=\dimen325
+\pgf@pathminx=\dimen326
+\pgf@pathmaxx=\dimen327
+\pgf@pathminy=\dimen328
+\pgf@pathmaxy=\dimen329
+\pgf@xx=\dimen330
+\pgf@xy=\dimen331
+\pgf@yx=\dimen332
+\pgf@yy=\dimen333
+\pgf@zx=\dimen334
+\pgf@zy=\dimen335
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen336
+\pgf@path@lasty=\dimen337
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen338
+\pgf@shorten@start@additional=\dimen339
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box75
+\pgf@hbox=\box76
+\pgf@layerbox@main=\box77
+\pgf@picture@serial@count=\count363
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+regraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen340
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+retransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen341
+\pgf@pt@y=\dimen342
+\pgf@pt@temp=\dimen343
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+requick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen344
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen345
+\pgf@sys@shading@range@num=\count364
+\pgf@shadingcount=\count365
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box78
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+relayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+retransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+eshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box79
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+eplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
+omp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen346
+\pgf@nodesepend=\dimen347
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
+omp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.s
+ty
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.
+sty
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+s.code.tex))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor
+.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen348
+\pgffor@skip=\dimen349
+\pgffor@stack=\toks54
+\pgffor@toks=\toks55
+))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count366
+\pgfplotmarksize=\dimen350
+)
+\tikz@lastx=\dimen351
+\tikz@lasty=\dimen352
+\tikz@lastxsaved=\dimen353
+\tikz@lastysaved=\dimen354
+\tikz@lastmovetox=\dimen355
+\tikz@lastmovetoy=\dimen356
+\tikzleveldistance=\dimen357
+\tikzsiblingdistance=\dimen358
+\tikz@figbox=\box80
+\tikz@figbox@bg=\box81
+\tikz@tempbox=\box82
+\tikz@tempbox@bg=\box83
+\tikztreelevel=\count367
+\tikznumberofchildren=\count368
+\tikznumberofcurrentchild=\count369
+\tikz@fig@count=\count370
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+ematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count371
+\pgfmatrixcurrentcolumn=\count372
+\pgf@matrix@numberofcolumns=\count373
+)
+\tikz@expandcount=\count374
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.re
+vision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.co
+de.tex
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscor
+e.code.tex
+\t@pgfplots@toka=\toks56
+\t@pgfplots@tokb=\toks57
+\t@pgfplots@tokc=\toks58
+\pgfplots@tmpa=\dimen359
+\c@pgfplots@coordindex=\count375
+\c@pgfplots@scanlineindex=\count376
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplot
+ssysgeneric.code.tex))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplo
+tslibrary.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompa
+tib\pgfplotsoldpgfsupp_loader.code.tex
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks59
+\t@pgf@tokb=\toks60
+\t@pgf@tokc=\toks61
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompa
+tib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplo
+tsutil.code.tex
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
+re\pgfplotsliststructure.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
+re\pgfplotsliststructureext.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
+re\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count377
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
+re\pgfplotsmatrix.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pg
+fplotstableshared.code.tex
+\c@pgfplotstable@counta=\count378
+\t@pgfplotstable@a=\toks62
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
+re\pgfplotsdeque.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplo
+tsbinary.code.tex
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplo
+tsbinary.data.code.tex))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplo
+tsutil.verb.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflib
+rarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count379
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibr
+arypgfplots.surfshading.pgfsys-pdftex.def)))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplo
+tscolormap.code.tex
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplo
+tscolor.code.tex))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotssta
+ckedplots.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplo
+thandlers.code.tex
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmes
+hplothandler.code.tex
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmes
+hplotimage.code.tex)))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.sc
+aling.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoo
+rdprocessing.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.er
+rorbars.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.ma
+rkers.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotstic
+ks.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.pa
+ths.code.tex)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarydecorations.code.tex
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+edecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen360
+\pgfdecoratedremainingdistance=\dimen361
+\pgfdecoratedinputsegmentcompleteddistance=\dimen362
+\pgfdecoratedinputsegmentremainingdistance=\dimen363
+\pgf@decorate@distancetomove=\dimen364
+\pgf@decorate@repeatstate=\count380
+\pgfdecorationsegmentamplitude=\dimen365
+\pgfdecorationsegmentlength=\dimen366
+)
+\tikz@lib@dec@box=\box84
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decora
+tions\pgflibrarydecorations.pathmorphing.code.tex))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarydecorations.pathreplacing.code.tex
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decora
+tions\pgflibrarydecorations.pathreplacing.code.tex))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzli
+brarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count381
+\pgfplots@xmin@reg=\dimen367
+\pgfplots@xmax@reg=\dimen368
+\pgfplots@ymin@reg=\dimen369
+\pgfplots@ymax@reg=\dimen370
+\pgfplots@zmin@reg=\dimen371
+\pgfplots@zmax@reg=\dimen372
+)
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count382
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count383
+) (MS_Thesis_Steering.aux (Chapter_1_Introduction.aux) (Chapter_2_Theory.aux)
+(Chapter_3_Model.aux) (Chapter_4_Results.aux
+
+LaTeX Warning: Label `fig:4.3' multiply defined.
+
+) (Chapter_5_Discussion.aux) (Chapter_6_Conclusions.aux)
+(Chapter_7_References.aux
 
 LaTeX Warning: Label `Serafini2017' multiply defined.
 
@@ -896,24 +1321,24 @@ LaTeX Warning: Label `BreuerPetruccione2002' multiply defined.
 ))
 \openout1 = `MS_Thesis_Steering.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -953,17 +1378,17 @@ LaTeX Font Info:    ... okay on input line 75.
 (C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count354
-\scratchdimen=\dimen309
-\scratchbox=\box73
-\nofMPsegments=\count355
-\nofMParguments=\count356
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count357
-\MPscratchDim=\dimen310
-\MPnumerator=\count358
-\makeMPintoPDFobject=\count359
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count384
+\scratchdimen=\dimen373
+\scratchbox=\box85
+\nofMPsegments=\count385
+\nofMParguments=\count386
+\everyMPshowfont=\toks63
+\MPscratchCnt=\count387
+\MPscratchDim=\dimen374
+\MPnumerator=\count388
+\makeMPintoPDFobject=\count389
+\everyMPtoPDFconversion=\toks64
 )
 (C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
 base.sty
@@ -978,17 +1403,21 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 75.
+Package hyperref Info: Link coloring ON on input line 80.
  (MS_Thesis_Steering.out) (MS_Thesis_Steering.out)
-\@outlinefile=\write3
-\openout3 = `MS_Thesis_Steering.out'.
+\@outlinefile=\write4
+\openout4 = `MS_Thesis_Steering.out'.
 
-<QAU_enhanced_Logo.jpg, id=299, 4111.36pt x 3577.365pt>
+
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+<QAU_enhanced_Logo.jpg, id=222, 4111.36pt x 3577.365pt>
 File: QAU_enhanced_Logo.jpg Graphic file (type jpg)
 <use QAU_enhanced_Logo.jpg>
-Package pdftex.def Info: QAU_enhanced_Logo.jpg  used on input line 87.
+Package pdftex.def Info: QAU_enhanced_Logo.jpg  used on input line 92.
 (pdftex.def)             Requested size: 219.08612pt x 190.61475pt.
- [1
+[1
 
 {C:/Users/quanta/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/qua
 nta/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./QAU_enhanced_
@@ -997,59 +1426,65 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.120 \end{titlepage}
+l.125 \end{titlepage}
                       [1] [8
 
-] [9
-
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 146
+LaTeX Font Info:    Trying to load font information for U+msa on input line 148
 .
 
 (C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 146
+LaTeX Font Info:    Trying to load font information for U+msb on input line 148
 .
 
 (C:\Users\quanta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-[10
+[1]
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.185 	$\sigma$ \> Covariance Matrix \\
+                                        [1
+
+] [2] (MS_Thesis_Steering.toc
+[3
 
 ]
-Overfull \vbox (46.42673pt too high) has occurred while \output is active []
-
-
-[11] (MS_Thesis_Steering.toc [12
-
-]
-Overfull \hbox (2.6493pt too wide) in paragraph at lines 22--22
+Overfull \hbox (2.6493pt too wide) in paragraph at lines 20--20
  [][] [][][]\T1/ptm/m/n/12 Relevance Of Op-ti-cal Waveg-uides For Quan-tum Cir-
 cuits/Photonics[][] []  
  []
 
-[13])
-\tf@toc=\write4
-\openout4 = `MS_Thesis_Steering.toc'.
+[4])
+\tf@toc=\write5
+\openout5 = `MS_Thesis_Steering.toc'.
 
- [14] (MS_Thesis_Steering.lof)
-\tf@lof=\write5
-\openout5 = `MS_Thesis_Steering.lof'.
+ [5] (MS_Thesis_Steering.lof)
+\tf@lof=\write6
+\openout6 = `MS_Thesis_Steering.lof'.
 
- [15
+ [6
 
-] (MS_Thesis_Steering.lot)
-\tf@lot=\write6
-\openout6 = `MS_Thesis_Steering.lot'.
+] [7] (MS_Thesis_Steering.lot)
+\tf@lot=\write7
+\openout7 = `MS_Thesis_Steering.lot'.
 
- [16
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.viii}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.236 \newpage
+               [8
 
 ]
 \openout2 = `Chapter_1_Introduction.aux'.
 
-
-(Chapter_1_Introduction.tex
+ (Chapter_1_Introduction.tex
 Chapter 1.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
@@ -1060,16 +1495,7 @@ l.7 \newpage
              [1
 
 
-]
-LaTeX Font Info:    Trying to load font information for OT1+times on input line
- 9.
-LaTeX Font Info:    No file OT1times.fd. on input line 9.
-
-
-LaTeX Font Warning: Font shape `OT1/times/bc/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 9.
-
-[2]
+] [2]
 Overfull \hbox (0.39075pt too wide) in paragraph at lines 24--26
 []\T1/ptm/m/n/12 One-sided device-independent quan-tum key dis-tri-bu-tion (QKD
 ) is es-sen-tial due to quan-
@@ -1085,361 +1511,322 @@ Chapter 2.
 
 
 
-]
+] [8] [9] [10
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1.
+6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.135 \end{equation}
+                    ] [11] [12]
 
-LaTeX Warning: Citation `WeedbrookAl2012' on page 8 undefined on input line 15.
-
-
-[8] [9] [10]
-Overfull \hbox (22.93808pt too wide) in paragraph at lines 136--143
-[]\T1/ptm/m/n/12 Physically-platform wise, squeezed states are usu-ally cre-ate
-d by us-ing para-met-ric (quadratic)
- []
-
-[11]
-Overfull \hbox (4.785pt too wide) in paragraph at lines 157--162
-[] []\T1/ptm/b/n/12 Con-nec-tion to co-vari-ance ma-tri-ces[] \T1/ptm/m/n/12 Wh
-ereas the bosonic the-ory char-ac-ter-izes squeez-
- []
-
-[12] [13]
-Overfull \hbox (17.11867pt too wide) in paragraph at lines 267--269
-\T1/ptm/m/n/12 In real op-ti-cal waveg-uide sys-tem, the per-for-mance is un-de
-r-mined by two pro-cesses:classical
- []
+LaTeX Warning: Citation `Ihn2020' on page 13 undefined on input line 264.
 
 
-Overfull \hbox (33.95496pt too wide) in paragraph at lines 269--269
+LaTeX Warning: Citation `Marcuse1974' on page 13 undefined on input line 267.
+
+
+LaTeX Warning: Citation `Ihn2020' on page 13 undefined on input line 267.
+
+[13]
+Overfull \hbox (33.95496pt too wide) in paragraph at lines 272--272
 |[]\T1/ptm/b/n/14.4 Relevance Of Op-ti-cal Waveg-uides For Quan-tum Cir-cuits/P
 hotonics| 
  []
 
-[14] [15] [16] [17] [18] [19] [20]
-Overfull \hbox (14.73146pt too wide) in paragraph at lines 387--391
+[14] [15]
+Overfull \hbox (3.6375pt too wide) in paragraph at lines 308--308
+|[]\T1/ptm/b/n/17.28 Quantum En-tan-gle-ment In Con-tin-ious Vari-able Sys-
+ []
+
+[16]
+Overfull \hbox (2.20264pt too wide) in paragraph at lines 313--316
+\T1/ptm/m/n/12 To mea-sure the en-tan-gle-ment cre-ated in a sys-tem in a quan-
+ti-ta-tive way, sci-en-tists adopted
+ []
+
+[17] [18] [19]
+Overfull \hbox (14.73146pt too wide) in paragraph at lines 383--387
 \T1/ptm/m/n/12 Quantum steer-ing is a form of quan-tum cor-re-la-tion that has 
 been in-tro-duced by Schrodinger
  []
 
-[21]) [22]
+[20]) [21]
 \openout2 = `Chapter_3_Model.aux'.
 
- (Chapter_3_Model.tex
+ (Chapter_3_Model.tex [22
+
+
+
+]
 Chapter 3.
 [23
 
-
-
-
-] [24]
-
-LaTeX Warning: Citation `SalehTeich2007' on page 25 undefined on input line 52.
-
-
-[25] [26] [27] [28]
-Overfull \hbox (49.63046pt too wide) detected at line 246
-[]
+]
+Overfull \hbox (1.99928pt too wide) in paragraph at lines 11--14
+\T1/ptm/m/n/12 Our pro-posed sys-tem con-sists of two iden-ti-cal single-mode w
+aveg-uides which are placed
  []
 
-[29] [30]
-Overfull \hbox (1.17017pt too wide) in paragraph at lines 306--308
-[]\T1/ptm/m/n/12 Within the non-clas-si-cal-ity^^Upurity parametriza-tion, the 
-same quan-tity $\OML/cmm/m/it/12 c[]$ \T1/ptm/m/n/12 can be ex-pressed
- []
-
-[31]
+<graphs/system_figure.png, id=771, 367.3725pt x 167.9073pt>
+File: graphs/system_figure.png Graphic file (type png)
+<use graphs/system_figure.png>
+Package pdftex.def Info: graphs/system_figure.png  used on input line 18.
+(pdftex.def)             Requested size: 227.62204pt x 104.03738pt.
+[24 <./graphs/system_figure.png>] [25] [26] [27] [28] [29]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 348.
+(hyperref)                than one, level fixed on input line 245.
 
-
-LaTeX Warning: Citation `WeedbrookEtAl2012' on page 32 undefined on input line 
-384.
-
-[32]
-Overfull \hbox (3.21263pt too wide) in paragraph at lines 444--452
-[] []\T1/ptm/b/n/12 Co-vari-ance--ma-trix rep-re-sen-ta-tion and PPT cri-te-rio
-n.[] \T1/ptm/m/n/12 In continuous-variable Gaus-
- []
-
-[33] [34] [35]) [36]
+[30] [31]) [32]
 \openout2 = `Chapter_4_Results.aux'.
 
  (Chapter_4_Results.tex
 Chapter 4.
-[37
+[33
 
 
 
 
 ]
-<graphs/A_GUASSIAN_EN.png, id=960, 570.933pt x 368.0952pt>
-File: graphs/A_GUASSIAN_EN.png Graphic file (type png)
-<use graphs/A_GUASSIAN_EN.png>
-Package pdftex.def Info: graphs/A_GUASSIAN_EN.png  used on input line 21.
-(pdftex.def)             Requested size: 416.83289pt x 268.75218pt.
- [38]
-<graphs/A_GUASSIAN_STEERING.png, id=967, 570.933pt x 368.577pt>
+<graphs/A_GUASSIAN_STEERING.png, id=890, 570.933pt x 368.577pt>
 File: graphs/A_GUASSIAN_STEERING.png Graphic file (type png)
 <use graphs/A_GUASSIAN_STEERING.png>
-Package pdftex.def Info: graphs/A_GUASSIAN_STEERING.png  used on input line 23.
+Package pdftex.def Info: graphs/A_GUASSIAN_STEERING.png  used on input line 17.
 
 (pdftex.def)             Requested size: 416.83289pt x 269.10394pt.
+<graphs/A_GUASSIAN_EN.png, id=891, 570.933pt x 368.0952pt>
+File: graphs/A_GUASSIAN_EN.png Graphic file (type png)
+<use graphs/A_GUASSIAN_EN.png>
+Package pdftex.def Info: graphs/A_GUASSIAN_EN.png  used on input line 18.
+(pdftex.def)             Requested size: 416.83289pt x 268.75218pt.
+ [34] [35 <./graphs/A_GUASSIAN_STEERING.png> <./graphs/A_GUASSIAN_EN.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 24.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 33.
+(hyperref)                removing `\tau' on input line 24.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\tau' on input line 33.
+(hyperref)                removing `math shift' on input line 24.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 33.
-
-[39 <./graphs/A_GUASSIAN_EN.png> <./graphs/A_GUASSIAN_STEERING.png>]
-<graphs/A_EN_TAU.png, id=974, 570.2103pt x 369.0588pt>
-File: graphs/A_EN_TAU.png Graphic file (type png)
-<use graphs/A_EN_TAU.png>
-Package pdftex.def Info: graphs/A_EN_TAU.png  used on input line 44.
-(pdftex.def)             Requested size: 416.83289pt x 269.79361pt.
-<graphs/A_STEERING_TAU.png, id=975, 570.2103pt x 369.0588pt>
+<graphs/A_STEERING_TAU.png, id=904, 570.2103pt x 369.0588pt>
 File: graphs/A_STEERING_TAU.png Graphic file (type png)
 <use graphs/A_STEERING_TAU.png>
-Package pdftex.def Info: graphs/A_STEERING_TAU.png  used on input line 48.
+Package pdftex.def Info: graphs/A_STEERING_TAU.png  used on input line 31.
 (pdftex.def)             Requested size: 416.83289pt x 269.79361pt.
- [40 <./graphs/A_EN_TAU.png>]
+<graphs/A_EN_TAU.png, id=905, 570.2103pt x 369.0588pt>
+File: graphs/A_EN_TAU.png Graphic file (type png)
+<use graphs/A_EN_TAU.png>
+Package pdftex.def Info: graphs/A_EN_TAU.png  used on input line 33.
+(pdftex.def)             Requested size: 416.83289pt x 269.79361pt.
+[36] [37 <./graphs/A_STEERING_TAU.png> <./graphs/A_EN_TAU.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 62.
+(hyperref)                removing `math shift' on input line 38.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 62.
+(hyperref)                removing `\mu' on input line 38.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 62.
+(hyperref)                removing `math shift' on input line 38.
 
-<graphs/MU.png, id=981, 611.4042pt x 352.1958pt>
-File: graphs/MU.png Graphic file (type png)
-<use graphs/MU.png>
-Package pdftex.def Info: graphs/MU.png  used on input line 73.
-(pdftex.def)             Requested size: 426.79134pt x 245.85825pt.
-
-Overfull \hbox (9.95845pt too wide) in paragraph at lines 73--74
- [] 
- []
-
-[41 <./graphs/A_STEERING_TAU.png>]
-<graphs/MU_STR.png, id=987, 611.1633pt x 352.1958pt>
+<graphs/MU_STR.png, id=917, 611.1633pt x 352.1958pt>
 File: graphs/MU_STR.png Graphic file (type png)
 <use graphs/MU_STR.png>
-Package pdftex.def Info: graphs/MU_STR.png  used on input line 77.
+Package pdftex.def Info: graphs/MU_STR.png  used on input line 44.
 (pdftex.def)             Requested size: 426.79134pt x 245.9496pt.
+<graphs/MU.png, id=918, 611.4042pt x 352.1958pt>
+File: graphs/MU.png Graphic file (type png)
+<use graphs/MU.png>
+Package pdftex.def Info: graphs/MU.png  used on input line 46.
+(pdftex.def)             Requested size: 426.79134pt x 245.85825pt.
 
-Overfull \hbox (9.95845pt too wide) in paragraph at lines 77--78
+Overfull \hbox (9.95845pt too wide) in paragraph at lines 44--47
  [][] 
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 86.
+Overfull \hbox (9.95845pt too wide) in paragraph at lines 44--47
+ [] 
+ []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kappa' on input line 86.
-
+[38] [39 <./graphs/MU_STR.png> <./graphs/MU.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 86.
+(hyperref)                removing `math shift' on input line 51.
 
-[42 <./graphs/MU.png> <./graphs/MU_STR.png>]
-<graphs/A_EN_KAPPA.png, id=994, 562.5015pt x 361.8318pt>
-File: graphs/A_EN_KAPPA.png Graphic file (type png)
-<use graphs/A_EN_KAPPA.png>
-Package pdftex.def Info: graphs/A_EN_KAPPA.png  used on input line 95.
-(pdftex.def)             Requested size: 398.33858pt x 256.2288pt.
-<graphs/A_STEERING_KAPPA.png, id=995, 562.5015pt x 361.8318pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\kappa' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 51.
+
+<graphs/A_STEERING_KAPPA.png, id=929, 562.5015pt x 361.8318pt>
 File: graphs/A_STEERING_KAPPA.png Graphic file (type png)
 <use graphs/A_STEERING_KAPPA.png>
-Package pdftex.def Info: graphs/A_STEERING_KAPPA.png  used on input line 99.
+Package pdftex.def Info: graphs/A_STEERING_KAPPA.png  used on input line 58.
 (pdftex.def)             Requested size: 398.33858pt x 256.2288pt.
- [43 <./graphs/A_EN_KAPPA.png>]
-<graphs/en_squeezed_non_lossy.png, id=1001, 566.5968pt x 369.2997pt>
-File: graphs/en_squeezed_non_lossy.png Graphic file (type png)
-<use graphs/en_squeezed_non_lossy.png>
-Package pdftex.def Info: graphs/en_squeezed_non_lossy.png  used on input line 1
-21.
-(pdftex.def)             Requested size: 398.33858pt x 259.6294pt.
-
-[44 <./graphs/A_STEERING_KAPPA.png>]
-<graphs/squeezed_lossless_steer.png, id=1008, 566.5968pt x 369.0588pt>
+<graphs/A_EN_KAPPA.png, id=930, 562.5015pt x 361.8318pt>
+File: graphs/A_EN_KAPPA.png Graphic file (type png)
+<use graphs/A_EN_KAPPA.png>
+Package pdftex.def Info: graphs/A_EN_KAPPA.png  used on input line 60.
+(pdftex.def)             Requested size: 398.33858pt x 256.2288pt.
+[40] [41 <./graphs/A_STEERING_KAPPA.png> <./graphs/A_EN_KAPPA.png>] [42]
+<graphs/squeezed_lossless_steer.png, id=945, 566.5968pt x 369.0588pt>
 File: graphs/squeezed_lossless_steer.png Graphic file (type png)
 <use graphs/squeezed_lossless_steer.png>
 Package pdftex.def Info: graphs/squeezed_lossless_steer.png  used on input line
- 125.
-(pdftex.def)             Requested size: 398.33858pt x 259.46004pt.
- [45 <./graphs/en_squeezed_non_lossy.png> <./graphs/squeezed_lossless_steer.png
->]
-<graphs/en_squeezed_lossy.png, id=1015, 578.16pt x 375.804pt>
-File: graphs/en_squeezed_lossy.png Graphic file (type png)
-<use graphs/en_squeezed_lossy.png>
-Package pdftex.def Info: graphs/en_squeezed_lossy.png  used on input line 141.
-(pdftex.def)             Requested size: 398.33858pt x 258.92084pt.
-<graphs/sqzd_str_loss.png, id=1016, 578.16pt x 375.804pt>
+ 75.
+(pdftex.def)             Requested size: 312.62466pt x 203.63057pt.
+<graphs/en_squeezed_non_lossy.png, id=946, 566.5968pt x 369.2997pt>
+File: graphs/en_squeezed_non_lossy.png Graphic file (type png)
+<use graphs/en_squeezed_non_lossy.png>
+Package pdftex.def Info: graphs/en_squeezed_non_lossy.png  used on input line 7
+8.
+(pdftex.def)             Requested size: 312.62466pt x 203.76347pt.
+<graphs/sqzd_str_loss.png, id=947, 578.16pt x 375.804pt>
 File: graphs/sqzd_str_loss.png Graphic file (type png)
 <use graphs/sqzd_str_loss.png>
-Package pdftex.def Info: graphs/sqzd_str_loss.png  used on input line 145.
+Package pdftex.def Info: graphs/sqzd_str_loss.png  used on input line 89.
 (pdftex.def)             Requested size: 398.33858pt x 258.92084pt.
- [46 <./graphs/en_squeezed_lossy.png>]
-[47 <./graphs/sqzd_str_loss.png>]
-<graphs/EN_STR_KT.png, id=1027, 570.6921pt x 513.117pt>
+<graphs/en_squeezed_lossy.png, id=948, 578.16pt x 375.804pt>
+File: graphs/en_squeezed_lossy.png Graphic file (type png)
+<use graphs/en_squeezed_lossy.png>
+Package pdftex.def Info: graphs/en_squeezed_lossy.png  used on input line 91.
+(pdftex.def)             Requested size: 398.33858pt x 258.92084pt.
+
+[43 <./graphs/squeezed_lossless_steer.png> <./graphs/en_squeezed_non_lossy.png>
+] [44 <./graphs/sqzd_str_loss.png> <./graphs/en_squeezed_lossy.png>]
+<graphs/EN_STR_KT.png, id=964, 570.6921pt x 513.117pt>
 File: graphs/EN_STR_KT.png Graphic file (type png)
 <use graphs/EN_STR_KT.png>
-Package pdftex.def Info: graphs/EN_STR_KT.png  used on input line 163.
+Package pdftex.def Info: graphs/EN_STR_KT.png  used on input line 103.
 (pdftex.def)             Requested size: 398.33858pt x 358.14595pt.
- [48 <./graphs/EN_STR_KT.png>]) [49] [50]
+ [45])
+[46 <./graphs/EN_STR_KT.png>] [47]
 \openout2 = `Chapter_5_Discussion.aux'.
 
-
-(Chapter_5_Discussion.tex
+ (Chapter_5_Discussion.tex
 Chapter 5.
-[51
+[48
 
 
 
 
-]) [52]
+]) [49]
 \openout2 = `Chapter_6_Conclusions.aux'.
 
- (Chapter_6_Conclusions.tex
-Chapter 6.
-[53
-
-
-
-
-] [54] [55]
-Chapter 7.
-[56
-
-] [57] [58] [59] [60]
-Overfull \hbox (9.82306pt too wide) detected at line 320
-\OML/cmm/m/it/12 c\OT1/times/bc/n/12 (\OML/cmm/m/it/12 t\OT1/times/bc/n/12 ) = 
-\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 a[]a[]\OMS/cmsy/m/n/12 i\OT1/times/bc/n/12 (
-\OML/cmm/m/it/12 t\OT1/times/bc/n/12 )\OML/cmm/m/it/12 ;  m[]\OT1/times/bc/n/12
- (\OML/cmm/m/it/12 t\OT1/times/bc/n/12 ) = \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 a
-[]a[]\OMS/cmsy/m/n/12 i\OT1/times/bc/n/12 (\OML/cmm/m/it/12 t\OT1/times/bc/n/12
- )\OML/cmm/m/it/12 ;  m[]\OT1/times/bc/n/12 (\OML/cmm/m/it/12 t\OT1/times/bc/n/
-12 ) = \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 a[]a[]\OMS/cmsy/m/n/12 i\OT1/times/bc
-/n/12 (\OML/cmm/m/it/12 t\OT1/times/bc/n/12 )\OML/cmm/m/it/12 ;  s\OT1/times/bc
-/n/12 (\OML/cmm/m/it/12 t\OT1/times/bc/n/12 ) = \OMS/cmsy/m/n/12 h\OML/cmm/m/it
-/12 a[]a[]\OMS/cmsy/m/n/12 i\OT1/times/bc/n/12 (\OML/cmm/m/it/12 t\OT1/times/bc
-/n/12 )\OML/cmm/m/it/12 :
- []
-
-) [61]
+ (Chapter_6_Conclusions.tex)
 \openout2 = `Chapter_7_References.aux'.
 
- (Chapter_7_References.tex [62
+ (Chapter_7_References.tex [50
 
 
 
 
-] [63
+
+
+
+] [51
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Serafini
 2017}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 \bibitem{Serafini2017}
-                           
-Underfull \hbox (badness 3343) in paragraph at lines 99--104
+l.50 	\bibitem{Serafini2017}
+                            
+Underfull \hbox (badness 3343) in paragraph at lines 100--105
 \T1/ptm/m/n/12 ing,'' \T1/ptm/m/it/12 Re-views of Mod-ern Physics\T1/ptm/m/n/12
  , vol. 92, no. 1, pp. 015001, 2020.
  []
 
-[64
+[52
 pdfTeX warning (ext4): destination with the same identifier (name{cite.AdessoRa
 gyLee2014}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.111 
-      ]
-Underfull \hbox (badness 1521) in paragraph at lines 133--138
+l.112 	
+       ]
+Underfull \hbox (badness 1521) in paragraph at lines 134--139
 []\T1/ptm/m/n/12 A. A. Zhahir, S. M. Mohd, M. I. M. Shuhud, B. Idrus, H. Zain-u
 d-din,
  []
 
 
-Underfull \hbox (badness 3058) in paragraph at lines 154--159
+Underfull \hbox (badness 3058) in paragraph at lines 155--160
 []\T1/ptm/m/n/12 K. M. R. Au-de-naert and M. B. Ple-nio, ``When are cor-re-la-t
 ions quan-
  []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 161--166
+Underfull \hbox (badness 1360) in paragraph at lines 162--167
 []\T1/ptm/m/n/12 A. Rai, S. Das, and G. S. Agar-wal, ``Quan-tum en-tan-gle-ment
  in cou-pled
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 161--166
+Underfull \hbox (badness 1087) in paragraph at lines 162--167
 \T1/ptm/m/n/12 lossy waveg-uides,'' \T1/ptm/m/it/12 Op-tics Ex-press\T1/ptm/m/n
 /12 , vol. 18, no. 6, pp. 6241--6254, 2010.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--173
+Underfull \hbox (badness 10000) in paragraph at lines 169--174
 []\T1/ptm/m/n/12 R. Al-icki, ``Pure De-co-her-ence in Quan-tum Sys-tems,'' \T1/
 ptm/m/it/12 Open Sys-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--173
+Underfull \hbox (badness 10000) in paragraph at lines 169--174
 \T1/ptm/m/it/12 tems & In-for-ma-tion Dy-nam-ics\T1/ptm/m/n/12 , vol. 11, no. 1
 , pp. 53--61, 2004.
  []
 
-[65]
+[53]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Zhahir20
 22}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.197 \bibitem{Zhahir2022}
-                          
-Underfull \hbox (badness 1533) in paragraph at lines 250--253
+l.198 	\bibitem{Zhahir2022}
+                           
+Underfull \hbox (badness 1533) in paragraph at lines 251--254
 []\T1/ptm/m/n/12 C. Bran-ciard, D. Ros-set, Y.-C. Liang, and N. Gisin, ``One-si
 ded device-
  []
 
-[66] [67
+[54] [55
 pdfTeX warning (ext4): destination with the same identifier (name{cite.PianiWat
 rous2015}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.312 
-      
+l.313 	
+       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Crespi20
 13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.312 
-      ]
+l.313 	
+       ]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.WallsMil
 burn}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.323 \bibitem{WallsMilburn}
-                            
+l.324 	\bibitem{WallsMilburn}
+                             
 pdfTeX warning (ext4): destination with the same identifier (name{cite.BreuerPe
 truccione2002}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.328 \bibitem{BreuerPetruccione2002}
-                                     ) [68] (MS_Thesis_Steering.aux
+l.329 	\bibitem{BreuerPetruccione2002}
+                                       [56]) [57] (MS_Thesis_Steering.aux
 (Chapter_1_Introduction.aux) (Chapter_2_Theory.aux) (Chapter_3_Model.aux)
 (Chapter_4_Results.aux) (Chapter_5_Discussion.aux) (Chapter_6_Conclusions.aux)
 (Chapter_7_References.aux))
@@ -1449,54 +1836,44 @@ L3 programming layer <2024-01-04>
  ***********
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `MS_Thesis_Steering.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MS_Thesis_Steering.out':
-(rerunfilecheck)             Before: 74A9936D1741BE541C96B48B93759BC3;17890
-(rerunfilecheck)             After:  E3D174298A46A41602D77FF506C1F3C6;17890.
+Package rerunfilecheck Info: File `MS_Thesis_Steering.out' has not changed.
+(rerunfilecheck)             Checksum: 78CC9C840E49332516AFC7E0D58241CB;13210.
  ) 
 Here is how much of TeX's memory you used:
- 25499 strings out of 474486
- 482152 string characters out of 5743283
- 1947542 words of memory out of 5000000
- 47048 multiletter control sequences out of 15000+600000
- 594578 words of font info for 95 fonts, out of 8000000 for 9000
+ 45351 strings out of 474486
+ 1041960 string characters out of 5743283
+ 1943542 words of memory out of 5000000
+ 66615 multiletter control sequences out of 15000+600000
+ 606812 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,12n,117p,2508b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
- exist, replaced by a fixed one
-
-<C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmex10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmmi12.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/quanta/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/quanta/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/quanta/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/q
-uanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
-/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy8.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/f
-onts/type1/urw/times/utmb8a.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/
-fonts/type1/urw/times/utmr8a.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX
-/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MS_Thesis_Steering.pdf (79 pages, 4973472 bytes).
+ 110i,12n,117p,2508b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmex10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/quanta/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/quanta/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/quanta/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/User
+s/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb
+><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr12.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/quanta/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/quanta/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/quanta/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/quanta/AppData
+/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/quanta/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on MS_Thesis_Steering.pdf (69 pages, 5011004 bytes).
 PDF statistics:
- 1265 PDF objects out of 1440 (max. 8388607)
- 301 named destinations out of 1000 (max. 500000)
- 663 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1158 PDF objects out of 1200 (max. 8388607)
+ 245 named destinations out of 1000 (max. 500000)
+ 520 words of extra memory for PDF output out of 10000 (max. 10000000)
 
