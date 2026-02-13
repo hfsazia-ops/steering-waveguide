@@ -46,11 +46,11 @@
 \contentsline {section}{\numberline {3.9}Relation Between Entanglement and Steering}{31}{section.3.9}%
 \contentsline {chapter}{\numberline {4}Results and Discussion}{33}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Time Evolution of Gaussian Quantum Steering and Entanglement}{34}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Effect of Nonclassicality $\tau $}{36}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Effect of Purity $\mu $}{38}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Effect of Loss Parameter $\kappa $}{40}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Gaussian Quantum Steering and Entanglement in Squeezed States}{42}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Effect of coupling strength on Quantum Steering and Entanglement}{45}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Summary}{46}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Conclusion}{48}{chapter.5}%
-\contentsline {chapter}{References}{50}{chapter*.15}%
+\contentsline {section}{\numberline {4.2}Effect of Nonclassicality $\tau $}{34}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Effect of Purity $\mu $}{37}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Effect of Loss Parameter $\kappa $}{39}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Gaussian Quantum Steering and Entanglement in Squeezed States}{41}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Effect of coupling strength on Quantum Steering and Entanglement}{44}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Summary}{45}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Conclusion}{47}{chapter.5}%
+\contentsline {chapter}{References}{49}{chapter*.15}%
