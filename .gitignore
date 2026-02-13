@@ -1,0 +1,35 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.lof
+*.lot
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.idx
+*.ilg
+*.ind
+*.nav
+*.snm
+*.vrb
+*.dvi
+*.tmp.*
+
+# Intermediate/test files
+Chap2_only.*
+MS_Thesis_Steering_en_quantification.pdf
+
+# Claude internal files
+.claude/
+
+# Summary/note files (not source)
+steering/
+THESIS_STRUCTURE_SUMMARY.md
+TITLE_UPDATE_SUMMARY.txt
+
+# Suggestion images
+research-theises-papep-*.jpeg
