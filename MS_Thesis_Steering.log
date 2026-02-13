@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.30)  13 FEB 2026 15:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.30)  14 FEB 2026 00:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1291,12 +1291,8 @@ Package caption Info: New subtype `subfigure' on input line 238.
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count383
 ) (MS_Thesis_Steering.aux (Chapter_1_Introduction.aux) (Chapter_2_Theory.aux)
-(Chapter_3_Model.aux) (Chapter_4_Results.aux
-
-LaTeX Warning: Label `fig:4.3' multiply defined.
-
-) (Chapter_5_Discussion.aux) (Chapter_6_Conclusions.aux)
-(Chapter_7_References.aux
+(Chapter_3_Model.aux) (Chapter_4_Results.aux) (Chapter_5_Discussion.aux)
+(Chapter_6_Conclusions.aux) (Chapter_7_References.aux
 
 LaTeX Warning: Label `Serafini2017' multiply defined.
 
@@ -1447,11 +1443,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.185 	$\sigma$ \> Covariance Matrix \\
+l.181 	$\sigma$ \> Covariance Matrix \\
                                         [1
 
-] [2] (MS_Thesis_Steering.toc
+] [2]
+
+LaTeX Warning: Hyper reference `fig:3.1' on page iii undefined on input line 21
+4.
+
 [3
+
+] (MS_Thesis_Steering.toc [4
 
 ]
 Overfull \hbox (2.6493pt too wide) in paragraph at lines 20--20
@@ -1459,27 +1461,27 @@ Overfull \hbox (2.6493pt too wide) in paragraph at lines 20--20
 cuits/Photonics[][] []  
  []
 
-[4])
+[5])
 \tf@toc=\write5
 \openout5 = `MS_Thesis_Steering.toc'.
 
- [5] (MS_Thesis_Steering.lof)
+ [6] (MS_Thesis_Steering.lof [7
+
+])
 \tf@lof=\write6
 \openout6 = `MS_Thesis_Steering.lof'.
-
- [6
-
-] [7] (MS_Thesis_Steering.lot)
-\tf@lot=\write7
-\openout7 = `MS_Thesis_Steering.lot'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.viii}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.236 \newpage
-               [8
+l.242 \newpage
+               [8] (MS_Thesis_Steering.lot)
+\tf@lot=\write7
+\openout7 = `MS_Thesis_Steering.lot'.
+
+ [9
 
 ]
 \openout2 = `Chapter_1_Introduction.aux'.
@@ -1517,25 +1519,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1.
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.135 \end{equation}
-                    ] [11] [12]
-
-LaTeX Warning: Citation `Ihn2020' on page 13 undefined on input line 264.
-
-
-LaTeX Warning: Citation `Marcuse1974' on page 13 undefined on input line 267.
-
-
-LaTeX Warning: Citation `Ihn2020' on page 13 undefined on input line 267.
-
-[13]
+                    ] [11] [12] [13]
 Overfull \hbox (33.95496pt too wide) in paragraph at lines 272--272
 |[]\T1/ptm/b/n/14.4 Relevance Of Op-ti-cal Waveg-uides For Quan-tum Cir-cuits/P
 hotonics| 
  []
 
 [14] [15]
-Overfull \hbox (3.6375pt too wide) in paragraph at lines 308--308
-|[]\T1/ptm/b/n/17.28 Quantum En-tan-gle-ment In Con-tin-ious Vari-able Sys-
+Overfull \hbox (8.4414pt too wide) in paragraph at lines 308--308
+|[]\T1/ptm/b/n/17.28 Quantum En-tan-gle-ment In Con-tin-u-ous Vari-able Sys-
  []
 
 [16]
@@ -1567,17 +1559,17 @@ Overfull \hbox (1.99928pt too wide) in paragraph at lines 11--14
 aveg-uides which are placed
  []
 
-<graphs/system_figure.png, id=771, 367.3725pt x 167.9073pt>
+<graphs/system_figure.png, id=793, 367.3725pt x 167.9073pt>
 File: graphs/system_figure.png Graphic file (type png)
 <use graphs/system_figure.png>
-Package pdftex.def Info: graphs/system_figure.png  used on input line 18.
+Package pdftex.def Info: graphs/system_figure.png  used on input line 17.
 (pdftex.def)             Requested size: 227.62204pt x 104.03738pt.
-[24 <./graphs/system_figure.png>] [25] [26] [27] [28] [29]
+[24 <./graphs/system_figure.png>] [25] [26] [27] [28]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 245.
+(hyperref)                than one, level fixed on input line 241.
 
-[30] [31]) [32]
+[29] [30] [31]) [32]
 \openout2 = `Chapter_4_Results.aux'.
 
  (Chapter_4_Results.tex
@@ -1588,13 +1580,13 @@ Chapter 4.
 
 
 ]
-<graphs/A_GUASSIAN_STEERING.png, id=890, 570.933pt x 368.577pt>
+<graphs/A_GUASSIAN_STEERING.png, id=912, 570.933pt x 368.577pt>
 File: graphs/A_GUASSIAN_STEERING.png Graphic file (type png)
 <use graphs/A_GUASSIAN_STEERING.png>
 Package pdftex.def Info: graphs/A_GUASSIAN_STEERING.png  used on input line 19.
 
 (pdftex.def)             Requested size: 200.078pt x 129.16135pt.
-<graphs/A_GUASSIAN_EN.png, id=891, 570.933pt x 368.0952pt>
+<graphs/A_GUASSIAN_EN.png, id=913, 570.933pt x 368.0952pt>
 File: graphs/A_GUASSIAN_EN.png Graphic file (type png)
 <use graphs/A_GUASSIAN_EN.png>
 Package pdftex.def Info: graphs/A_GUASSIAN_EN.png  used on input line 24.
@@ -1612,122 +1604,111 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 30.
 
-<graphs/A_STEERING_TAU.png, id=892, 570.2103pt x 369.0588pt>
+<graphs/A_STEERING_TAU.png, id=914, 570.2103pt x 369.0588pt>
 File: graphs/A_STEERING_TAU.png Graphic file (type png)
 <use graphs/A_STEERING_TAU.png>
-Package pdftex.def Info: graphs/A_STEERING_TAU.png  used on input line 37.
-(pdftex.def)             Requested size: 416.83289pt x 269.79361pt.
-<graphs/A_EN_TAU.png, id=893, 570.2103pt x 369.0588pt>
+Package pdftex.def Info: graphs/A_STEERING_TAU.png  used on input line 39.
+(pdftex.def)             Requested size: 333.46758pt x 215.83376pt.
+<graphs/A_EN_TAU.png, id=915, 570.2103pt x 369.0588pt>
 File: graphs/A_EN_TAU.png Graphic file (type png)
 <use graphs/A_EN_TAU.png>
-Package pdftex.def Info: graphs/A_EN_TAU.png  used on input line 39.
-(pdftex.def)             Requested size: 416.83289pt x 269.79361pt.
-[34 <./graphs/A_GUASSIAN_STEERING.png> <./graphs/A_GUASSIAN_EN.png>] [35]
-[36 <./graphs/A_STEERING_TAU.png> <./graphs/A_EN_TAU.png>]
+Package pdftex.def Info: graphs/A_EN_TAU.png  used on input line 44.
+(pdftex.def)             Requested size: 333.46758pt x 215.83376pt.
+[34 <./graphs/A_GUASSIAN_STEERING.png> <./graphs/A_GUASSIAN_EN.png>] [35 <./gra
+phs/A_STEERING_TAU.png> <./graphs/A_EN_TAU.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 44.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 44.
+(hyperref)                removing `math shift' on input line 50.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 44.
+(hyperref)                removing `\mu' on input line 50.
 
-<graphs/MU_STR.png, id=912, 611.1633pt x 352.1958pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 50.
+
+<graphs/MU_STR.png, id=930, 611.1633pt x 352.1958pt>
 File: graphs/MU_STR.png Graphic file (type png)
 <use graphs/MU_STR.png>
-Package pdftex.def Info: graphs/MU_STR.png  used on input line 50.
-(pdftex.def)             Requested size: 426.79134pt x 245.9496pt.
-<graphs/MU.png, id=913, 611.4042pt x 352.1958pt>
+Package pdftex.def Info: graphs/MU_STR.png  used on input line 58.
+(pdftex.def)             Requested size: 333.46758pt x 192.16592pt.
+<graphs/MU.png, id=931, 611.4042pt x 352.1958pt>
 File: graphs/MU.png Graphic file (type png)
 <use graphs/MU.png>
-Package pdftex.def Info: graphs/MU.png  used on input line 52.
-(pdftex.def)             Requested size: 426.79134pt x 245.85825pt.
-
-Overfull \hbox (9.95845pt too wide) in paragraph at lines 50--53
- [][] 
- []
-
-
-Overfull \hbox (9.95845pt too wide) in paragraph at lines 50--53
- [] 
- []
-
-[37] [38 <./graphs/MU_STR.png> <./graphs/MU.png>]
+Package pdftex.def Info: graphs/MU.png  used on input line 63.
+(pdftex.def)             Requested size: 333.46758pt x 192.09607pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
+(hyperref)                removing `math shift' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kappa' on input line 57.
+(hyperref)                removing `\kappa' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
+(hyperref)                removing `math shift' on input line 69.
 
-<graphs/A_STEERING_KAPPA.png, id=925, 562.5015pt x 361.8318pt>
+<graphs/A_STEERING_KAPPA.png, id=932, 562.5015pt x 361.8318pt>
 File: graphs/A_STEERING_KAPPA.png Graphic file (type png)
 <use graphs/A_STEERING_KAPPA.png>
-Package pdftex.def Info: graphs/A_STEERING_KAPPA.png  used on input line 64.
-(pdftex.def)             Requested size: 398.33858pt x 256.2288pt.
-<graphs/A_EN_KAPPA.png, id=926, 562.5015pt x 361.8318pt>
+Package pdftex.def Info: graphs/A_STEERING_KAPPA.png  used on input line 77.
+(pdftex.def)             Requested size: 291.78174pt x 187.68985pt.
+<graphs/A_EN_KAPPA.png, id=933, 562.5015pt x 361.8318pt>
 File: graphs/A_EN_KAPPA.png Graphic file (type png)
 <use graphs/A_EN_KAPPA.png>
-Package pdftex.def Info: graphs/A_EN_KAPPA.png  used on input line 66.
-(pdftex.def)             Requested size: 398.33858pt x 256.2288pt.
-[39] [40 <./graphs/A_STEERING_KAPPA.png> <./graphs/A_EN_KAPPA.png>] [41]
-<graphs/squeezed_lossless_steer.png, id=941, 566.5968pt x 369.0588pt>
+Package pdftex.def Info: graphs/A_EN_KAPPA.png  used on input line 82.
+(pdftex.def)             Requested size: 291.78174pt x 187.68985pt.
+[36 <./graphs/MU_STR.png> <./graphs/MU.png>] [37 <./graphs/A_STEERING_KAPPA.png
+> <./graphs/A_EN_KAPPA.png>]
+<graphs/squeezed_lossless_steer.png, id=947, 566.5968pt x 369.0588pt>
 File: graphs/squeezed_lossless_steer.png Graphic file (type png)
 <use graphs/squeezed_lossless_steer.png>
 Package pdftex.def Info: graphs/squeezed_lossless_steer.png  used on input line
- 81.
-(pdftex.def)             Requested size: 312.62466pt x 203.63057pt.
-<graphs/en_squeezed_non_lossy.png, id=942, 566.5968pt x 369.2997pt>
+ 99.
+(pdftex.def)             Requested size: 200.078pt x 130.3213pt.
+<graphs/en_squeezed_non_lossy.png, id=948, 566.5968pt x 369.2997pt>
 File: graphs/en_squeezed_non_lossy.png Graphic file (type png)
 <use graphs/en_squeezed_non_lossy.png>
-Package pdftex.def Info: graphs/en_squeezed_non_lossy.png  used on input line 8
-4.
-(pdftex.def)             Requested size: 312.62466pt x 203.76347pt.
-<graphs/sqzd_str_loss.png, id=943, 578.16pt x 375.804pt>
+Package pdftex.def Info: graphs/en_squeezed_non_lossy.png  used on input line 1
+04.
+(pdftex.def)             Requested size: 200.078pt x 130.40637pt.
+<graphs/sqzd_str_loss.png, id=949, 578.16pt x 375.804pt>
 File: graphs/sqzd_str_loss.png Graphic file (type png)
 <use graphs/sqzd_str_loss.png>
-Package pdftex.def Info: graphs/sqzd_str_loss.png  used on input line 95.
-(pdftex.def)             Requested size: 398.33858pt x 258.92084pt.
-<graphs/en_squeezed_lossy.png, id=944, 578.16pt x 375.804pt>
+Package pdftex.def Info: graphs/sqzd_str_loss.png  used on input line 117.
+(pdftex.def)             Requested size: 375.14705pt x 243.84537pt.
+<graphs/en_squeezed_lossy.png, id=950, 578.16pt x 375.804pt>
 File: graphs/en_squeezed_lossy.png Graphic file (type png)
 <use graphs/en_squeezed_lossy.png>
-Package pdftex.def Info: graphs/en_squeezed_lossy.png  used on input line 97.
-(pdftex.def)             Requested size: 398.33858pt x 258.92084pt.
-
-[42 <./graphs/squeezed_lossless_steer.png> <./graphs/en_squeezed_non_lossy.png>
-] [43 <./graphs/sqzd_str_loss.png> <./graphs/en_squeezed_lossy.png>]
-<graphs/EN_STR_KT.png, id=960, 570.6921pt x 513.117pt>
+Package pdftex.def Info: graphs/en_squeezed_lossy.png  used on input line 122.
+(pdftex.def)             Requested size: 375.14705pt x 243.84537pt.
+ [38 <./graphs/squeezed_lossless_steer.png> <./graphs/en_squeezed_non_lossy.png
+>] [39 <./graphs/sqzd_str_loss.png> <./graphs/en_squeezed_lossy.png>]
+<graphs/EN_STR_KT.png, id=963, 570.6921pt x 513.117pt>
 File: graphs/EN_STR_KT.png Graphic file (type png)
 <use graphs/EN_STR_KT.png>
-Package pdftex.def Info: graphs/EN_STR_KT.png  used on input line 109.
-(pdftex.def)             Requested size: 398.33858pt x 358.14595pt.
- [44])
-[45 <./graphs/EN_STR_KT.png>] [46]
+Package pdftex.def Info: graphs/EN_STR_KT.png  used on input line 135.
+(pdftex.def)             Requested size: 333.46758pt x 299.82382pt.
+) [40 <./graphs/EN_STR_KT.png>] [41] [42]
 \openout2 = `Chapter_5_Discussion.aux'.
 
- (Chapter_5_Discussion.tex
+
+(Chapter_5_Discussion.tex
 Chapter 5.
-[47
+[43
 
 
 
 
-]) [48]
+]) [44]
 \openout2 = `Chapter_6_Conclusions.aux'.
 
  (Chapter_6_Conclusions.tex)
 \openout2 = `Chapter_7_References.aux'.
 
- (Chapter_7_References.tex [49
+ (Chapter_7_References.tex [45
 
 
 
@@ -1735,7 +1716,7 @@ Chapter 5.
 
 
 
-] [50
+] [46
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Serafini
@@ -1749,7 +1730,7 @@ Underfull \hbox (badness 3343) in paragraph at lines 100--105
  , vol. 92, no. 1, pp. 015001, 2020.
  []
 
-[51
+[47
 pdfTeX warning (ext4): destination with the same identifier (name{cite.AdessoRa
 gyLee2014}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1791,7 +1772,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--174
 , pp. 53--61, 2004.
  []
 
-[52]
+[48]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Zhahir20
 22}) has been already used, duplicate ignored
 <to be read again> 
@@ -1803,7 +1784,7 @@ Underfull \hbox (badness 1533) in paragraph at lines 251--254
 ded device-
  []
 
-[53] [54
+[49] [50
 pdfTeX warning (ext4): destination with the same identifier (name{cite.PianiWat
 rous2015}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1827,7 +1808,7 @@ truccione2002}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.329 	\bibitem{BreuerPetruccione2002}
-                                       [55]) [56] (MS_Thesis_Steering.aux
+                                       [51]) [52] (MS_Thesis_Steering.aux
 (Chapter_1_Introduction.aux) (Chapter_2_Theory.aux) (Chapter_3_Model.aux)
 (Chapter_4_Results.aux) (Chapter_5_Discussion.aux) (Chapter_6_Conclusions.aux)
 (Chapter_7_References.aux))
@@ -1843,16 +1824,16 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `MS_Thesis_Steering.out' has not changed.
-(rerunfilecheck)             Checksum: 78CC9C840E49332516AFC7E0D58241CB;13210.
+(rerunfilecheck)             Checksum: 7D28AF8DE63C92DA5B821612C5F1C5FA;13210.
  ) 
 Here is how much of TeX's memory you used:
- 45352 strings out of 474486
- 1042013 string characters out of 5743283
+ 45355 strings out of 474486
+ 1042055 string characters out of 5743283
  1943542 words of memory out of 5000000
- 66617 multiletter control sequences out of 15000+600000
- 606812 words of font info for 110 fonts, out of 8000000 for 9000
+ 66621 multiletter control sequences out of 15000+600000
+ 604044 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,12n,117p,2508b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 110i,12n,117p,2508b,621s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbx12.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmex10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/fonts/type
@@ -1869,12 +1850,11 @@ blic/amsfonts/cm/cmsy10.pfb><C:/Users/quanta/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/quanta/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/quanta/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/quanta/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/quanta/AppData
-/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/quanta/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MS_Thesis_Steering.pdf (68 pages, 5010329 bytes).
+ocal/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/quanta/AppData/
+Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on MS_Thesis_Steering.pdf (65 pages, 5003751 bytes).
 PDF statistics:
- 1154 PDF objects out of 1200 (max. 8388607)
- 244 named destinations out of 1000 (max. 500000)
+ 1153 PDF objects out of 1200 (max. 8388607)
+ 245 named destinations out of 1000 (max. 500000)
  520 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,20 +6,20 @@
 
 \label{chp2}
 % ============================= SECTION 2.1: INTRODUCTION =============================
-This chapter gives a  review of the theoretical background of quantum correlations in integrated photonic circuits. It begins with a review of continuous-variable quantum states, particularly of Gaussian states, the properties of which are fully characterized by a covariance matrix, extracted out of the field quadratures. This is in turn followed by a discussion of the physical platform of optical waveguides, how the light is localized within the guiding medium and interaction between adjacent modes through evanescent interaction, provide ordinary optical attenuation ($\alpha$) couples the system to the vacuum and causes the system to decay ($\Gamma$), making it hard to preserve quantum information. The chapter also summarizes two important quantum correlations investigated in this work, that is, Gaussian quantum steering, denoted by ($\mathcal{S}$), and quantum entanglement, characterized by the logarithmic negativity $E_N$.All the above factors together are the conceptual framework that are used in the dynamical development of these resources in coupled waveguide architechtures.
+This chapter gives a  review of the theoretical background of quantum correlations in integrated photonic circuits. It begins with a review of continuous-variable quantum states, particularly of Gaussian states, the properties of which are fully characterized by a covariance matrix, extracted out of the field quadrature. This is in turn followed by a discussion of the physical platform of optical waveguides, how the light is localized within the guiding medium and interaction between adjacent modes through evanescent interaction, provide ordinary optical attenuation ($\alpha$) couples the system to the vacuum and causes the system to decay ($\Gamma$), making it hard to preserve quantum information. The chapter also summarizes two important quantum correlations investigated in this work, that is, Gaussian quantum steering, denoted by ($\mathcal{S}$), and quantum entanglement, characterized by the logarithmic negativity $E_N$.All the above factors together are the conceptual framework that are used in the dynamical development of these resources in coupled waveguide architectures.
 This chapter ends with the discussion of the vital uses of entanglement, steering, and waveguides.
  
 % ============================= SECTION 2.2: LITERATURE REVIEW =============================
 \section{Quantum States Of Light}
 Quantum states of light represent the quantized description of the electromagnetic field, where the field is treated as a bosonic system governed by quantum mechanics. These states are typically expressed using state vectors or density matrices~\cite{WallsMilburn}.
 These states, unlike classical light, can have nonclassical characteristics, including squeezing, entanglement and quantum correlations, which are of paramount importance to Continuous variable quantum information and quantum technologies~\cite{Weedbrook2012}. Quantum states of light are classified into pure and mixed states~\cite{WallsMilburn,Weedbrook2012}.
-In terms of information encoding and processing quantum states of light can either be modeled in a discrete variable model, in terms of photon-number observables, or in a continuous variable model, where information is encoded in field quadratures with continuous spectra~\cite{BraunsteinVanLoock2005,Weedbrook2012}.
+In terms of information encoding and processing quantum states of light can either be modeled in a discrete variable model, in terms of photon-number observable, or in a continuous variable model, where information is encoded in field quadrature with continuous spectra~\cite{BraunsteinVanLoock2005,Weedbrook2012}.
 \subsection{Continuous Variable States}
-In quantum mechanics, a continuous variable state is a quantum state where the physical observables, i.e, momentum and position vary continiously unlike discrete variable state where observables can take only discrete values. These system are illustrated with in an infinite-dimensional Hilbert space~\cite{BraunsteinVanLoock2005}. In these system the principal variables are the quadrature operators which obey specific commutation relations that form the foundation of the system's quantum structure~\cite{Serafini2017}.
-Continious variable quantum states are classified into two categories: Gaussian and non-Guassian states~\cite{AdessoRagyLee2014}.
+In quantum mechanics, a continuous variable state is a quantum state where the physical observable, i.e, momentum and position vary continuously unlike discrete variable state where observable can take only discrete values. These system are illustrated with in an infinite-dimensional Hilbert space~\cite{BraunsteinVanLoock2005}. In these system the principal variables are the quadrature operators which obey specific commutation relations that form the foundation of the system's quantum structure~\cite{Serafini2017}.
+Continuous variable quantum states are classified into two categories: Gaussian and non-Gaussian states~\cite{AdessoRagyLee2014}.
 
 \subsection{Gaussian States}
-In a Continious variable framework, a Gaussian state is a special kind of quantum state whose Fourier representation has a Guassian form in phase space. These states are completely described by their first and second moments~\cite{Weedbrook2012}.
+In a Continuous variable framework, a Gaussian state is a special kind of quantum state whose Fourier representation has a Gaussian form in phase space. These states are completely described by their first and second moments~\cite{Weedbrook2012}.
 The quadrature operators can be defined in terms of bosonic operators~\cite{WallsMilburn}.
 
 \begin{equation}
@@ -110,7 +110,7 @@ The corresponding single-mode squeezed vacuum state is then given by
 	|\zeta\rangle = \hat{S}(\zeta)\,|0\rangle .
 \end{equation}
 
-The Heisenberg picture represents the squeezing transformation that actually elongates and rotates the quadrature axes. In the case of rotated quadratures that are duly rotated $Y_1$ and $Y_2$, the variances become
+The Heisenberg picture represents the squeezing transformation that actually elongates and rotates the quadrature axes. In the case of rotated quadrature that are duly rotated $Y_1$ and $Y_2$, the variances become
 \[
 V(Y_1)=\tfrac{1}{2}e^{-2r}, \qquad
 V(Y_2)=\tfrac{1}{2}e^{2r},
@@ -160,7 +160,7 @@ analyzed in the covariance matrix framework~\cite{AdessoRagyLee2014}.
 
 \subsubsection{Connection to covariance matrices}
 Whereas the bosonic theory characterizes squeezing through transformations of operators.
-the transformation interms of bosonic operatorst is entirely identical to the quadrature covariance matrix description utilized to measure steering and Gaussian entanglement~\cite{Weedbrook2012,AdessoRagyLee2014}.
+the transformation interms of bosonic operators is entirely identical to the quadrature covariance matrix description utilized to measure steering and Gaussian entanglement~\cite{Weedbrook2012,AdessoRagyLee2014}.
 Realistically, it is common to solve the dynamics in the bosonic basis to get second moments,
 and then project these moments onto the quadrature covariance matrix which can be easily manipulated and controlled to engage and control in further analysis~\cite{Weedbrook2012}.
 
@@ -215,7 +215,7 @@ can be written in block form as~\cite{AdessoRagyLee2014,Weedbrook2012}
 
 
 Here, the diagonal blocks, i.e., \ $\mathbf{M}$ and $\mathbf{N}$ are $2\times2$ real symmetric
-matrices describing only local noise and squeezing of each mode, resepectively, whereas the
+matrices describing only local noise and squeezing of each mode, respectively, whereas the
 off-diagonal blocks $\mathbf{L}$ and $\mathbf{L}^{T}$ are $2\times2$ real matrices
 containing all cross-quadrature moments and therefore fully encode the correlations
 between the two modes~\cite{AdessoRagyLee2014}.
@@ -230,7 +230,7 @@ The covariance matrix in its standard form can be written as
 	\end{pmatrix}.
 	\label{eq:CM_standard_form}
 \end{equation}
-The variances $a$ and $b$, and the covariances $c_{1}$ and $c_{2}$ can be determined using
+The variances $a$ and $b$, and the covariance $c_{1}$ and $c_{2}$ can be determined using
 the four local symplectic invariants. For example, the determinant of the covariance
 matrix is $MN = (ab - c_{1}^{2})(ab - c_{2}^{2})$
  while
@@ -264,7 +264,7 @@ form~\cite{AdessoRagyLee2014,Weedbrook2012}
 An optical waveguide is a structure that guides light along a desired path. It consists of thin, high-refractive-index core layer positioned between low-refractive-index cladding material and the light is trapped within the core through total internal reflection\cite{Ihn2020}. Photons passes through these waveguides in particular patterns known as modes~\cite{Fu2002}.
 
 \subsection{Evanescent Overlap/Coupled Mode Theory}
-When light passes through a waveguide system, the electric field is mostly trapped in the high-refractive-index core. Yet, a part of the field can penetrate into the surrounding lower-index cladding and this decaying field is known as the evanescent field~\cite{Marcuse1974,Ihn2020}. If we place another waveguide in this region, i.e., Within the evanescent field, Which typically extends less than 1-2 wavelenghts, light can tunnel between these two waveguides. We call this transfer of energy through coupling of evanescent feild as evanescent coupling. The coupling strenght between the waveguides depends on the separtion distance between the waveguides, refractive index and mode~\cite{Yariv1973}.
+When light passes through a waveguide system, the electric field is mostly trapped in the high-refractive-index core. Yet, a part of the field can penetrate into the surrounding lower-index cladding and this decaying field is known as the evanescent field~\cite{Marcuse1974,Ihn2020}. If we place another waveguide in this region, i.e., Within the evanescent field, Which typically extends less than 1-2 wavelength, light can tunnel between these two waveguides. We call this transfer of energy through coupling of evanescent feild as evanescent coupling. The coupling strenght between the waveguides depends on the separtion distance between the waveguides, refractive index and mode~\cite{Yariv1973}.
 
 \subsection{Loss and Decoherence in Real Waveguide Systems}
 In real optical waveguide system, the performance is undermined by two processes: classical optical power loss (attenuation) and quantum information loss (decoherence). Exponential decay of optical intensity as light propagates is called attenuation while decoherence is the process in which a quantum system loses its correlation properties i,e superposition or entanglement due to interaction with the environment. This results in losing the necessary phase relationship and limiting visibility of interference~\cite{BourassinBouchetEtAl2020,BreuerPetruccione2002,Yariv1973}.
@@ -305,7 +305,7 @@ where $H_{2}(\sigma)$ denotes the Rényi-2 entropy~\cite{Kogias2015}.
 
 % =======================================================
 
-\section{Quantum Entanglement In Continious Variable Systems}
+\section{Quantum Entanglement In Continuous Variable Systems}
 Entanglement is a fundamental property of a quantum mechanics, and it is a central resource for most quantum information processing protocols and emerging quantum technologies~\cite{Masada2016}. Originating from conceptual structures identified by Einstein, Podolsky, and Rosen (EPR) and Schrödinger, entanglement describes nonlocal correlations within composite quantum systems that cannot be replicated by classical systems~\cite{Horodecki2009}. It is a physical fact that two or more particles show correlations which cannot be explained classically, and these particles will be correlated no matter how far they are from each other~\cite{NielsenChuang2000,Horodecki2009}. Historically considered  a "spooky" phenomenon, entanglement is now an important part of engineering essential quantum protocols, such as, quantum computing and quantum teleportation in CV systems associated with infinite dimensional Hilbert spaces, provide the advantage of allowing deterministic and unconditional quantum operations of which is often a shortcoming in DV schemes due to relying on an imperfect single-photon generation and detection~\cite{Masada2016}. Within the CV framework, the family of Gaussian states is mostly used for the generation and manipulation of entangled states~\cite{Adesso2007}.
 The quantitative way to determine the intensity or the extent of entanglement within a quantum system is termed as entanglement quantification. Quantification is needed and important because the measured degree of entanglement directly influences the performance of quantum information tasks~\cite{NielsenChuang2000,Horodecki2009,Zhahir2022}.
 
