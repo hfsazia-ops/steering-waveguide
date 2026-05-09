@@ -2,32 +2,27 @@
 %                       Chapter 3: Physical Model and Theoretical Formulation
 %=============================================================================================
 In this chapter, we discuss physical model of our system and construct the theoretical framework which is required to study its quantum dynamics.
-\chapter{Model System and Theoretical Formulations}
+\chapter{Dynamics of the Model System}
 \label{chp3}
 \newpage
 
 %=================================================
 \section{The Model System}
-Our proposed system consists of two identical single-mode waveguides which are placed parallel to each other in a close distance such that their evanscent feild overlap and enables coupling between them. The optical modes in each waveguide are represented by creation and anhilation operators $a_1$ and $a_2$, where $a_1$ represents optical mode in the first waveguide and $a_2$ represents optical mode in the second waveguide. Each waveguide mode act as  a bosonic harmonic oscillator.
+Our proposed system consists of two identical single-mode waveguides which are placed parallel to each other in a close distance, as shown in Fig.~\ref{fig:1}, such that their evanescent field overlap and enables coupling between them. The optical modes in each waveguide are represented by creation and annihilation operators $a_1$ and $a_2$, where $a_1$ represents optical mode in the first waveguide and $a_2$ represents optical mode in the second waveguide. Each waveguide mode acts as a bosonic harmonic oscillator.
 It is to be noted that the two waveguides are assumed to be
 identical and at the same resonance frequency and with the same loss rate, which is a realistic assumption.
-
-\vspace{2cm}
-
-\begin{center}
+\begin{figure}[H]
+	\centering
 	\includegraphics[width=8cm]{graphs/system_figure.png}
-\end{center}
-
-\textbf{Fig1} shows schematic diagram of a coupled waveguide system
-
-\vspace{2cm}
-
+	\caption[Schematic diagram of a coupled waveguide system]{Schematic diagram of a coupled waveguide system.}
+	\label{fig:1}
+\end{figure}
 %=================================================
 \section{Hamiltonian of the Coupled Waveguide System}
 %=================================================
 In this section, we discuss our system Hamiltonian, and coupling between waveguide modes.
 \subsection{System Hamiltonian}
-The hamiltonian for our system is given by
+The Hamiltonian for our system is given by
 \begin{equation}
 	H = \hbar \omega \left(a_1^{\dagger} a_1 + a_2^{\dagger} a_2\right)
 	+ \hbar J \left(a_1^{\dagger} a_2 + a_2^{\dagger} a_1\right).
@@ -36,28 +31,28 @@ The hamiltonian for our system is given by
 Here, $a_1$ and $a_2$ are the bosonic field operators for the optical modes in each waveguide, satisfying the commutation relations
 $[a_1, a_1^{\dagger}] = 1$ and $[a_2, a_2^{\dagger}] = 1$.
 
-The symbol $\omega$ is angular frequency of the each waveguide mode and the parameter $J$ in the second part of the Hamiltonian represents the coupling strength between the two waveguides and its value depends on the seperation distance between the waveguides.
+The symbol $\omega$ is angular frequency of each waveguide mode and the parameter $J$ in the second part of the Hamiltonian represents the coupling strength between the two waveguides and its value depends on the separation distance between the waveguides.
 
-The Hamiltonian consists of two main parts, that is, the free energy part and the coupling part. The first part, $\hbar \omega \left(a_1^{\dagger} a_1 + a_2^{\dagger} a_2\right)$, correspond to the free energy of the individual waveguide modes.  The second part, account for the evanescent coupling between the two waveguide modes,
-$\hbar J \left(a_1^{\dagger} a_2 + a_2^{\dagger} a_1\right)$, accounts for the evanscent coupling between the two waveguide modes.
+The Hamiltonian consists of two main parts, that is, the free energy part and the coupling part. The first part, $\hbar \omega \left(a_1^{\dagger} a_1 + a_2^{\dagger} a_2\right)$, corresponds to the free energy of the individual waveguide modes.  The second part, account for the evanescent coupling between the two waveguide modes,
+$\hbar J \left(a_1^{\dagger} a_2 + a_2^{\dagger} a_1\right)$, accounts for the evanescent coupling between the two waveguide modes.
 
 \subsection{Physical Interpretation of the Coupling}
 
-The evanescent interaction between the two parallel optical waveguides is represented by the coupling term in the system Hamiltonian. When the waveguides are sufficiently close to each other, the electromagnetic field of the guided mode extends beyond the core of the waveguide and overlaps with the field of the neighboring waveguide.  This overlap allows the coherent exchange of photons between the two modes and is called as evascent overlapping~\cite{Yariv1973,SalehTeich2007}.
+The evanescent interaction between the two parallel optical waveguides is represented by the coupling term in the system Hamiltonian. When the waveguides are sufficiently close to each other, the electromagnetic field of the guided mode extends beyond the core of the waveguide and overlaps with the field of the neighboring waveguide.  This overlap allows the coherent exchange of photons between the two modes and is called as evanescent overlapping~\cite{Yariv1973,SalehTeich2007}.
 
-The strength of the coupling between the waveguides is defined by the parameter J which defines the speed with which energy moves between the waveguides. The higher the value of $J$ the higher the mode overlap and higher the speed of oscillatory exchange of photons. When the two waveguides are far away from eachother such that the coupling parameter is zero, they are entirely independent and are considered uncoupled. Physically, such an interaction is similar to a beam splitter, where the photons coherently and simultaneously hopped between the two modes without loss in ideal case~\cite{Yariv1973,Rai2010,Politi2008}.
+The strength of the coupling between the waveguides is defined by the parameter J which defines the speed with which energy moves between the waveguides. The higher the value of $J$ the higher the mode overlap and higher the speed of oscillatory exchange of photons. When the two waveguides are far away from each other such that the coupling parameter is zero, they are entirely independent and are considered uncoupled. Physically, such an interaction is similar to a beam splitter, where the photons coherently and simultaneously hopped between the two modes without loss in ideal case~\cite{Yariv1973,Rai2010,Politi2008}.
 
-Without the dissipation, the coherent exchange between the two waveguides results in a periodic oscillation of photon betwenen the two waveguides. In case of losses, such oscillations are slowly damped, although the coupling term still plays the role of creating and maintaining quantum correlations. The coupling is therefore the core of creation maintenance of quantum interactions in integrated photonic systems~\cite{Rai2010,Yariv1973}.
+Without the dissipation, the coherent exchange between the two waveguides results in a periodic oscillation of photon between the two waveguides. In case of losses, such oscillations are slowly damped, although the coupling term still plays the role of creating and maintaining quantum correlations. The coupling is therefore the core of creation maintenance of quantum interactions in integrated photonic systems~\cite{Rai2010,Yariv1973}.
 %=================================================
 \section{Open-System Dynamics and Loss Modelling}
 %=================================================
 In realistic integrated photonic systems, optical modes experience losses. The coupled waveguide system cannot be treated as an isolated
 system, it needs to be formulated in the context of an open quantum
-systems. To include these dissipative effects, the system dynamics is determined uding the density matrix formalism, in which the interaction with the external environment results in decoherence and energy decay~\cite{BreuerPetruccione2002,Rai2010}
-.The time evolution of the coupled waveguide system along with the losses factors is formulated interms of the Lindblad form of the quantum Liouville (master) equation. This approach allows inclusion of photon loss without changing the nature of the Gaussian states. This preservation is necessary for the analysis of quantum steering and entanglement~\cite{BreuerPetruccione2002,GardinerZoller2004,Weedbrook2012,Rai2010}.
+systems. To include these dissipative effects, the system dynamics is determined using the density matrix formalism, in which the interaction with the external environment results in decoherence and energy decay~\cite{BreuerPetruccione2002,Rai2010}
+.The time evolution of the coupled waveguide system along with the losses factors is formulated in terms of the Lindblad form of the quantum Liouville (master) equation. This approach allows inclusion of photon loss without changing the nature of the Gaussian states. This preservation is necessary for the analysis of quantum steering and entanglement~\cite{BreuerPetruccione2002,GardinerZoller2004,Weedbrook2012,Rai2010}.
 
 \subsection{Quantum Liouville (Master) Equation}
-The time evolution of the proposed system with loss terms is determined using the following quantum liouville equation~\cite{BreuerPetruccione2002,GardinerZoller2004}.
+The time evolution of the proposed system with loss terms is determined using the following quantum Liouville equation~\cite{BreuerPetruccione2002,GardinerZoller2004}.
 \begin{equation}
 	\dot{\rho} = -\frac{i}{\hbar}[H, \rho] + \mathcal{L}\rho.
 \end{equation}
@@ -130,7 +125,7 @@ moments.
 %=================================================
 \section{Analytical Solutions of the Moment  Equations}
 %=================================================
-In this section, we present the closed-form solutions of the moment differential equations derived in the previous section. These solutions represents the time evolution of photon number and coherence correlations between the coupled waveguide modes in the presence of losses. In order to solve the dynamical rate equations, given in Eqs.~(3.5) to~(3.11), we use the following initial conditions:
+In this section, we present the closed-form solutions of the moment differential equations derived in the previous section. These solutions represent the time evolution of photon number and coherence correlations between the coupled waveguide modes in the presence of losses. In order to solve the dynamical rate equations, given in Eqs.~(3.5) to~(3.11), we use the following initial conditions:
 \[
 n_1 = \langle a_1^\dagger a_1 \rangle + \frac{1}{2}, \quad
 n_2 = \langle a_2^\dagger a_2 \rangle + \frac{1}{2}, \quad
@@ -340,33 +335,19 @@ where
 
 \section{Relation Between Entanglement and Steering}
 
-Although quantum and quantum steering can both be determined from the same
+Although quantum entanglement and quantum steering can both be determined from the same
 covariance matrix, they explore different aspects of quantum correlations.
 Entanglement is detected by the partial transpose of the covariance
 matrix and is symmetric between the subsystems, whereas steering is detected
 through conditional uncertainty relation and is intrinsically directional.
 All the steerable Gaussian states are therefore entangled, but not all entangled
-states exhibit steering~\cite{Uola2020,WisemanJonesDoherty2007}
-.
+states exhibit steering~\cite{Uola2020,WisemanJonesDoherty2007}.
 
 The quantum hierarchy relation between quantum correlations is  essential and the same strict hierarchy holds
 for continuous-variable Gaussian states ~\cite{WisemanJonesDoherty2007}:
-\begin{equation}
-	\text{Bell nonlocality}
-	\;\subsetneq\;
-	\text{Gaussian Steering}
-	\;\subsetneq\;
-	\text{Gaussian Entanglement}.
-\end{equation}
-
+$\text{Bell nonlocality} \;\subsetneq\; \text{Gaussian Steering} \;\subsetneq\; \text{Gaussian Entanglement}$
 Since, the focus of this thesis is on generation of quantum steering and entanglement, therefore, we are going to show the hierarchy relation, such that,
-
-
-\begin{equation}
-	\text{Gaussian Steering}
-	\;\subsetneq\;
-	\text{Gaussian Entanglement}.
-\end{equation}
+$\text{Gaussian Steering} \;\subsetneq\; \text{Gaussian Entanglement}$
 This relation simply means that quantum steering is a subset of quantum entanglement~\cite{Uola2020}.
 
 
